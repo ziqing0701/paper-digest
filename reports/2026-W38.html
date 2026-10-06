@@ -11,113 +11,573 @@
 <h2 class="paper-title">1. Anti-interference circularly polarized LiDAR for ocean detection</h2>
 <p class="paper-meta">Communications Physics · 2026 · 科研 · <a href="https://doi.org/10.1038/s42005-025-02477-4">DOI 10.1038/s42005-025-02477-4</a></p>
 <div class="tags"><span>#圆偏振</span><span>#海洋LiDAR</span><span>#多次散射</span></div>
-<dl class="facts">
-<dt>研究问题</dt><dd>圆偏振 V 通道能否同时抑制太阳背景和部分多次散射？</dd>
-<dt>核心假设 / 方法</dt><dd>太阳背景 V≈0，而保持圆偏振记忆的低阶/小角散射路径在 V 中权重更高。</dd>
-<dt>关键结果</dt><dd>南海实测中 V 通道夜间有效探测距离由 I 的 82 m 提升到 118 m，并改善深层 SBR 与 KL 物理意义。</dd>
-<dt>科研故事线</dt><dd>干扰瓶颈 → 找到偏振不对称性 → ACPL 原理 → Monte Carlo → 海试 → 反演意义。</dd>
-<dt>高水平期刊特征</dt><dd>measurement principle 级创新，同时有理论、仪器和真实海试闭环。</dd>
-<dt>薄弱点 / 延伸</dt><dd>单波长与单次航次仍限制普适性；V 同时受颗粒与多次散射影响。</dd>
-<dt>对你的启发</dt><dd>可用全偏振 SA-MC 研究 scattering-order × Stokes-channel information map。</dd>
-</dl>
+
+<p class="paper-summary"><strong>一句话抓核心：</strong>圆偏振 V 通道能否同时抑制太阳背景和部分多次散射？ 文章通过 太阳背景 V≈0，而保持圆偏振记忆的低阶/小角散射路径在 V 中权重更高。，最终得到的关键证据是：南海实测中 V 通道夜间有效探测距离由 I 的 82 m 提升到 118 m，并改善深层 SBR 与 KL 物理意义。</p>
+
+<div class="deep-section">
+<h3>1. 研究问题：作者真正想解决什么</h3>
+<p>圆偏振 V 通道能否同时抑制太阳背景和部分多次散射？</p>
+<p>这类问题的重要性通常不在于“再测一个相关性”，而在于现有解释中存在明显的识别缺口：多个过程可能产生相似观测、同一个结果可能对应多种来源，或者传统方法对某个关键维度缺乏独立约束。文章的价值首先来自把这个模糊问题压缩成一个可以被数据、实验或模型明确检验的问题。</p>
+</div>
+
+<div class="deep-section">
+<h3>2. 核心假设与物理 / 经济机制</h3>
+<p>太阳背景 V≈0，而保持圆偏振记忆的低阶/小角散射路径在 V 中权重更高。</p>
+<p>这里最值得注意的是“假设—可观测量”之间是否一一对应。一个好的高水平论文不会只给出最终预测，而会让每个核心变量承担明确角色：某个量对应源、某个量对应输运、某个量对应状态或噪声，最终形成可以被逐层证伪的机制链。</p>
+</div>
+
+<div class="deep-section">
+<h3>3. 数据、实验或模型：证据链是怎样搭起来的</h3>
+<p>文章的方法设计围绕上述假设展开：太阳背景 V≈0，而保持圆偏振记忆的低阶/小角散射路径在 V 中权重更高。</p>
+<p>阅读这一部分时，最应该检查三件事：第一，作者是否有独立数据约束关键中间环节；第二，是否存在替代机制并被主动比较；第三，模型或算法是否通过外部数据、对照实验、消融实验或反事实得到验证。因此阅读时要区分“信号相关”“机制支持”和“因果识别”三个层级，并检查新增观测量究竟增加了独立信息，还是只是重复描述同一物理过程。</p>
+</div>
+
+<div class="deep-section">
+<h3>4. 关键结果：哪些结果真正推动了故事</h3>
+<p>南海实测中 V 通道夜间有效探测距离由 I 的 82 m 提升到 118 m，并改善深层 SBR 与 KL 物理意义。</p>
+<p>关键并不是结果数值本身，而是它改变了哪一个判断。如果加入新观测后总拟合几乎不变，但源归因、参数后验或风险暴露发生明显重排，那么这说明新信息解决的是“可辨识性”而非单纯拟合；如果某个过程移除后核心结果显著退化，则说明作者已经从相关性向机制必要性推进。</p>
+</div>
+
+<div class="deep-section">
+<h3>5. 最重要的创新点</h3>
+<ul>
+<li><strong>问题创新：</strong>把原先较宽泛的问题压缩为“圆偏振 V 通道能否同时抑制太阳背景和部分多次散射？”，使研究目标具备明确的可检验性。</li>
+<li><strong>方法创新：</strong>太阳背景 V≈0，而保持圆偏振记忆的低阶/小角散射路径在 V 中权重更高。 这使新增方法或观测量直接服务于机制识别，而不是单纯增加模型复杂度。</li>
+<li><strong>证据创新：</strong>南海实测中 V 通道夜间有效探测距离由 I 的 82 m 提升到 118 m，并改善深层 SBR 与 KL 物理意义。 文章用结果层面的变化证明新增信息确实改变了科学或经济判断。</li>
+<li><strong>叙事创新：</strong>干扰瓶颈 → 找到偏振不对称性 → ACPL 原理 → Monte Carlo → 海试 → 反演意义。 结果之间具有前后依赖关系，能够形成闭环。</li>
+</ul>
+</div>
+
+<div class="deep-section">
+<h3>6. 科研故事线：为什么读起来是一个完整故事</h3>
+<div class="chain">干扰瓶颈 → 找到偏振不对称性 → ACPL 原理 → Monte Carlo → 海试 → 反演意义。</div>
+<p>这条链最值得模仿的地方，是每一部分都在制造下一部分的必要性：先展示现象或已有模型的不足，再提出竞争解释；随后用新的观测、模型或实验把解释空间收窄；最后把局地结果提升到更广的机制、系统效应或决策意义。这样论文就不会变成“很多结果的集合”。</p>
+</div>
+
+<div class="deep-section">
+<h3>7. 为什么能进入高水平期刊</h3>
+<p>measurement principle 级创新，同时有理论、仪器和真实海试闭环。</p>
+<p>从编辑和审稿视角看，核心通常是四点：问题是否足够重要；方法是否真正解决了识别瓶颈；证据链是否包含独立验证或机制检验；结论是否具有超出单一数据集或单一地点的可迁移意义。图表组织也应围绕这一逻辑展开，而不是按“方法有什么就画什么”。</p>
+</div>
+
+<div class="deep-section">
+<h3>薄弱点与最值得继续追的问题</h3>
+<div class="caution"><p>单波长与单次航次仍限制普适性；V 同时受颗粒与多次散射影响。</p></div>
+<p>这个限制并不必然削弱核心结论，它更重要的作用是定义外推边界。最有价值的后续工作通常不是简单扩大样本量，而是针对这里的识别缺口增加一个真正独立的观测维度、实验控制或空间/时间尺度验证。</p>
+</div>
+
+
+<div class="deep-section">
+<h3>8. 对你现有研究可以直接怎么迁移</h3>
+<div class="takeaway"><strong>第一步：把这篇论文的“新增信息”翻译成你的观测量。</strong><p>可用全偏振 SA-MC 研究 scattering-order × Stokes-channel information map。</p></div>
+<ul>
+<li><strong>研究问题层：</strong>不要只问某个参数是否敏感，而要问它能否解除已有观测中的退化、是否改变 posterior / Jacobian / DFS，或者是否帮助区分竞争机制。</li>
+<li><strong>方法层：</strong>优先采用“基础模型 → 加入一个新过程或新通道 → 独立验证 → 消融/反事实”的设计。这样每一部分结果都能回答上一部分留下的疑问。</li>
+<li><strong>论文叙事层：</strong>把模型、仪器或算法放在科学问题之后。真正有价值的贡献是说明新方法让过去无法区分的过程、参数或空间结构变得可区分。</li>
+</ul>
+</div>
+
 </section>
 <section class="paper" id="equilibrium-data-mining">
 <h2 class="paper-title">2. Equilibrium Data Mining and Data Abundance</h2>
 <p class="paper-meta">The Journal of Finance · 2025 · 金融 · <a href="https://doi.org/10.1111/jofi.13397">DOI 10.1111/jofi.13397</a></p>
 <div class="tags"><span>#量化投资</span><span>#数据</span><span>#市场效率</span></div>
-<dl class="facts">
-<dt>研究问题</dt><dd>数据更丰富、算力更便宜时，量化 alpha 会怎样演化？</dd>
-<dt>核心假设 / 方法</dt><dd>把 data frontier 与 processing cost 分开建模，并考虑 data miners 的最优搜索和均衡价格信息含量。</dd>
-<dt>关键结果</dt><dd>更多数据提高价格信息效率，主动管理表现可能呈驼峰；长期平均 alpha 会受到竞争侵蚀。</dd>
-<dt>科研故事线</dt><dd>大数据革命 → 拆成数据丰富度/计算成本 → 一般均衡搜索模型 → 反直觉比较静态。</dd>
-<dt>高水平期刊特征</dt><dd>把 AI/另类数据趋势转化为可检验的资产管理均衡预测。</dd>
-<dt>薄弱点 / 延伸</dt><dd>理论模型省略许多交易摩擦和拥挤机制。</dd>
-<dt>对你的启发</dt><dd>任何公开数据策略都要回答：十万个 agent 同时发现后，收益为何仍存在？</dd>
-</dl>
+
+<p class="paper-summary"><strong>一句话抓核心：</strong>数据更丰富、算力更便宜时，量化 alpha 会怎样演化？ 文章通过 把 data frontier 与 processing cost 分开建模，并考虑 data miners 的最优搜索和均衡价格信息含量。，最终得到的关键证据是：更多数据提高价格信息效率，主动管理表现可能呈驼峰；长期平均 alpha 会受到竞争侵蚀。</p>
+
+<div class="deep-section">
+<h3>1. 研究问题：作者真正想解决什么</h3>
+<p>数据更丰富、算力更便宜时，量化 alpha 会怎样演化？</p>
+<p>这类问题的重要性通常不在于“再测一个相关性”，而在于现有解释中存在明显的识别缺口：多个过程可能产生相似观测、同一个结果可能对应多种来源，或者传统方法对某个关键维度缺乏独立约束。文章的价值首先来自把这个模糊问题压缩成一个可以被数据、实验或模型明确检验的问题。</p>
+</div>
+
+<div class="deep-section">
+<h3>2. 核心假设与物理 / 经济机制</h3>
+<p>把 data frontier 与 processing cost 分开建模，并考虑 data miners 的最优搜索和均衡价格信息含量。</p>
+<p>这里最值得注意的是“假设—可观测量”之间是否一一对应。一个好的高水平论文不会只给出最终预测，而会让每个核心变量承担明确角色：某个量对应源、某个量对应输运、某个量对应状态或噪声，最终形成可以被逐层证伪的机制链。</p>
+</div>
+
+<div class="deep-section">
+<h3>3. 数据、实验或模型：证据链是怎样搭起来的</h3>
+<p>文章的方法设计围绕上述假设展开：把 data frontier 与 processing cost 分开建模，并考虑 data miners 的最优搜索和均衡价格信息含量。</p>
+<p>阅读这一部分时，最应该检查三件事：第一，作者是否有独立数据约束关键中间环节；第二，是否存在替代机制并被主动比较；第三，模型或算法是否通过外部数据、对照实验、消融实验或反事实得到验证。因此阅读时要把统计显著性、经济显著性、可交易性和交易成本四层分开，避免把论文中的平均关系直接等同于个人账户中的机械交易规则。</p>
+</div>
+
+<div class="deep-section">
+<h3>4. 关键结果：哪些结果真正推动了故事</h3>
+<p>更多数据提高价格信息效率，主动管理表现可能呈驼峰；长期平均 alpha 会受到竞争侵蚀。</p>
+<p>关键并不是结果数值本身，而是它改变了哪一个判断。如果加入新观测后总拟合几乎不变，但源归因、参数后验或风险暴露发生明显重排，那么这说明新信息解决的是“可辨识性”而非单纯拟合；如果某个过程移除后核心结果显著退化，则说明作者已经从相关性向机制必要性推进。</p>
+</div>
+
+<div class="deep-section">
+<h3>5. 最重要的创新点</h3>
+<ul>
+<li><strong>问题创新：</strong>把原先较宽泛的问题压缩为“数据更丰富、算力更便宜时，量化 alpha 会怎样演化？”，使研究目标具备明确的可检验性。</li>
+<li><strong>方法创新：</strong>把 data frontier 与 processing cost 分开建模，并考虑 data miners 的最优搜索和均衡价格信息含量。 这使新增方法或观测量直接服务于机制识别，而不是单纯增加模型复杂度。</li>
+<li><strong>证据创新：</strong>更多数据提高价格信息效率，主动管理表现可能呈驼峰；长期平均 alpha 会受到竞争侵蚀。 文章用结果层面的变化证明新增信息确实改变了科学或经济判断。</li>
+<li><strong>叙事创新：</strong>大数据革命 → 拆成数据丰富度/计算成本 → 一般均衡搜索模型 → 反直觉比较静态。 结果之间具有前后依赖关系，能够形成闭环。</li>
+</ul>
+</div>
+
+<div class="deep-section">
+<h3>6. 科研故事线：为什么读起来是一个完整故事</h3>
+<div class="chain">大数据革命 → 拆成数据丰富度/计算成本 → 一般均衡搜索模型 → 反直觉比较静态。</div>
+<p>这条链最值得模仿的地方，是每一部分都在制造下一部分的必要性：先展示现象或已有模型的不足，再提出竞争解释；随后用新的观测、模型或实验把解释空间收窄；最后把局地结果提升到更广的机制、系统效应或决策意义。这样论文就不会变成“很多结果的集合”。</p>
+</div>
+
+<div class="deep-section">
+<h3>7. 为什么能进入高水平期刊</h3>
+<p>把 AI/另类数据趋势转化为可检验的资产管理均衡预测。</p>
+<p>从编辑和审稿视角看，核心通常是四点：问题是否足够重要；方法是否真正解决了识别瓶颈；证据链是否包含独立验证或机制检验；结论是否具有超出单一数据集或单一地点的可迁移意义。图表组织也应围绕这一逻辑展开，而不是按“方法有什么就画什么”。</p>
+</div>
+
+<div class="deep-section">
+<h3>薄弱点与最值得继续追的问题</h3>
+<div class="caution"><p>理论模型省略许多交易摩擦和拥挤机制。</p></div>
+<p>这个限制并不必然削弱核心结论，它更重要的作用是定义外推边界。最有价值的后续工作通常不是简单扩大样本量，而是针对这里的识别缺口增加一个真正独立的观测维度、实验控制或空间/时间尺度验证。</p>
+</div>
+
+
+<div class="deep-section">
+<h3>8. 学术结论与可操作投资启示</h3>
+<div class="invest"><strong>学术层面：</strong><p>更多数据提高价格信息效率，主动管理表现可能呈驼峰；长期平均 alpha 会受到竞争侵蚀。</p></div>
+<div class="takeaway"><strong>迁移到个人投资：</strong><p>任何公开数据策略都要回答：十万个 agent 同时发现后，收益为何仍存在？</p></div>
+<ul>
+<li><strong>组合层：</strong>把论文变量先作为风险预算、仓位缩放或筛选条件测试，而不是直接当作单一买卖信号。</li>
+<li><strong>验证层：</strong>使用 point-in-time 数据、walk-forward / out-of-sample 检验，并把交易成本、滑点和极端行情单独计入。</li>
+<li><strong>决策层：</strong>明确区分“平均意义上的资产定价关系”和“当前时点的条件概率”。论文结论提供决策框架，不替代当前估值、流动性和风险状态判断。</li>
+</ul>
+</div>
+
 </section>
 <section class="paper" id="active-rrs">
 <h2 class="paper-title">3. Active Remote Sensing Reflectance Measurement Using White-Light Lidar: Monte Carlo Simulations</h2>
 <p class="paper-meta">Journal of Remote Sensing · 2026 · 科研 · <a href="https://doi.org/10.34133/remotesensing.1066">DOI 10.34133/remotesensing.1066</a></p>
 <div class="tags"><span>#白光LiDAR</span><span>#SAMC</span><span>#主动被动协同</span></div>
-<dl class="facts">
-<dt>研究问题</dt><dd>白光 LiDAR 能否主动测量与被动 ocean color 同物理意义的 Rrs？</dd>
-<dt>核心假设 / 方法</dt><dd>当接收 footprint 足够大、收集到匹配的多次散射比例时，主动积分回波可逼近被动 Rrs。</dd>
-<dt>关键结果</dt><dd>PB-SMC/AF-SMC/AF-SAMC 与 HydroLight 交叉验证；给出 H–FOV–IOP 设计条件，部分高空/星载场景 MAPE<10%。</dd>
-<dt>科研故事线</dt><dd>太阳依赖 → 人工太阳概念 → active/passive 等价问题 → MC 体系 → 关键控制量 → 仪器设计。</dd>
-<dt>高水平期刊特征</dt><dd>提出新观测范式，并把多次散射完整性转成系统参数约束。</dd>
-<dt>薄弱点 / 延伸</dt><dd>均匀水体假设较强，真实垂向非均匀海洋和 photon budget 仍待验证。</dd>
-<dt>对你的启发</dt><dd>非常适合继续做“垂向非均匀水体下 active-passive Rrs 等价边界”。</dd>
-</dl>
+
+<p class="paper-summary"><strong>一句话抓核心：</strong>白光 LiDAR 能否主动测量与被动 ocean color 同物理意义的 Rrs？ 文章通过 当接收 footprint 足够大、收集到匹配的多次散射比例时，主动积分回波可逼近被动 Rrs。，最终得到的关键证据是：PB-SMC/AF-SMC/AF-SAMC 与 HydroLight 交叉验证；给出 H–FOV–IOP 设计条件，部分高空/星载场景 MAPE&lt;10%。</p>
+
+<div class="deep-section">
+<h3>1. 研究问题：作者真正想解决什么</h3>
+<p>白光 LiDAR 能否主动测量与被动 ocean color 同物理意义的 Rrs？</p>
+<p>这类问题的重要性通常不在于“再测一个相关性”，而在于现有解释中存在明显的识别缺口：多个过程可能产生相似观测、同一个结果可能对应多种来源，或者传统方法对某个关键维度缺乏独立约束。文章的价值首先来自把这个模糊问题压缩成一个可以被数据、实验或模型明确检验的问题。</p>
+</div>
+
+<div class="deep-section">
+<h3>2. 核心假设与物理 / 经济机制</h3>
+<p>当接收 footprint 足够大、收集到匹配的多次散射比例时，主动积分回波可逼近被动 Rrs。</p>
+<p>这里最值得注意的是“假设—可观测量”之间是否一一对应。一个好的高水平论文不会只给出最终预测，而会让每个核心变量承担明确角色：某个量对应源、某个量对应输运、某个量对应状态或噪声，最终形成可以被逐层证伪的机制链。</p>
+</div>
+
+<div class="deep-section">
+<h3>3. 数据、实验或模型：证据链是怎样搭起来的</h3>
+<p>文章的方法设计围绕上述假设展开：当接收 footprint 足够大、收集到匹配的多次散射比例时，主动积分回波可逼近被动 Rrs。</p>
+<p>阅读这一部分时，最应该检查三件事：第一，作者是否有独立数据约束关键中间环节；第二，是否存在替代机制并被主动比较；第三，模型或算法是否通过外部数据、对照实验、消融实验或反事实得到验证。因此阅读时要区分“信号相关”“机制支持”和“因果识别”三个层级，并检查新增观测量究竟增加了独立信息，还是只是重复描述同一物理过程。</p>
+</div>
+
+<div class="deep-section">
+<h3>4. 关键结果：哪些结果真正推动了故事</h3>
+<p>PB-SMC/AF-SMC/AF-SAMC 与 HydroLight 交叉验证；给出 H–FOV–IOP 设计条件，部分高空/星载场景 MAPE&lt;10%。</p>
+<p>关键并不是结果数值本身，而是它改变了哪一个判断。如果加入新观测后总拟合几乎不变，但源归因、参数后验或风险暴露发生明显重排，那么这说明新信息解决的是“可辨识性”而非单纯拟合；如果某个过程移除后核心结果显著退化，则说明作者已经从相关性向机制必要性推进。</p>
+</div>
+
+<div class="deep-section">
+<h3>5. 最重要的创新点</h3>
+<ul>
+<li><strong>问题创新：</strong>把原先较宽泛的问题压缩为“白光 LiDAR 能否主动测量与被动 ocean color 同物理意义的 Rrs？”，使研究目标具备明确的可检验性。</li>
+<li><strong>方法创新：</strong>当接收 footprint 足够大、收集到匹配的多次散射比例时，主动积分回波可逼近被动 Rrs。 这使新增方法或观测量直接服务于机制识别，而不是单纯增加模型复杂度。</li>
+<li><strong>证据创新：</strong>PB-SMC/AF-SMC/AF-SAMC 与 HydroLight 交叉验证；给出 H–FOV–IOP 设计条件，部分高空/星载场景 MAPE&lt;10%。 文章用结果层面的变化证明新增信息确实改变了科学或经济判断。</li>
+<li><strong>叙事创新：</strong>太阳依赖 → 人工太阳概念 → active/passive 等价问题 → MC 体系 → 关键控制量 → 仪器设计。 结果之间具有前后依赖关系，能够形成闭环。</li>
+</ul>
+</div>
+
+<div class="deep-section">
+<h3>6. 科研故事线：为什么读起来是一个完整故事</h3>
+<div class="chain">太阳依赖 → 人工太阳概念 → active/passive 等价问题 → MC 体系 → 关键控制量 → 仪器设计。</div>
+<p>这条链最值得模仿的地方，是每一部分都在制造下一部分的必要性：先展示现象或已有模型的不足，再提出竞争解释；随后用新的观测、模型或实验把解释空间收窄；最后把局地结果提升到更广的机制、系统效应或决策意义。这样论文就不会变成“很多结果的集合”。</p>
+</div>
+
+<div class="deep-section">
+<h3>7. 为什么能进入高水平期刊</h3>
+<p>提出新观测范式，并把多次散射完整性转成系统参数约束。</p>
+<p>从编辑和审稿视角看，核心通常是四点：问题是否足够重要；方法是否真正解决了识别瓶颈；证据链是否包含独立验证或机制检验；结论是否具有超出单一数据集或单一地点的可迁移意义。图表组织也应围绕这一逻辑展开，而不是按“方法有什么就画什么”。</p>
+</div>
+
+<div class="deep-section">
+<h3>薄弱点与最值得继续追的问题</h3>
+<div class="caution"><p>均匀水体假设较强，真实垂向非均匀海洋和 photon budget 仍待验证。</p></div>
+<p>这个限制并不必然削弱核心结论，它更重要的作用是定义外推边界。最有价值的后续工作通常不是简单扩大样本量，而是针对这里的识别缺口增加一个真正独立的观测维度、实验控制或空间/时间尺度验证。</p>
+</div>
+
+
+<div class="deep-section">
+<h3>8. 对你现有研究可以直接怎么迁移</h3>
+<div class="takeaway"><strong>第一步：把这篇论文的“新增信息”翻译成你的观测量。</strong><p>非常适合继续做“垂向非均匀水体下 active-passive Rrs 等价边界”。</p></div>
+<ul>
+<li><strong>研究问题层：</strong>不要只问某个参数是否敏感，而要问它能否解除已有观测中的退化、是否改变 posterior / Jacobian / DFS，或者是否帮助区分竞争机制。</li>
+<li><strong>方法层：</strong>优先采用“基础模型 → 加入一个新过程或新通道 → 独立验证 → 消融/反事实”的设计。这样每一部分结果都能回答上一部分留下的疑问。</li>
+<li><strong>论文叙事层：</strong>把模型、仪器或算法放在科学问题之后。真正有价值的贡献是说明新方法让过去无法区分的过程、参数或空间结构变得可区分。</li>
+</ul>
+</div>
+
 </section>
 <section class="paper" id="core-inflation">
 <h2 class="paper-title">4. Getting to the Core: Inflation Risks Within and Across Asset Classes</h2>
 <p class="paper-meta">The Review of Financial Studies · 2026 · 金融 · <a href="https://doi.org/10.1093/rfs/hhaf050">DOI 10.1093/rfs/hhaf050</a></p>
 <div class="tags"><span>#通胀</span><span>#资产配置</span><span>#宏观</span></div>
-<dl class="facts">
-<dt>研究问题</dt><dd>“资产抗通胀”是否取决于通胀组成？</dd>
-<dt>核心假设 / 方法</dt><dd>把总通胀拆为 core inflation 与 energy inflation，检验跨资产 beta 与风险价格。</dd>
-<dt>关键结果</dt><dd>股票对 core inflation beta 为负、对 energy inflation beta 为正；稳定负风险价格主要来自 core inflation。</dd>
-<dt>科研故事线</dt><dd>总通胀模糊 → 分解组成 → 跨资产证据 → 风险价格 → NK 模型 → 股债相关性。</dd>
-<dt>高水平期刊特征</dt><dd>一个简单分解统一解释多类资产的通胀暴露与股债相关性状态变化。</dd>
-<dt>薄弱点 / 延伸</dt><dd>core/energy 仍是粗粒度分解，供给/需求、住房/服务等结构可继续细分。</dd>
-<dt>对你的启发</dt><dd>个人投资看 CPI 时先问“高在哪里”，并把股债相关性视为状态变量。</dd>
-</dl>
+
+<p class="paper-summary"><strong>一句话抓核心：</strong>“资产抗通胀”是否取决于通胀组成？ 文章通过 把总通胀拆为 core inflation 与 energy inflation，检验跨资产 beta 与风险价格。，最终得到的关键证据是：股票对 core inflation beta 为负、对 energy inflation beta 为正；稳定负风险价格主要来自 core inflation。</p>
+
+<div class="deep-section">
+<h3>1. 研究问题：作者真正想解决什么</h3>
+<p>“资产抗通胀”是否取决于通胀组成？</p>
+<p>这类问题的重要性通常不在于“再测一个相关性”，而在于现有解释中存在明显的识别缺口：多个过程可能产生相似观测、同一个结果可能对应多种来源，或者传统方法对某个关键维度缺乏独立约束。文章的价值首先来自把这个模糊问题压缩成一个可以被数据、实验或模型明确检验的问题。</p>
+</div>
+
+<div class="deep-section">
+<h3>2. 核心假设与物理 / 经济机制</h3>
+<p>把总通胀拆为 core inflation 与 energy inflation，检验跨资产 beta 与风险价格。</p>
+<p>这里最值得注意的是“假设—可观测量”之间是否一一对应。一个好的高水平论文不会只给出最终预测，而会让每个核心变量承担明确角色：某个量对应源、某个量对应输运、某个量对应状态或噪声，最终形成可以被逐层证伪的机制链。</p>
+</div>
+
+<div class="deep-section">
+<h3>3. 数据、实验或模型：证据链是怎样搭起来的</h3>
+<p>文章的方法设计围绕上述假设展开：把总通胀拆为 core inflation 与 energy inflation，检验跨资产 beta 与风险价格。</p>
+<p>阅读这一部分时，最应该检查三件事：第一，作者是否有独立数据约束关键中间环节；第二，是否存在替代机制并被主动比较；第三，模型或算法是否通过外部数据、对照实验、消融实验或反事实得到验证。因此阅读时要把统计显著性、经济显著性、可交易性和交易成本四层分开，避免把论文中的平均关系直接等同于个人账户中的机械交易规则。</p>
+</div>
+
+<div class="deep-section">
+<h3>4. 关键结果：哪些结果真正推动了故事</h3>
+<p>股票对 core inflation beta 为负、对 energy inflation beta 为正；稳定负风险价格主要来自 core inflation。</p>
+<p>关键并不是结果数值本身，而是它改变了哪一个判断。如果加入新观测后总拟合几乎不变，但源归因、参数后验或风险暴露发生明显重排，那么这说明新信息解决的是“可辨识性”而非单纯拟合；如果某个过程移除后核心结果显著退化，则说明作者已经从相关性向机制必要性推进。</p>
+</div>
+
+<div class="deep-section">
+<h3>5. 最重要的创新点</h3>
+<ul>
+<li><strong>问题创新：</strong>把原先较宽泛的问题压缩为““资产抗通胀”是否取决于通胀组成？”，使研究目标具备明确的可检验性。</li>
+<li><strong>方法创新：</strong>把总通胀拆为 core inflation 与 energy inflation，检验跨资产 beta 与风险价格。 这使新增方法或观测量直接服务于机制识别，而不是单纯增加模型复杂度。</li>
+<li><strong>证据创新：</strong>股票对 core inflation beta 为负、对 energy inflation beta 为正；稳定负风险价格主要来自 core inflation。 文章用结果层面的变化证明新增信息确实改变了科学或经济判断。</li>
+<li><strong>叙事创新：</strong>总通胀模糊 → 分解组成 → 跨资产证据 → 风险价格 → NK 模型 → 股债相关性。 结果之间具有前后依赖关系，能够形成闭环。</li>
+</ul>
+</div>
+
+<div class="deep-section">
+<h3>6. 科研故事线：为什么读起来是一个完整故事</h3>
+<div class="chain">总通胀模糊 → 分解组成 → 跨资产证据 → 风险价格 → NK 模型 → 股债相关性。</div>
+<p>这条链最值得模仿的地方，是每一部分都在制造下一部分的必要性：先展示现象或已有模型的不足，再提出竞争解释；随后用新的观测、模型或实验把解释空间收窄；最后把局地结果提升到更广的机制、系统效应或决策意义。这样论文就不会变成“很多结果的集合”。</p>
+</div>
+
+<div class="deep-section">
+<h3>7. 为什么能进入高水平期刊</h3>
+<p>一个简单分解统一解释多类资产的通胀暴露与股债相关性状态变化。</p>
+<p>从编辑和审稿视角看，核心通常是四点：问题是否足够重要；方法是否真正解决了识别瓶颈；证据链是否包含独立验证或机制检验；结论是否具有超出单一数据集或单一地点的可迁移意义。图表组织也应围绕这一逻辑展开，而不是按“方法有什么就画什么”。</p>
+</div>
+
+<div class="deep-section">
+<h3>薄弱点与最值得继续追的问题</h3>
+<div class="caution"><p>core/energy 仍是粗粒度分解，供给/需求、住房/服务等结构可继续细分。</p></div>
+<p>这个限制并不必然削弱核心结论，它更重要的作用是定义外推边界。最有价值的后续工作通常不是简单扩大样本量，而是针对这里的识别缺口增加一个真正独立的观测维度、实验控制或空间/时间尺度验证。</p>
+</div>
+
+
+<div class="deep-section">
+<h3>8. 学术结论与可操作投资启示</h3>
+<div class="invest"><strong>学术层面：</strong><p>股票对 core inflation beta 为负、对 energy inflation beta 为正；稳定负风险价格主要来自 core inflation。</p></div>
+<div class="takeaway"><strong>迁移到个人投资：</strong><p>个人投资看 CPI 时先问“高在哪里”，并把股债相关性视为状态变量。</p></div>
+<ul>
+<li><strong>组合层：</strong>把论文变量先作为风险预算、仓位缩放或筛选条件测试，而不是直接当作单一买卖信号。</li>
+<li><strong>验证层：</strong>使用 point-in-time 数据、walk-forward / out-of-sample 检验，并把交易成本、滑点和极端行情单独计入。</li>
+<li><strong>决策层：</strong>明确区分“平均意义上的资产定价关系”和“当前时点的条件概率”。论文结论提供决策框架，不替代当前估值、流动性和风险状态判断。</li>
+</ul>
+</div>
+
 </section>
 <section class="paper" id="opa-polarization-lidar">
 <h2 class="paper-title">5. Optical phased array LiDAR chips towards polarization-resolved 4D sensing</h2>
 <p class="paper-meta">Nature Communications · 2026 · 科研 · <a href="https://doi.org/10.1038/s41467-026-76736-5">DOI 10.1038/s41467-026-76736-5</a></p>
 <div class="tags"><span>#OPA LiDAR</span><span>#偏振</span><span>#光计算</span></div>
-<dl class="facts">
-<dt>研究问题</dt><dd>LiDAR 如何从“定位物体”升级到“识别材料”？</dd>
-<dt>核心假设 / 方法</dt><dd>把偏振作为材料敏感维度，并用片上 PolarONN 直接进行光域推理。</dd>
-<dt>关键结果</dt><dd>实现 3D+强度+偏振+材料标签；wood/stone/steel 在约 10 m 范围保持 >85% 分类准确率。</dd>
-<dt>科研故事线</dt><dd>几何能力缺口 → 偏振信息 → 电子后端瓶颈 → 光计算 → 实时材料感知。</dd>
-<dt>高水平期刊特征</dt><dd>感知维度、功能与计算架构三层创新叠加。</dd>
-<dt>薄弱点 / 延伸</dt><dd>材料种类少，粗糙度、入射角、湿度等 nuisance variables 仍待处理。</dd>
-<dt>对你的启发</dt><dd>你的多模态海洋 LiDAR 应由“能力缺口→所需信息→物理量→器件→算法”倒推。</dd>
-</dl>
+
+<p class="paper-summary"><strong>一句话抓核心：</strong>LiDAR 如何从“定位物体”升级到“识别材料”？ 文章通过 把偏振作为材料敏感维度，并用片上 PolarONN 直接进行光域推理。，最终得到的关键证据是：实现 3D+强度+偏振+材料标签；wood/stone/steel 在约 10 m 范围保持 &gt;85% 分类准确率。</p>
+
+<div class="deep-section">
+<h3>1. 研究问题：作者真正想解决什么</h3>
+<p>LiDAR 如何从“定位物体”升级到“识别材料”？</p>
+<p>这类问题的重要性通常不在于“再测一个相关性”，而在于现有解释中存在明显的识别缺口：多个过程可能产生相似观测、同一个结果可能对应多种来源，或者传统方法对某个关键维度缺乏独立约束。文章的价值首先来自把这个模糊问题压缩成一个可以被数据、实验或模型明确检验的问题。</p>
+</div>
+
+<div class="deep-section">
+<h3>2. 核心假设与物理 / 经济机制</h3>
+<p>把偏振作为材料敏感维度，并用片上 PolarONN 直接进行光域推理。</p>
+<p>这里最值得注意的是“假设—可观测量”之间是否一一对应。一个好的高水平论文不会只给出最终预测，而会让每个核心变量承担明确角色：某个量对应源、某个量对应输运、某个量对应状态或噪声，最终形成可以被逐层证伪的机制链。</p>
+</div>
+
+<div class="deep-section">
+<h3>3. 数据、实验或模型：证据链是怎样搭起来的</h3>
+<p>文章的方法设计围绕上述假设展开：把偏振作为材料敏感维度，并用片上 PolarONN 直接进行光域推理。</p>
+<p>阅读这一部分时，最应该检查三件事：第一，作者是否有独立数据约束关键中间环节；第二，是否存在替代机制并被主动比较；第三，模型或算法是否通过外部数据、对照实验、消融实验或反事实得到验证。因此阅读时要区分“信号相关”“机制支持”和“因果识别”三个层级，并检查新增观测量究竟增加了独立信息，还是只是重复描述同一物理过程。</p>
+</div>
+
+<div class="deep-section">
+<h3>4. 关键结果：哪些结果真正推动了故事</h3>
+<p>实现 3D+强度+偏振+材料标签；wood/stone/steel 在约 10 m 范围保持 &gt;85% 分类准确率。</p>
+<p>关键并不是结果数值本身，而是它改变了哪一个判断。如果加入新观测后总拟合几乎不变，但源归因、参数后验或风险暴露发生明显重排，那么这说明新信息解决的是“可辨识性”而非单纯拟合；如果某个过程移除后核心结果显著退化，则说明作者已经从相关性向机制必要性推进。</p>
+</div>
+
+<div class="deep-section">
+<h3>5. 最重要的创新点</h3>
+<ul>
+<li><strong>问题创新：</strong>把原先较宽泛的问题压缩为“LiDAR 如何从“定位物体”升级到“识别材料”？”，使研究目标具备明确的可检验性。</li>
+<li><strong>方法创新：</strong>把偏振作为材料敏感维度，并用片上 PolarONN 直接进行光域推理。 这使新增方法或观测量直接服务于机制识别，而不是单纯增加模型复杂度。</li>
+<li><strong>证据创新：</strong>实现 3D+强度+偏振+材料标签；wood/stone/steel 在约 10 m 范围保持 &gt;85% 分类准确率。 文章用结果层面的变化证明新增信息确实改变了科学或经济判断。</li>
+<li><strong>叙事创新：</strong>几何能力缺口 → 偏振信息 → 电子后端瓶颈 → 光计算 → 实时材料感知。 结果之间具有前后依赖关系，能够形成闭环。</li>
+</ul>
+</div>
+
+<div class="deep-section">
+<h3>6. 科研故事线：为什么读起来是一个完整故事</h3>
+<div class="chain">几何能力缺口 → 偏振信息 → 电子后端瓶颈 → 光计算 → 实时材料感知。</div>
+<p>这条链最值得模仿的地方，是每一部分都在制造下一部分的必要性：先展示现象或已有模型的不足，再提出竞争解释；随后用新的观测、模型或实验把解释空间收窄；最后把局地结果提升到更广的机制、系统效应或决策意义。这样论文就不会变成“很多结果的集合”。</p>
+</div>
+
+<div class="deep-section">
+<h3>7. 为什么能进入高水平期刊</h3>
+<p>感知维度、功能与计算架构三层创新叠加。</p>
+<p>从编辑和审稿视角看，核心通常是四点：问题是否足够重要；方法是否真正解决了识别瓶颈；证据链是否包含独立验证或机制检验；结论是否具有超出单一数据集或单一地点的可迁移意义。图表组织也应围绕这一逻辑展开，而不是按“方法有什么就画什么”。</p>
+</div>
+
+<div class="deep-section">
+<h3>薄弱点与最值得继续追的问题</h3>
+<div class="caution"><p>材料种类少，粗糙度、入射角、湿度等 nuisance variables 仍待处理。</p></div>
+<p>这个限制并不必然削弱核心结论，它更重要的作用是定义外推边界。最有价值的后续工作通常不是简单扩大样本量，而是针对这里的识别缺口增加一个真正独立的观测维度、实验控制或空间/时间尺度验证。</p>
+</div>
+
+
+<div class="deep-section">
+<h3>8. 对你现有研究可以直接怎么迁移</h3>
+<div class="takeaway"><strong>第一步：把这篇论文的“新增信息”翻译成你的观测量。</strong><p>你的多模态海洋 LiDAR 应由“能力缺口→所需信息→物理量→器件→算法”倒推。</p></div>
+<ul>
+<li><strong>研究问题层：</strong>不要只问某个参数是否敏感，而要问它能否解除已有观测中的退化、是否改变 posterior / Jacobian / DFS，或者是否帮助区分竞争机制。</li>
+<li><strong>方法层：</strong>优先采用“基础模型 → 加入一个新过程或新通道 → 独立验证 → 消融/反事实”的设计。这样每一部分结果都能回答上一部分留下的疑问。</li>
+<li><strong>论文叙事层：</strong>把模型、仪器或算法放在科学问题之后。真正有价值的贡献是说明新方法让过去无法区分的过程、参数或空间结构变得可区分。</li>
+</ul>
+</div>
+
 </section>
 <section class="paper" id="partial-equilibrium-bubbles">
 <h2 class="paper-title">6. Partial Equilibrium Thinking, Extrapolation, and Bubbles</h2>
 <p class="paper-meta">The Review of Financial Studies · 2026 · 金融 · <a href="https://doi.org/10.1093/rfs/hhag053">DOI 10.1093/rfs/hhag053</a></p>
 <div class="tags"><span>#行为金融</span><span>#泡沫</span><span>#趋势</span></div>
-<dl class="facts">
-<dt>研究问题</dt><dd>为什么同样的趋势外推平时产生 momentum，重大变革后却演化成 bubble/crash？</dd>
-<dt>核心假设 / 方法</dt><dd>投资者低估一般均衡反馈；displacement shock 提高不确定性并放大 extrapolation。</dd>
-<dt>关键结果</dt><dd>统一解释普通 momentum 与泡沫—崩盘，关键状态变量是 displacement 与不确定性。</dd>
-<dt>科研故事线</dt><dd>趋势外推 → PET 微观基础 → 普通冲击 → momentum；重大冲击 → 强化外推 → bubble/crash。</dd>
-<dt>高水平期刊特征</dt><dd>一个机制统一多个行为资产定价现象。</dd>
-<dt>薄弱点 / 延伸</dt><dd>理论上如何实时识别 displacement 仍需额外实证。</dd>
-<dt>对你的启发</dt><dd>AI/机器人/crypto 等主题可监控 Price Revision − Fundamental Revision 的 extrapolation gap。</dd>
-</dl>
+
+<p class="paper-summary"><strong>一句话抓核心：</strong>为什么同样的趋势外推平时产生 momentum，重大变革后却演化成 bubble/crash？ 文章通过 投资者低估一般均衡反馈；displacement shock 提高不确定性并放大 extrapolation。，最终得到的关键证据是：统一解释普通 momentum 与泡沫—崩盘，关键状态变量是 displacement 与不确定性。</p>
+
+<div class="deep-section">
+<h3>1. 研究问题：作者真正想解决什么</h3>
+<p>为什么同样的趋势外推平时产生 momentum，重大变革后却演化成 bubble/crash？</p>
+<p>这类问题的重要性通常不在于“再测一个相关性”，而在于现有解释中存在明显的识别缺口：多个过程可能产生相似观测、同一个结果可能对应多种来源，或者传统方法对某个关键维度缺乏独立约束。文章的价值首先来自把这个模糊问题压缩成一个可以被数据、实验或模型明确检验的问题。</p>
+</div>
+
+<div class="deep-section">
+<h3>2. 核心假设与物理 / 经济机制</h3>
+<p>投资者低估一般均衡反馈；displacement shock 提高不确定性并放大 extrapolation。</p>
+<p>这里最值得注意的是“假设—可观测量”之间是否一一对应。一个好的高水平论文不会只给出最终预测，而会让每个核心变量承担明确角色：某个量对应源、某个量对应输运、某个量对应状态或噪声，最终形成可以被逐层证伪的机制链。</p>
+</div>
+
+<div class="deep-section">
+<h3>3. 数据、实验或模型：证据链是怎样搭起来的</h3>
+<p>文章的方法设计围绕上述假设展开：投资者低估一般均衡反馈；displacement shock 提高不确定性并放大 extrapolation。</p>
+<p>阅读这一部分时，最应该检查三件事：第一，作者是否有独立数据约束关键中间环节；第二，是否存在替代机制并被主动比较；第三，模型或算法是否通过外部数据、对照实验、消融实验或反事实得到验证。因此阅读时要把统计显著性、经济显著性、可交易性和交易成本四层分开，避免把论文中的平均关系直接等同于个人账户中的机械交易规则。</p>
+</div>
+
+<div class="deep-section">
+<h3>4. 关键结果：哪些结果真正推动了故事</h3>
+<p>统一解释普通 momentum 与泡沫—崩盘，关键状态变量是 displacement 与不确定性。</p>
+<p>关键并不是结果数值本身，而是它改变了哪一个判断。如果加入新观测后总拟合几乎不变，但源归因、参数后验或风险暴露发生明显重排，那么这说明新信息解决的是“可辨识性”而非单纯拟合；如果某个过程移除后核心结果显著退化，则说明作者已经从相关性向机制必要性推进。</p>
+</div>
+
+<div class="deep-section">
+<h3>5. 最重要的创新点</h3>
+<ul>
+<li><strong>问题创新：</strong>把原先较宽泛的问题压缩为“为什么同样的趋势外推平时产生 momentum，重大变革后却演化成 bubble/crash？”，使研究目标具备明确的可检验性。</li>
+<li><strong>方法创新：</strong>投资者低估一般均衡反馈；displacement shock 提高不确定性并放大 extrapolation。 这使新增方法或观测量直接服务于机制识别，而不是单纯增加模型复杂度。</li>
+<li><strong>证据创新：</strong>统一解释普通 momentum 与泡沫—崩盘，关键状态变量是 displacement 与不确定性。 文章用结果层面的变化证明新增信息确实改变了科学或经济判断。</li>
+<li><strong>叙事创新：</strong>趋势外推 → PET 微观基础 → 普通冲击 → momentum；重大冲击 → 强化外推 → bubble/crash。 结果之间具有前后依赖关系，能够形成闭环。</li>
+</ul>
+</div>
+
+<div class="deep-section">
+<h3>6. 科研故事线：为什么读起来是一个完整故事</h3>
+<div class="chain">趋势外推 → PET 微观基础 → 普通冲击 → momentum；重大冲击 → 强化外推 → bubble/crash。</div>
+<p>这条链最值得模仿的地方，是每一部分都在制造下一部分的必要性：先展示现象或已有模型的不足，再提出竞争解释；随后用新的观测、模型或实验把解释空间收窄；最后把局地结果提升到更广的机制、系统效应或决策意义。这样论文就不会变成“很多结果的集合”。</p>
+</div>
+
+<div class="deep-section">
+<h3>7. 为什么能进入高水平期刊</h3>
+<p>一个机制统一多个行为资产定价现象。</p>
+<p>从编辑和审稿视角看，核心通常是四点：问题是否足够重要；方法是否真正解决了识别瓶颈；证据链是否包含独立验证或机制检验；结论是否具有超出单一数据集或单一地点的可迁移意义。图表组织也应围绕这一逻辑展开，而不是按“方法有什么就画什么”。</p>
+</div>
+
+<div class="deep-section">
+<h3>薄弱点与最值得继续追的问题</h3>
+<div class="caution"><p>理论上如何实时识别 displacement 仍需额外实证。</p></div>
+<p>这个限制并不必然削弱核心结论，它更重要的作用是定义外推边界。最有价值的后续工作通常不是简单扩大样本量，而是针对这里的识别缺口增加一个真正独立的观测维度、实验控制或空间/时间尺度验证。</p>
+</div>
+
+
+<div class="deep-section">
+<h3>8. 学术结论与可操作投资启示</h3>
+<div class="invest"><strong>学术层面：</strong><p>统一解释普通 momentum 与泡沫—崩盘，关键状态变量是 displacement 与不确定性。</p></div>
+<div class="takeaway"><strong>迁移到个人投资：</strong><p>AI/机器人/crypto 等主题可监控 Price Revision − Fundamental Revision 的 extrapolation gap。</p></div>
+<ul>
+<li><strong>组合层：</strong>把论文变量先作为风险预算、仓位缩放或筛选条件测试，而不是直接当作单一买卖信号。</li>
+<li><strong>验证层：</strong>使用 point-in-time 数据、walk-forward / out-of-sample 检验，并把交易成本、滑点和极端行情单独计入。</li>
+<li><strong>决策层：</strong>明确区分“平均意义上的资产定价关系”和“当前时点的条件概率”。论文结论提供决策框架，不替代当前估值、流动性和风险状态判断。</li>
+</ul>
+</div>
+
 </section>
 <section class="paper" id="hcho-methane-oxidation">
 <h2 class="paper-title">7. Satellite quantification of enhanced methane oxidation applied to the stratospheric plume following Hunga Tonga-Hunga Ha’apai eruption</h2>
 <p class="paper-meta">Nature Communications · 2026 · 科研 · <a href="https://doi.org/10.1038/s41467-026-72191-4">DOI 10.1038/s41467-026-72191-4</a></p>
 <div class="tags"><span>#甲烷氧化</span><span>#TROPOMI</span><span>#代理量</span></div>
-<dl class="facts">
-<dt>研究问题</dt><dd>目标 CH₄ sink 难直接测时，能否通过反应链中 HCHO 代理量反演氧化速率？</dd>
-<dt>核心假设 / 方法</dt><dd>CH₄ 氧化产生短寿命 HCHO；在异常化学羽流中，HCHO enhancement 可约束 CH₄ oxidation。</dd>
-<dt>关键结果</dt><dd>TROPOMI 观测到强 HCHO 异常并反演约 900±220 Mg/day CH₄ oxidation，进一步指向持续氯化学。</dd>
-<dt>科研故事线</dt><dd>MRV 难题 → 找 proxy → 火山天然实验 → 化学归因 → 定量 sink → 未解 Cl 来源。</dd>
-<dt>高水平期刊特征</dt><dd>从状态量观测升级到过程量监测，并指向未来 methane-removal MRV。</dd>
-<dt>薄弱点 / 延伸</dt><dd>HCHO 有多种来源，代理关系需要其他 tracer 与化学输送模型共同约束。</dd>
-<dt>对你的启发</dt><dd>你的 CH₄ 研究可先画反应/因果链，再寻找寿命合适、背景干净的过程 proxy。</dd>
-</dl>
+
+<p class="paper-summary"><strong>一句话抓核心：</strong>目标 CH₄ sink 难直接测时，能否通过反应链中 HCHO 代理量反演氧化速率？ 文章通过 CH₄ 氧化产生短寿命 HCHO；在异常化学羽流中，HCHO enhancement 可约束 CH₄ oxidation。，最终得到的关键证据是：TROPOMI 观测到强 HCHO 异常并反演约 900±220 Mg/day CH₄ oxidation，进一步指向持续氯化学。</p>
+
+<div class="deep-section">
+<h3>1. 研究问题：作者真正想解决什么</h3>
+<p>目标 CH₄ sink 难直接测时，能否通过反应链中 HCHO 代理量反演氧化速率？</p>
+<p>这类问题的重要性通常不在于“再测一个相关性”，而在于现有解释中存在明显的识别缺口：多个过程可能产生相似观测、同一个结果可能对应多种来源，或者传统方法对某个关键维度缺乏独立约束。文章的价值首先来自把这个模糊问题压缩成一个可以被数据、实验或模型明确检验的问题。</p>
+</div>
+
+<div class="deep-section">
+<h3>2. 核心假设与物理 / 经济机制</h3>
+<p>CH₄ 氧化产生短寿命 HCHO；在异常化学羽流中，HCHO enhancement 可约束 CH₄ oxidation。</p>
+<p>这里最值得注意的是“假设—可观测量”之间是否一一对应。一个好的高水平论文不会只给出最终预测，而会让每个核心变量承担明确角色：某个量对应源、某个量对应输运、某个量对应状态或噪声，最终形成可以被逐层证伪的机制链。</p>
+</div>
+
+<div class="deep-section">
+<h3>3. 数据、实验或模型：证据链是怎样搭起来的</h3>
+<p>文章的方法设计围绕上述假设展开：CH₄ 氧化产生短寿命 HCHO；在异常化学羽流中，HCHO enhancement 可约束 CH₄ oxidation。</p>
+<p>阅读这一部分时，最应该检查三件事：第一，作者是否有独立数据约束关键中间环节；第二，是否存在替代机制并被主动比较；第三，模型或算法是否通过外部数据、对照实验、消融实验或反事实得到验证。因此阅读时要区分“信号相关”“机制支持”和“因果识别”三个层级，并检查新增观测量究竟增加了独立信息，还是只是重复描述同一物理过程。</p>
+</div>
+
+<div class="deep-section">
+<h3>4. 关键结果：哪些结果真正推动了故事</h3>
+<p>TROPOMI 观测到强 HCHO 异常并反演约 900±220 Mg/day CH₄ oxidation，进一步指向持续氯化学。</p>
+<p>关键并不是结果数值本身，而是它改变了哪一个判断。如果加入新观测后总拟合几乎不变，但源归因、参数后验或风险暴露发生明显重排，那么这说明新信息解决的是“可辨识性”而非单纯拟合；如果某个过程移除后核心结果显著退化，则说明作者已经从相关性向机制必要性推进。</p>
+</div>
+
+<div class="deep-section">
+<h3>5. 最重要的创新点</h3>
+<ul>
+<li><strong>问题创新：</strong>把原先较宽泛的问题压缩为“目标 CH₄ sink 难直接测时，能否通过反应链中 HCHO 代理量反演氧化速率？”，使研究目标具备明确的可检验性。</li>
+<li><strong>方法创新：</strong>CH₄ 氧化产生短寿命 HCHO；在异常化学羽流中，HCHO enhancement 可约束 CH₄ oxidation。 这使新增方法或观测量直接服务于机制识别，而不是单纯增加模型复杂度。</li>
+<li><strong>证据创新：</strong>TROPOMI 观测到强 HCHO 异常并反演约 900±220 Mg/day CH₄ oxidation，进一步指向持续氯化学。 文章用结果层面的变化证明新增信息确实改变了科学或经济判断。</li>
+<li><strong>叙事创新：</strong>MRV 难题 → 找 proxy → 火山天然实验 → 化学归因 → 定量 sink → 未解 Cl 来源。 结果之间具有前后依赖关系，能够形成闭环。</li>
+</ul>
+</div>
+
+<div class="deep-section">
+<h3>6. 科研故事线：为什么读起来是一个完整故事</h3>
+<div class="chain">MRV 难题 → 找 proxy → 火山天然实验 → 化学归因 → 定量 sink → 未解 Cl 来源。</div>
+<p>这条链最值得模仿的地方，是每一部分都在制造下一部分的必要性：先展示现象或已有模型的不足，再提出竞争解释；随后用新的观测、模型或实验把解释空间收窄；最后把局地结果提升到更广的机制、系统效应或决策意义。这样论文就不会变成“很多结果的集合”。</p>
+</div>
+
+<div class="deep-section">
+<h3>7. 为什么能进入高水平期刊</h3>
+<p>从状态量观测升级到过程量监测，并指向未来 methane-removal MRV。</p>
+<p>从编辑和审稿视角看，核心通常是四点：问题是否足够重要；方法是否真正解决了识别瓶颈；证据链是否包含独立验证或机制检验；结论是否具有超出单一数据集或单一地点的可迁移意义。图表组织也应围绕这一逻辑展开，而不是按“方法有什么就画什么”。</p>
+</div>
+
+<div class="deep-section">
+<h3>薄弱点与最值得继续追的问题</h3>
+<div class="caution"><p>HCHO 有多种来源，代理关系需要其他 tracer 与化学输送模型共同约束。</p></div>
+<p>这个限制并不必然削弱核心结论，它更重要的作用是定义外推边界。最有价值的后续工作通常不是简单扩大样本量，而是针对这里的识别缺口增加一个真正独立的观测维度、实验控制或空间/时间尺度验证。</p>
+</div>
+
+
+<div class="deep-section">
+<h3>8. 对你现有研究可以直接怎么迁移</h3>
+<div class="takeaway"><strong>第一步：把这篇论文的“新增信息”翻译成你的观测量。</strong><p>你的 CH₄ 研究可先画反应/因果链，再寻找寿命合适、背景干净的过程 proxy。</p></div>
+<ul>
+<li><strong>研究问题层：</strong>不要只问某个参数是否敏感，而要问它能否解除已有观测中的退化、是否改变 posterior / Jacobian / DFS，或者是否帮助区分竞争机制。</li>
+<li><strong>方法层：</strong>优先采用“基础模型 → 加入一个新过程或新通道 → 独立验证 → 消融/反事实”的设计。这样每一部分结果都能回答上一部分留下的疑问。</li>
+<li><strong>论文叙事层：</strong>把模型、仪器或算法放在科学问题之后。真正有价值的贡献是说明新方法让过去无法区分的过程、参数或空间结构变得可区分。</li>
+</ul>
+</div>
+
 </section>
 <section class="paper" id="portfolio-frictions">
 <h2 class="paper-title">8. What Drives Investors' Portfolio Choices? Separating Risk Preferences from Frictions</h2>
 <p class="paper-meta">The Journal of Finance · 2026 · 金融 · <a href="https://doi.org/10.1111/jofi.70013">DOI 10.1111/jofi.70013</a></p>
 <div class="tags"><span>#家庭金融</span><span>#摩擦</span><span>#默认选项</span></div>
-<dl class="facts">
-<dt>研究问题</dt><dd>低股票仓位来自高风险厌恶，还是来自参与/调整摩擦？</dd>
-<dt>核心假设 / 方法</dt><dd>利用 401(k) 默认配置变化识别 revealed preferences 与 participation frictions。</dd>
-<dt>关键结果</dt><dd>消除摩擦后约 94% 投资者愿意持股；结构估计显示相对温和的风险厌恶即可解释组合选择。</dd>
-<dt>科研故事线</dt><dd>经典 puzzle → preference/friction 识别难题 → default 准实验 → 结构模型 → 重新解释。</dd>
-<dt>高水平期刊特征</dt><dd>准实验和生命周期结构模型结合，改变 stock participation puzzle 的解释。</dd>
-<dt>薄弱点 / 延伸</dt><dd>美国退休账户制度背景限制外部推广。</dd>
-<dt>对你的启发</dt><dd>投资系统要把研究、操作、税务、再平衡等摩擦计入真实最优组合。</dd>
-</dl>
+
+<p class="paper-summary"><strong>一句话抓核心：</strong>低股票仓位来自高风险厌恶，还是来自参与/调整摩擦？ 文章通过 利用 401(k) 默认配置变化识别 revealed preferences 与 participation frictions。，最终得到的关键证据是：消除摩擦后约 94% 投资者愿意持股；结构估计显示相对温和的风险厌恶即可解释组合选择。</p>
+
+<div class="deep-section">
+<h3>1. 研究问题：作者真正想解决什么</h3>
+<p>低股票仓位来自高风险厌恶，还是来自参与/调整摩擦？</p>
+<p>这类问题的重要性通常不在于“再测一个相关性”，而在于现有解释中存在明显的识别缺口：多个过程可能产生相似观测、同一个结果可能对应多种来源，或者传统方法对某个关键维度缺乏独立约束。文章的价值首先来自把这个模糊问题压缩成一个可以被数据、实验或模型明确检验的问题。</p>
+</div>
+
+<div class="deep-section">
+<h3>2. 核心假设与物理 / 经济机制</h3>
+<p>利用 401(k) 默认配置变化识别 revealed preferences 与 participation frictions。</p>
+<p>这里最值得注意的是“假设—可观测量”之间是否一一对应。一个好的高水平论文不会只给出最终预测，而会让每个核心变量承担明确角色：某个量对应源、某个量对应输运、某个量对应状态或噪声，最终形成可以被逐层证伪的机制链。</p>
+</div>
+
+<div class="deep-section">
+<h3>3. 数据、实验或模型：证据链是怎样搭起来的</h3>
+<p>文章的方法设计围绕上述假设展开：利用 401(k) 默认配置变化识别 revealed preferences 与 participation frictions。</p>
+<p>阅读这一部分时，最应该检查三件事：第一，作者是否有独立数据约束关键中间环节；第二，是否存在替代机制并被主动比较；第三，模型或算法是否通过外部数据、对照实验、消融实验或反事实得到验证。因此阅读时要把统计显著性、经济显著性、可交易性和交易成本四层分开，避免把论文中的平均关系直接等同于个人账户中的机械交易规则。</p>
+</div>
+
+<div class="deep-section">
+<h3>4. 关键结果：哪些结果真正推动了故事</h3>
+<p>消除摩擦后约 94% 投资者愿意持股；结构估计显示相对温和的风险厌恶即可解释组合选择。</p>
+<p>关键并不是结果数值本身，而是它改变了哪一个判断。如果加入新观测后总拟合几乎不变，但源归因、参数后验或风险暴露发生明显重排，那么这说明新信息解决的是“可辨识性”而非单纯拟合；如果某个过程移除后核心结果显著退化，则说明作者已经从相关性向机制必要性推进。</p>
+</div>
+
+<div class="deep-section">
+<h3>5. 最重要的创新点</h3>
+<ul>
+<li><strong>问题创新：</strong>把原先较宽泛的问题压缩为“低股票仓位来自高风险厌恶，还是来自参与/调整摩擦？”，使研究目标具备明确的可检验性。</li>
+<li><strong>方法创新：</strong>利用 401(k) 默认配置变化识别 revealed preferences 与 participation frictions。 这使新增方法或观测量直接服务于机制识别，而不是单纯增加模型复杂度。</li>
+<li><strong>证据创新：</strong>消除摩擦后约 94% 投资者愿意持股；结构估计显示相对温和的风险厌恶即可解释组合选择。 文章用结果层面的变化证明新增信息确实改变了科学或经济判断。</li>
+<li><strong>叙事创新：</strong>经典 puzzle → preference/friction 识别难题 → default 准实验 → 结构模型 → 重新解释。 结果之间具有前后依赖关系，能够形成闭环。</li>
+</ul>
+</div>
+
+<div class="deep-section">
+<h3>6. 科研故事线：为什么读起来是一个完整故事</h3>
+<div class="chain">经典 puzzle → preference/friction 识别难题 → default 准实验 → 结构模型 → 重新解释。</div>
+<p>这条链最值得模仿的地方，是每一部分都在制造下一部分的必要性：先展示现象或已有模型的不足，再提出竞争解释；随后用新的观测、模型或实验把解释空间收窄；最后把局地结果提升到更广的机制、系统效应或决策意义。这样论文就不会变成“很多结果的集合”。</p>
+</div>
+
+<div class="deep-section">
+<h3>7. 为什么能进入高水平期刊</h3>
+<p>准实验和生命周期结构模型结合，改变 stock participation puzzle 的解释。</p>
+<p>从编辑和审稿视角看，核心通常是四点：问题是否足够重要；方法是否真正解决了识别瓶颈；证据链是否包含独立验证或机制检验；结论是否具有超出单一数据集或单一地点的可迁移意义。图表组织也应围绕这一逻辑展开，而不是按“方法有什么就画什么”。</p>
+</div>
+
+<div class="deep-section">
+<h3>薄弱点与最值得继续追的问题</h3>
+<div class="caution"><p>美国退休账户制度背景限制外部推广。</p></div>
+<p>这个限制并不必然削弱核心结论，它更重要的作用是定义外推边界。最有价值的后续工作通常不是简单扩大样本量，而是针对这里的识别缺口增加一个真正独立的观测维度、实验控制或空间/时间尺度验证。</p>
+</div>
+
+
+<div class="deep-section">
+<h3>8. 学术结论与可操作投资启示</h3>
+<div class="invest"><strong>学术层面：</strong><p>消除摩擦后约 94% 投资者愿意持股；结构估计显示相对温和的风险厌恶即可解释组合选择。</p></div>
+<div class="takeaway"><strong>迁移到个人投资：</strong><p>投资系统要把研究、操作、税务、再平衡等摩擦计入真实最优组合。</p></div>
+<ul>
+<li><strong>组合层：</strong>把论文变量先作为风险预算、仓位缩放或筛选条件测试，而不是直接当作单一买卖信号。</li>
+<li><strong>验证层：</strong>使用 point-in-time 数据、walk-forward / out-of-sample 检验，并把交易成本、滑点和极端行情单独计入。</li>
+<li><strong>决策层：</strong>明确区分“平均意义上的资产定价关系”和“当前时点的条件概率”。论文结论提供决策框架，不替代当前估值、流动性和风险状态判断。</li>
+</ul>
+</div>
+
 </section>
 <div class="week-nav"><a href="2026-W37.html">← 2026-W37</a><a href="2026-W39.html">2026-W39 →</a></div>
 </article></main></body></html>
