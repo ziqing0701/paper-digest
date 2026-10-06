@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>2026-W40 顶刊论文精读 · Paper Digest</title><link rel="stylesheet" href="../style.css"></head>
+<title>2026-W40 顶刊论文精读 · Paper Digest</title><link rel="stylesheet" href="../style.css">
+<script>
+window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
 <body><main class="wrap"><article class="report">
 <a class="back" href="../index.html">← 返回论文精读首页</a>
 <p class="eyebrow">HISTORICAL BACKFILL · WEEKLY REPORT</p>
@@ -13,6 +18,16 @@
 <div class="tags"><span>#T-matrix</span><span>#非球形颗粒</span><span>#偏振MC</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>球形颗粒假设会怎样改变水下偏振传播和 LiDAR 可观测量？ 文章通过 用 T-matrix 生成 sand/algae 非球形散射矩阵，再嵌入 polarized Monte Carlo。，最终得到的关键证据是：flattened particles 增强后向散射、elongated 增强前向散射；algae 退偏更强，圆偏振 memory 具有颗粒依赖性。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇真正要回答的是：如果真实颗粒不是球，单颗粒散射矩阵改变以后，经过多次散射传播，最终 LiDAR 还能保留多少形态信息。</p>
+<div class="formula-box">\[\mathbf S_{out}=\mathbf M(\theta;r,shape,m)\mathbf S_{in}\]</div>
+<div class="formula-box">\[\mathbf S^{(n)}=\mathbf M_n\cdots\mathbf M_2\mathbf M_1\mathbf S^{(0)}\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：用 T-matrix 替代球形 Mie</strong><p>先得到 flattened / elongated / algae / sand 等形态相关 Mueller matrix。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：嵌入 polarized Monte Carlo</strong><p>把单次散射差异传播到多次散射、时间展宽和 Stokes 变化。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：比较哪些信息能存活</strong><p>flattened / elongated 对前后向散射和 circular memory 的影响并不会完全被多次散射抹平。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 对你的下一步</strong><p>从 forward sensitivity 继续走到 inverse degeneracy：哪些不同 \((r,shape,m)\) 会给出相同 \((I,Q,U,V)\) 响应。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -84,6 +99,16 @@
 <div class="tags"><span>#真实颗粒</span><span>#DDA</span><span>#退偏</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>真实 3D 颗粒形态、粒径和复折射率如何共同影响 LiDAR depolarization？ 文章通过 用 FIB tomography 重建真实颗粒形状，结合 EDX 组成与 DDA 计算 scattering matrix。，最终得到的关键证据是：size parameter 约 &gt;8 后 S 与 δ 进入平台；sphericity 与 δ/S 相关性很弱；吸收矿物显著改变 δ。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇最有价值的地方是把“形态”从一个抽象 sphericity 参数变成真实 3D 几何，然后问真实形态、尺寸和吸收折射率各自对 lidar ratio / depolarization 有多少贡献。</p>
+<div class="formula-box">\[x=\frac{2\pi r}{\lambda}\]</div>
+<div class="formula-box">\[\delta_L=\frac{\beta_{\perp}}{\beta_{\parallel}}\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：用 FIB tomography 获取真实颗粒</strong><p>避免用一个椭球就代表所有 dust。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：结合成分给复折射率</strong><p>形态与吸收被同时纳入严格散射计算。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：做参数隔离</strong><p>观察 size parameter 增大后哪些量进入饱和，哪些量仍对折射率敏感。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 关键启发</strong><p>sphericity 与 lidar observables 的相关性很弱，说明‘一个形状标量’不足以代表真实形态信息。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -155,6 +180,15 @@
 <div class="tags"><span>#北极甲烷</span><span>#冰川</span><span>#机制</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>为什么相邻斯瓦尔巴冰川 CH₄ 排放可相差多个数量级？ 文章通过 甲烷 mobilization = source availability × hydrological accessibility；前者受地质控制，后者受 basal thermal state 控制。，最终得到的关键证据是：19 条冰川中 geology 单独解释约 52% 方差，加入 temperate basal ice fraction 后提高到约 75%。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>作者把冰川甲烷问题拆成两个乘法项：地下有没有足够 CH₄ 储库，以及冰床是否有水文通道把它带出来。只有两者同时满足才会出现高排放。</p>
+<div class="formula-box">\[Mobilization\approx Source\ Potential\times Hydrological\ Accessibility\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：先用同位素和轻烃确定 source type</strong><p>多数冰川以 thermogenic methane 为主，因此源头与地质有关。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：geology 只能解释一部分方差</strong><p>相似富有机质地层上的冰川仍可有很不同 CH₄。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：加入 basal thermal state</strong><p>GPR 给出 temperate basal ice fraction，解释“通道是否打开”。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 第四步：沿河追踪 fate</strong><p>CH₄ 还会受到 groundwater、河内生成、氧化和逸散影响，最终形成 source→transport→emission 链。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -226,6 +260,17 @@
 <div class="tags"><span>#偏振遥感</span><span>#DFS</span><span>#信息量</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>增加 multi-angle 和 polarization 到底提供多少独立反演信息？ 文章通过 用 vector RT + optimal estimation，通过 averaging kernel 和 DFS 定量评估观测配置。，最终得到的关键证据是：加入多角度偏振明显提高 ALH DFS；PACE HARP2 反演经 EarthCARE ATLID 验证，RMSE 约 1.03 km。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇最值得你复制的不是 aerosol retrieval 本身，而是它把‘多一个偏振通道有没有用’变成了可计算的信息量问题。</p>
+<div class="formula-box">\[\mathbf K=\frac{\partial \mathbf F}{\partial \mathbf x}\]</div>
+<div class="formula-box">\[\mathbf A=(K^TS_\epsilon^{-1}K+S_a^{-1})^{-1}K^TS_\epsilon^{-1}K\]</div>
+<div class="formula-box">\[DFS=tr(\mathbf A)\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：先用 Jacobian 看敏感性</strong><p>不同角度和偏振量对 ALH / aerosol properties 的偏导方向不同。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：把噪声和先验放进 optimal estimation</strong><p>单纯敏感不等于能反演，DFS 衡量真实条件下能拿回多少独立状态维度。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：理论信息增益必须落到真实反演</strong><p>HARP2 retrieval 再用 ATLID 做独立垂直验证。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 对你的直接迁移</strong><p>可以比较 \(DFS_I\)、\(DFS_{I+\delta}\)、\(DFS_{I+\delta+V}\)、\(DFS_{+Raman/fluorescence}\)，把通道设计变成定量问题。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -297,6 +342,16 @@
 <div class="tags"><span>#HSRL</span><span>#物理解耦</span><span>#机载</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>传统 elastic ocean LiDAR 的 α–β 耦合如何通过新增光谱观测解开？ 文章通过 利用分子/颗粒光谱差异建立独立观测方程，实现 seawater optical properties 的 decoupled measurement。，最终得到的关键证据是：从船载 HSRL 推进到机载平台，形成区域尺度三维海洋光学观测能力。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>HSRL 的核心不是‘光谱更窄’，而是给原本耦合在一条 elastic waveform 里的衰减和后向散射增加独立观测方程，从根本上改变反问题条件数。</p>
+<div class="formula-box">\[P(z)\propto \beta(z)\exp\!\left[-2\int_0^z\alpha(z')dz'\right]\]</div>
+<div class="formula-box">\[\mathbf y=\begin{bmatrix}y_{mol}\\y_{part}\end{bmatrix}=\mathbf F(\alpha,\beta)\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：识别 elastic lidar 的 α–β 耦合</strong><p>同样的回波衰减可以由更强 extinction 或更弱 backscatter 造成。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：利用分子/颗粒光谱差异</strong><p>HSRL 让两个物理分量进入不同通道，增加 Jacobian rank。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：从船载验证推向机载</strong><p>平台化后才真正具备区域尺度三维观测能力。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 对你的下一步</strong><p>继续问粒径、形态、复折射率之间还剩多少退化，以及新增偏振/多波长/非弹性通道谁最值得加。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -368,6 +423,16 @@
 <div class="tags"><span>#北极甲烷</span><span>#上升流</span><span>#海冰</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>冬季北极海洋在海冰覆盖下为何仍会出现脉冲式 CH₄ ventilation？ 文章通过 海冰破裂提供交换窗口，沿岸上升流把深层富 CH₄ 水带到表层，两者相乘触发排放事件。，最终得到的关键证据是：2003–2023 识别 196 个 ventilation days；SIC 下降、东北风与 Atlantic Water 共同增强事件。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>冬季北极甲烷排放需要同时满足两个条件：有 CH₄-rich water 被送到表层，以及海冰打开让气体真的能逸出。作者把这两个条件拆开再重新相乘。</p>
+<div class="formula-box">\[F_{CH_4}=k(U,T,SIC)\,[C_w-C_{eq}]\]</div>
+<div class="formula-box">\[Emission\ Event\sim Supply_{upwelling}\times Ventilation_{open\ water}\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：先从 ventilation days 找事件</strong><p>长期平均会稀释短时排放脉冲，因此作者先做事件检测。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：SIC 只解释‘出口’</strong><p>海冰打开说明交换条件变好，但仍不能解释表层 CH₄ 从哪里来。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：风和 mooring 指向 coastal upwelling</strong><p>东北风和 Atlantic Water 把深层富甲烷水带上来，补齐 source/supply 环节。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 最终闭环</strong><p>warming 同时影响海冰厚度和海洋混合，因此会改变事件频率与强度。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -439,6 +504,17 @@
 <div class="tags"><span>#海洋甲烷</span><span>#中尺度涡</span><span>#生物地球化学</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>气旋/反气旋涡如何同时改变海洋 CH₄ 生产、氧化和海气通量？ 文章通过 气旋涡通过营养盐与 DMSP 促进 CH₄ production；反气旋涡强化 stratification 与 methanotrophy。，最终得到的关键证据是：cyclonic eddy 中 CH₄ flux 相对 reference +204%，anticyclonic eddy 约 -25.1%；DMSP 与 CH₄ 显著相关。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇没有停在‘气旋涡 CH₄ 高、反气旋涡低’，而是继续问：物理涡旋如何通过营养盐、浮游生物和甲烷氧化菌把动力差异翻译成 CH₄ 通量。</p>
+<div class="formula-box">\[F_{CH_4}=k\,\Delta pCH_4\]</div>
+<div class="formula-box">\[CE\Rightarrow Nutrients\uparrow\Rightarrow DMSP\uparrow\Rightarrow CH_4\ production\uparrow\]</div>
+<div class="formula-box">\[AE\Rightarrow Stratification/Convergence\Rightarrow Methanotrophy\uparrow\Rightarrow CH_4\ oxidation\uparrow\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：先建立 CE / AE 的 CH₄ 差异</strong><p>确认 mesoscale dynamics 的确对应不同 CH₄ 状态。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：找生产端机制</strong><p>DMSP 与 CH₄ 的显著共变把气旋涡连接到 pelagic production。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：找消耗端机制</strong><p>methane oxidation rate 和 pmoA 在反气旋涡增强，说明 sink 同样被涡旋调控。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 最后上升到全球问题</strong><p>现场过程证据已经有了，下一步自然是用全球 eddy tracks 做 population-level composite。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -510,6 +586,16 @@
 <div class="tags"><span>#单光子LiDAR</span><span>#多次散射</span><span>#自适应反演</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>如何同时降低经验参数先验依赖与 multiple scattering 偏差？ 文章通过 dual-iterative 优化反演参数，并把半解析多次散射校正嵌入 retrieval。，最终得到的关键证据是：环海南约 2500 km、&gt;58,000 profiles；Kd/bbp 与原位吻合较好，多次散射校正显著降低误差。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇同时修两个误差源：一个来自 inverse model 的经验参数假设，另一个来自 forward model 没有完整描述 multiple scattering。</p>
+<div class="formula-box">\[P_{obs}=P_{SS}+P_{MS}\]</div>
+<div class="formula-box">\[(r^*,\eta^*)=\arg\min_{r,\eta}\mathcal L(P_{corr},\hat P(r,\eta))\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：adaptive inversion 降低 water-type prior 依赖</strong><p>让关键参数在不同清洁/浑浊水体中自行调整。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：半解析 MS correction 修 forward mismatch</strong><p>先估算 MS，再从回波中分离其影响。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：大航次验证</strong><p>2500 km、数万剖面和原位 IOP 把算法从仿真推到真实海洋。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 对你的提升空间</strong><p>下一步应研究 MS 不只是 bias，而会怎样改变不同 Stokes / 非弹性通道的独立信息含量。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
