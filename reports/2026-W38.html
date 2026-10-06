@@ -93,7 +93,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>\(I\) 是左右圆偏振强度和，\(V\) 是差。太阳背景通常在 V 上接近零，因此差分会天然抵消大量背景；同时，多次散射会逐步随机化偏振，使 V 对不同 photon paths 的权重与 I 不同。这里的关键不是“V 只含单散射”，而是“V 重新选择了散射路径分布”。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>第一层证据是偏振 Monte Carlo 说明不同阶次/角度的散射对 V 的贡献不同；第二层是同平台 I/V 海试对照，直接看到探测距离提升；第三层是 KL 变化，表明 V 通道不仅提高 SNR，还改变了回波对应的有效传输物理。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>最关键的审稿问题是圆偏振 memory 对粒径、形态、复折射率和 FOV 的敏感性。若这些因素显著改变 V 的路径选择，那么“抗干扰”性能会具有强水体依赖。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你最适合做的是把 \(P(N_{sca}=n\mid I,Q,U,V)\) 画出来，再引入 T-matrix 非球形颗粒，看形态如何改变 circular-memory 与 MS suppression 的效率。</p></div>
+</div></section>
 <section class="paper" id="equilibrium-data-mining">
 <h2 class="paper-title">2. Equilibrium Data Mining and Data Abundance</h2>
 <p class="paper-meta">The Journal of Finance · 2025 · 金融 · <a href="https://doi.org/10.1111/jofi.13397">DOI 10.1111/jofi.13397</a></p>
@@ -174,7 +180,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>数据越多，单个研究者可搜索的候选信号越多，但一旦更多机构同时搜索，价格会更快吸收这些信号。于是 alpha 是“发现能力”和“竞争侵蚀”的差，而不是数据量的单调函数。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>理论最重要的不是某个参数值，而是均衡比较静态：数据 frontier 扩大与计算成本下降会如何改变研究投入、价格信息效率和基金表现。驼峰关系说明早期技术进步和成熟市场阶段可能给出完全不同经验现象。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会追问现实中竞争不是完全对称：数据独占、执行基础设施、资金容量和交易冲击都可能让部分 alpha 长期存在。理论简化与真实市场摩擦之间的距离要明确。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你做任何公开因子策略时，应单独评估 signal scarcity、capacity 和 crowding。真正有护城河的通常不是“知道一个指标”，而是数据时效、执行、结构性限制或独特持有周期。</p></div>
+</div></section>
 <section class="paper" id="active-rrs">
 <h2 class="paper-title">3. Active Remote Sensing Reflectance Measurement Using White-Light Lidar: Monte Carlo Simulations</h2>
 <p class="paper-meta">Journal of Remote Sensing · 2026 · 科研 · <a href="https://doi.org/10.34133/remotesensing.1066">DOI 10.34133/remotesensing.1066</a></p>
@@ -257,7 +269,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>主动白光 LiDAR 与被动 \(R_{rs}\) 等价的关键，不是光谱范围一样，而是两种照明几何下最终进入接收器的散射阶次和空间扩展足够匹配。平台高度 H 与 FOV 共同决定海面 footprint，进而决定能否收全 lateral multiple scattering。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>PB-SMC/HydroLight 建立被动参考，AF-SMC 给出严格主动解，AF-SAMC用于高效参数扫描。三级模型相互交叉验证使“等价性”不是单个模拟器内部自洽，而是跨方法一致。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>最容易被问的是均匀水体假设。SCM、CDOM 层、颗粒薄层会改变光子深度来源和 lateral spread，可能破坏当前 FOV 条件。真实系统还要叠加白光谱功率、探测器 QE 与大气路径。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你可以直接做非均匀 \(IOP(z)\) 下的 equivalence breakdown map，把 \(z_{SCM}\)、厚度、幅值、H、FOV、波长作为轴，找 active/passive 一致性的失效边界。</p></div>
+</div></section>
 <section class="paper" id="core-inflation">
 <h2 class="paper-title">4. Getting to the Core: Inflation Risks Within and Across Asset Classes</h2>
 <p class="paper-meta">The Review of Financial Studies · 2026 · 金融 · <a href="https://doi.org/10.1093/rfs/hhaf050">DOI 10.1093/rfs/hhaf050</a></p>
@@ -339,7 +357,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>headline CPI 是不同价格过程的加权和。core inflation 更接近持续性需求/工资与服务价格压力，energy inflation 更像高波动供给冲击，因此它们对企业现金流和贴现率的传导路径不同，资产 beta 也不应相同。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>真正重要的是跨资产一致性：如果股票、债券、商品等对两类通胀的暴露呈系统模式，而且风险价格也稳定，就说明分解不是数据挖掘。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问 core/energy 是否仍过于粗糙，以及结果是否在不同货币政策时期稳定。住房、服务、食品与能源自身也有异质动态。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>实际投资中，CPI 超预期后先拆组成，再结合期限利率与盈利预期判断。对行业配置而言，“核心服务黏性”与“能源冲击”应对应不同仓位反应。</p></div>
+</div></section>
 <section class="paper" id="opa-polarization-lidar">
 <h2 class="paper-title">5. Optical phased array LiDAR chips towards polarization-resolved 4D sensing</h2>
 <p class="paper-meta">Nature Communications · 2026 · 科研 · <a href="https://doi.org/10.1038/s41467-026-76736-5">DOI 10.1038/s41467-026-76736-5</a></p>
@@ -420,7 +444,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>新增偏振维度等于在传统 range/intensity observation vector 中加入对材料/表面散射矩阵敏感的分量。片上光网络则把 \(\mathbf y\rightarrow class\) 的一部分映射在光域完成，目标是同时减轻数据吞吐和电子计算压力。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>如果只展示芯片结构仍属于器件论文；真正把工作抬高的是在真实材料分类任务中证明偏振信息带来增量，并展示实时 sensing pipeline。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>材料分类最容易受入射角、粗糙度、湿度和表面污染影响。若训练集环境过窄，模型可能学习场景而不是材料本身。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>对海洋颗粒多模态系统，你可以借鉴“先定义任务缺口，再倒推所需物理维度”，而不是先有硬件再找应用。</p></div>
+</div></section>
 <section class="paper" id="partial-equilibrium-bubbles">
 <h2 class="paper-title">6. Partial Equilibrium Thinking, Extrapolation, and Bubbles</h2>
 <p class="paper-meta">The Review of Financial Studies · 2026 · 金融 · <a href="https://doi.org/10.1093/rfs/hhag053">DOI 10.1093/rfs/hhag053</a></p>
@@ -502,7 +532,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>partial-equilibrium thinking 的核心偏差是只外推当前价格/现金流趋势，而忽略价格变化会反过来改变供给、竞争、融资和投资。重大 displacement 越强，一般均衡反馈越难估，趋势外推就越可能失真。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>好的理论论文需要同时解释普通状态和极端状态。如果同一机制既能产生常规 momentum，也能在高不确定环境下产生 bubble/crash，统一性就是主要贡献。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问如何在数据中可操作地识别 displacement。若无法构造 ex ante proxy，模型很难被直接检验。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你观察 AI/机器人/crypto 主题时，可以记录价格修正、盈利修正、用户增长和资本开支修正的时间序列，构造一个实际的 extrapolation gap。</p></div>
+</div></section>
 <section class="paper" id="hcho-methane-oxidation">
 <h2 class="paper-title">7. Satellite quantification of enhanced methane oxidation applied to the stratospheric plume following Hunga Tonga-Hunga Ha’apai eruption</h2>
 <p class="paper-meta">Nature Communications · 2026 · 科研 · <a href="https://doi.org/10.1038/s41467-026-72191-4">DOI 10.1038/s41467-026-72191-4</a></p>
@@ -583,7 +619,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>CH₄ 氧化链中 HCHO 是短寿命中间产物，因此它比 CH₄ 本身更能保留局地反应空间结构。将 HCHO 异常与化学输送模型结合，可以反推一个难以直接观测的 sink rate。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>天然实验是关键。火山羽流把背景与扰动分开，使 HCHO 增强更容易归因到特定化学过程；若没有这种空间边界，HCHO 的多源性会严重削弱识别。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会追问 HCHO 的其他来源、光化学寿命、垂直混合与运输误差。只有其他 tracer 和 CTM 同时支持，proxy→process 的推断才稳固。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你的甲烷工作可以画完整反应/输运图，优先寻找能标记过程而非状态的 proxy。真正高价值的遥感量经常不是目标变量本身，而是反应链中的短寿命中间体。</p></div>
+</div></section>
 <section class="paper" id="portfolio-frictions">
 <h2 class="paper-title">8. What Drives Investors' Portfolio Choices? Separating Risk Preferences from Frictions</h2>
 <p class="paper-meta">The Journal of Finance · 2026 · 金融 · <a href="https://doi.org/10.1111/jofi.70013">DOI 10.1111/jofi.70013</a></p>
@@ -664,6 +706,12 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>实际持仓可以理解为理论最优持仓被参与成本、默认选项和调整惰性扭曲后的结果。因此仅用 observed equity share 反推 risk aversion 会把 friction 错当 preference。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>准实验是这篇的识别核心：默认选项变化如果在风险基本面没有同步改变时显著移动组合，就说明摩擦具有因果作用。结构模型随后才有资格估计真实偏好。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问默认变化是否完全外生，以及家庭在外部账户是否做反向调整。若只看单一账户，可能高估制度冲击对总资产配置的影响。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你的个人资产配置评估也应把‘不愿操作、税务麻烦、平台限制、流动性差’当作真实摩擦，而不是事后归因给风险偏好。</p></div>
+</div></section>
 <div class="week-nav"><a href="2026-W37.html">← 2026-W37</a><a href="2026-W39.html">2026-W39 →</a></div>
 </article></main></body></html>
