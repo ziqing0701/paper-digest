@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>2026-W41 顶刊论文精读 · Paper Digest</title><link rel="stylesheet" href="../style.css"></head>
+<title>2026-W41 顶刊论文精读 · Paper Digest</title><link rel="stylesheet" href="../style.css">
+<script>
+window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
 <body><main class="wrap"><article class="report">
 <a class="back" href="../index.html">← 返回论文精读首页</a>
 <p class="eyebrow">HISTORICAL BACKFILL · WEEKLY REPORT</p>
@@ -13,6 +18,16 @@
 <div class="tags"><span>#NPP</span><span>#海色遥感</span><span>#碳循环</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>全球变暖下海洋 NPP 是否已系统下降，原因是 biomass 下降还是 physiology 改变？ 文章通过 用 25 年 SeaWiFS+MODIS 与 absorption-based model 拆分 aφ、Cphyto、growth rate。，最终得到的关键证据是：约 48% 海域 NPP 显著下降，growth rate 下降幅度明显大于 biomass；subsurface NPP fraction 上升。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇真正有价值的地方，是作者没有停在“全球 NPP 在下降”，而是继续问下降来自 biomass 变少，还是同样 biomass 的生理生产效率下降。</p>
+<div class="formula-box">\[NPP\;\sim\;C_{phyto}\times \mu\quad\text{(schematic decomposition)}\]</div>
+<div class="formula-box">\[\Delta NPP\approx \mu\,\Delta C_{phyto}+C_{phyto}\,\Delta\mu\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：用 25 年 ocean-color 建立全球趋势</strong><p>先证明下降不是局部事件。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：把 NPP 拆成可解释中间量</strong><p>aφ、Cphyto、growth rate 分别对应色素吸收、biomass 与 physiology。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：发现 \(\mu\) 的下降比 biomass 更强</strong><p>这把机制从‘藻少了’推进到‘营养限制下单位生物量生产效率下降’。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 第四步：发现生产向深层再分配</strong><p>表层吸收下降让光穿透更深，subsurface NPP fraction 上升，直接暴露 passive satellite 的观测盲区。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -84,6 +99,16 @@
 <div class="tags"><span>#荧光LiDAR</span><span>#退偏</span><span>#概率分类</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>传统 elastic/Raman 参数重叠时，什么新 observable 最能提升颗粒类型识别？ 文章通过 用 δ532 表征形态、fluorescence ratio 表征成分，并按 RH 状态训练 GMM。，最终得到的关键证据是：真实长期观测显示 fluorescence+depolarization 能提供互补信息，并输出概率分类与不确定性。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这里最重要的不是 GMM 算法本身，而是作者选择了两个物理上近似正交的观测维度：退偏看形态，荧光看有机/生物成分，再用 RH 处理环境调制。</p>
+<div class="formula-box">\[G_{fluo}=\frac{\beta_{fluo}}{\beta_{532}}\]</div>
+<div class="formula-box">\[p(\mathbf x)=\sum_{k=1}^{K}\pi_k\,\mathcal N(\mathbf x\mid\mu_k,\Sigma_k)\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：传统 elastic/Raman 参数空间存在重叠</strong><p>多放几个高度相关的参数不一定增加独立信息。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：加入 fluorescence</strong><p>成分敏感性与 depolarization 的形态敏感性互补。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：显式处理 RH</strong><p>吸湿增长会移动颗粒 cluster，如果不分状态，环境效应容易被误判成类型差异。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 第四步：输出 posterior 概率</strong><p>边界样本不再被强制硬分类，这对研究不可辨识区域尤其重要。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -155,6 +180,16 @@
 <div class="tags"><span>#甲烷</span><span>#同位素</span><span>#4D-Var</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>TROPOMI 能约束总 CH₄，但如何解除 source-sector attribution degeneracy？ 文章通过 把 XCH4 与 δ13C-CH4、δD-CH4、可选 C2H6 共同进入 GEOS-Chem adjoint 4D-Var，并逐级做信息消融。，最终得到的关键证据是：总排放只小幅改变，但 fossil/wetland 等 sector attribution 大幅重排；δ13C+δD 独立验证最佳，额外 ethane 还会引入模型不确定性。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇是‘拟合很好仍然可能归因错’的典型案例。只用 XCH₄ 可以把总浓度解释得很好，但 fossil、wetland、livestock 等源之间仍高度可交换。</p>
+<div class="formula-box">\[\mathbf y=\mathcal H(\mathbf x)+\varepsilon\]</div>
+<div class="formula-box">\[J(\mathbf x)=\tfrac12(\mathbf x-\mathbf x_a)^TS_a^{-1}(\mathbf x-\mathbf x_a)+\tfrac12(\mathbf y-\mathcal H(\mathbf x))^TS_e^{-1}(\mathbf y-\mathcal H(\mathbf x))\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：methane-only inversion 给出一个可行解</strong><p>但它只约束总量，对 source sector 的 posterior 很宽。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：加入 δ13C 与 δD</strong><p>同位素相当于给 source 加 fingerprint，改变 Jacobian 的独立方向。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：做信息消融</strong><p>逐级比较 CH₄、CH₄+δ13C、+δD、+C₂H₆，判断每个 tracer 的净信息。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 关键结果</strong><p>总排放变化并不大，但 fossil / wetland attribution 大幅重排；这正说明拟合误差和参数可辨识性是两回事。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -226,6 +261,15 @@
 <div class="tags"><span>#资产定价</span><span>#持仓</span><span>#投资者异质性</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>能否从投资者真实持仓结构直接提取 priced factor？ 文章通过 用 1997–2017 挪威个人投资者持仓，按年龄/财富等特征构造 investor long-short factor。，最终得到的关键证据是：market + investor factor 能同时解释持仓共同变化与股票收益横截面，连接 household finance 与 asset pricing。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>传统因子从股票特征或收益协方差出发，这篇反过来问：如果资产价格最终由投资者需求形成，那么‘谁持有什么’本身是否就是一个定价状态变量。</p>
+<div class="formula-box">\[R_i=\beta_{i,M}R_M+\beta_{i,I}R_I+\varepsilon_i\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：从真实持仓中提取系统性差异</strong><p>按年龄、财富等特征观察不同投资者群体的组合偏好。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：把持仓异质性构造成 long-short investor factor</strong><p>将 household demand 映射到可交易收益因子。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：检验它是否同时解释 holdings 与 returns</strong><p>只有两边都解释，才说明它不是纯统计构造。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 投资迁移</strong><p>股票和加密研究都应增加 holder structure：集中度、杠杆、长期持有者、ETF/机构流和边际定价者。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -298,6 +342,16 @@
 <div class="tags"><span>#北极甲烷</span><span>#水柱过程</span><span>#机制模型</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>Beaufort Sea subsurface CH₄ maxima 到底来自 benthic input、水平输运还是水柱生物生产？ 文章通过 在 GOTM-ERSEM 中逐个加入 zooplankton、bacterial remineralization、MPn degradation 与 lateral transport。，最终得到的关键证据是：沿岸 S27 主要由 lateral transport 解释，外海 S19 更支持 pelagic biological production；counterfactual removal 显著改变 sea-air flux。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇最适合学‘竞争机制逐项打开’。基础模型解释不了 subsurface CH₄ peak 后，作者没有直接堆一个复杂模型，而是把四个候选过程一个个加进去。</p>
+<div class="formula-box">\[\frac{dC_{CH_4}}{dt}=P_G+P_B+P_P+T_L-O-E+Mixing\]</div>
+<div class="formula-box">\[F_{CH_4}=k(C_w-C_{eq})\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：先让 null model 失败</strong><p>只有明确展示 benthic-centered model 无法重现峰值，新增机制才有必要。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：四个过程单独打开</strong><p>zooplankton、bacterial remineralization、MPn degradation、lateral transport 分别测试。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：用峰位、幅度和独立 proxy 共同判别</strong><p>沿岸 halocline 与 transport 匹配，外海则与 zooplankton / bacteria / DOP / SCM 共位。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 第四步：做 removal counterfactual</strong><p>删掉最佳机制后 sea-air flux 明显改变，说明机制不仅解释剖面，也影响最终气候量。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -369,6 +423,19 @@
 <div class="tags"><span>#市场微观结构</span><span>#强化学习</span><span>#流动性</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>Q-learning 做市商会如何影响价差与流动性？ 文章通过 做市商能学习 adverse selection，但 noisy profit feedback 与有限 exploration 会让其长期学不会充分竞争。，最终得到的关键证据是：即使禁止传统 tacit collusion，算法仍可稳定在高于竞争基准的价差；环境噪声越大，学习竞争越慢。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇要先抓住一个非常具体的学习难题：Q-learning 做市商降价以后利润变了，它并不知道这次利润变化究竟来自自己的报价，还是来自随机订单、资产价值或客户流动性冲击。</p>
+<div class="formula-box">\[v^C=v+L\]</div>
+<div class="formula-box">\[Q_{t+1}(s,a)=(1-\alpha)Q_t(s,a)+\alpha\big[r_t+\gamma\max_{a'}Q_t(s',a')\big]\]</div>
+<div class="formula-box">\[Spread^{AI}\approx Adverse\ Selection\ Cost+Learning\ Friction\ Rent\quad\text{(conceptual decomposition)}\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：先有传统 benchmark</strong><p>Glosten–Milgrom 竞争均衡里，dealers 不断 undercut，spread 最终被压到补偿 adverse-selection cost 的水平。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：把理性 dealer 换成 Q-learning agent</strong><p>算法通过大量 episode 学报价，但 reward 很噪：同一次降价对应的利润变化可能被随机订单和 fundamental shock 淹没。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 为什么这里必须继续往下做</strong><p>如果只看到 AI spread 更宽，还可能是因为它更好地识别了 adverse selection；所以作者需要主动把替代解释关掉。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 第三步：关闭或弱化 adverse selection</strong><p>即使没有传统信息不对称，非竞争价差仍然存在，说明问题来自 learning dynamics 本身。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>5. 第四步：改变 liquidity-shock dispersion 与 asset volatility</strong><p>环境越噪，Q-value 之间的差异越难学出来，算法越慢发现‘进一步降价能抢市场份额’，spread 于是长期偏高。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>6. 最后做 experimentation counterfactual</strong><p>提高 exploration 可以把报价推近竞争价格，但探索本身会牺牲短期利润，算法又缺乏主动提高 exploration 的激励，于是出现‘fail to learn to compete’。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -441,6 +508,18 @@
 <div class="tags"><span>#主动协同</span><span>#海洋LiDAR</span><span>#中尺度涡</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>怎样同步观测中尺度涡的动力结构和水下生态响应？ 文章通过 把 Ka/Ku radar altimetry 与双波长 blue-green ocean LiDAR 集成到同一 UAV，实现 SLA(x,y)+Chl(x,y,z)。，最终得到的关键证据是：超过 5800 km 航测中，SLA 异常与 SCM 垂向移动和 subsurface Chl 响应同步出现，并分别经卫星/原位验证。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇的价值不在于‘把两个传感器放一起’，而在于两个传感器恰好对应同一科学链条的上下游：radar 测动力 forcing，LiDAR 测 subsurface biological response。</p>
+<div class="formula-box">\[SLA=SLA(x,y)\]</div>
+<div class="formula-box">\[Chl=Chl(x,y,z)\]</div>
+<div class="formula-box">\[SLA\downarrow\Rightarrow Upwelling\uparrow\Rightarrow SCM\ shoaling\Rightarrow Chl_{subsurface}\uparrow\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：传统 altimetry 只有海面动力二维图</strong><p>能找到涡，但看不到水下生态层如何移动。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：ocean LiDAR 补上 z 维</strong><p>直接得到 Chl 垂向结构和 SCM 深度。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：同一 UAV 同步观测</strong><p>避免事后拼接不同时间/空间分辨率产品造成的 collocation 误差。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 第四步：分别独立验证</strong><p>SLA 对 DUACS/SWOT，Chl 对原位 fluorescence，先证明每个观测链条可信。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>5. 最后才谈 physical-biological coupling</strong><p>看到 SLA anomaly 与 SCM shoaling / Chl enhancement 同步，才形成“动力→生态”证据链。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -512,6 +591,16 @@
 <div class="tags"><span>#宏观金融</span><span>#消费风险</span><span>#资产定价</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>能否反过来用股票和债券价格识别难以从低频数据中直接看到的持久消费冲击？ 文章通过 state-space model 用高维资产收益提取 persistent consumption conditional mean。，最终得到的关键证据是：金融市场所含 persistent consumption shocks 解释超过四分之一消费波动，并在资产横截面具有显著风险溢价。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>消费数据频率低、修订多、噪声大，直接估计长期消费风险很困难。作者反过来把金融市场看成一组高频前瞻传感器，用资产价格帮助识别持久消费状态。</p>
+<div class="formula-box">\[\Delta c_t=\mu_t+\varepsilon_t\]</div>
+<div class="formula-box">\[E_t[M_{t+1}R_{t+1}]=1\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：先把消费增长拆成 persistent 与 transitory</strong><p>资产定价真正关心的是会持续进入边际效用的那部分。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：用股票和债券共同信息识别 \(\mu_t\)</strong><p>金融价格对未来状态反应更快，因此可作为低频消费数据的辅助观测。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：检验该 shock 是否被定价</strong><p>如果它只是统计滤波结果，就不应系统性解释横截面风险溢价。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 第四步：放进 Epstein–Zin 结构模型</strong><p>看识别出的消费风险能否同时解释 equity premium 和 risk-free rate 等宏观资产定价事实。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
