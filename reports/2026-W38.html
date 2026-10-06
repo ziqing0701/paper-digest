@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-W38 顶刊论文精读 · Paper Digest</title><link rel="stylesheet" href="../style.css"></head>
+<body><main class="wrap"><article class="report">
+<a class="back" href="../index.html">← 返回论文精读首页</a>
+<p class="eyebrow">HISTORICAL BACKFILL · WEEKLY REPORT</p>
+<h1>2026-W38 · 顶刊论文精读</h1>
+<p class="sub">2026-09-14 — 2026-09-20。本页为历史回填：按当前对话中的既有推送顺序整理到连续 ISO 自然周；历史消息未暴露精确发送时间，因此以周级顺序归档，不把周内日期当作精确发送时间。</p>
+<nav class="toc"><strong>本周 8 篇</strong><p><a href="#acpl">1. Anti-interference circularly polarized LiDAR for ocean detection</a><br><a href="#equilibrium-data-mining">2. Equilibrium Data Mining and Data Abundance</a><br><a href="#active-rrs">3. Active Remote Sensing Reflectance Measurement Using White-Light Lidar: Monte Carlo Simulations</a><br><a href="#core-inflation">4. Getting to the Core: Inflation Risks Within and Across Asset Classes</a><br><a href="#opa-polarization-lidar">5. Optical phased array LiDAR chips towards polarization-resolved 4D sensing</a><br><a href="#partial-equilibrium-bubbles">6. Partial Equilibrium Thinking, Extrapolation, and Bubbles</a><br><a href="#hcho-methane-oxidation">7. Satellite quantification of enhanced methane oxidation applied to the stratospheric plume following Hunga Tonga-Hunga Ha’apai eruption</a><br><a href="#portfolio-frictions">8. What Drives Investors' Portfolio Choices? Separating Risk Preferences from Frictions</a></p></nav>
+<section class="paper" id="acpl">
+<h2 class="paper-title">1. Anti-interference circularly polarized LiDAR for ocean detection</h2>
+<p class="paper-meta">Communications Physics · 2026 · 科研 · <a href="https://doi.org/10.1038/s42005-025-02477-4">DOI 10.1038/s42005-025-02477-4</a></p>
+<div class="tags"><span>#圆偏振</span><span>#海洋LiDAR</span><span>#多次散射</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>圆偏振 V 通道能否同时抑制太阳背景和部分多次散射？</dd>
+<dt>核心假设 / 方法</dt><dd>太阳背景 V≈0，而保持圆偏振记忆的低阶/小角散射路径在 V 中权重更高。</dd>
+<dt>关键结果</dt><dd>南海实测中 V 通道夜间有效探测距离由 I 的 82 m 提升到 118 m，并改善深层 SBR 与 KL 物理意义。</dd>
+<dt>科研故事线</dt><dd>干扰瓶颈 → 找到偏振不对称性 → ACPL 原理 → Monte Carlo → 海试 → 反演意义。</dd>
+<dt>高水平期刊特征</dt><dd>measurement principle 级创新，同时有理论、仪器和真实海试闭环。</dd>
+<dt>薄弱点 / 延伸</dt><dd>单波长与单次航次仍限制普适性；V 同时受颗粒与多次散射影响。</dd>
+<dt>对你的启发</dt><dd>可用全偏振 SA-MC 研究 scattering-order × Stokes-channel information map。</dd>
+</dl>
+</section>
+<section class="paper" id="equilibrium-data-mining">
+<h2 class="paper-title">2. Equilibrium Data Mining and Data Abundance</h2>
+<p class="paper-meta">The Journal of Finance · 2025 · 金融 · <a href="https://doi.org/10.1111/jofi.13397">DOI 10.1111/jofi.13397</a></p>
+<div class="tags"><span>#量化投资</span><span>#数据</span><span>#市场效率</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>数据更丰富、算力更便宜时，量化 alpha 会怎样演化？</dd>
+<dt>核心假设 / 方法</dt><dd>把 data frontier 与 processing cost 分开建模，并考虑 data miners 的最优搜索和均衡价格信息含量。</dd>
+<dt>关键结果</dt><dd>更多数据提高价格信息效率，主动管理表现可能呈驼峰；长期平均 alpha 会受到竞争侵蚀。</dd>
+<dt>科研故事线</dt><dd>大数据革命 → 拆成数据丰富度/计算成本 → 一般均衡搜索模型 → 反直觉比较静态。</dd>
+<dt>高水平期刊特征</dt><dd>把 AI/另类数据趋势转化为可检验的资产管理均衡预测。</dd>
+<dt>薄弱点 / 延伸</dt><dd>理论模型省略许多交易摩擦和拥挤机制。</dd>
+<dt>对你的启发</dt><dd>任何公开数据策略都要回答：十万个 agent 同时发现后，收益为何仍存在？</dd>
+</dl>
+</section>
+<section class="paper" id="active-rrs">
+<h2 class="paper-title">3. Active Remote Sensing Reflectance Measurement Using White-Light Lidar: Monte Carlo Simulations</h2>
+<p class="paper-meta">Journal of Remote Sensing · 2026 · 科研 · <a href="https://doi.org/10.34133/remotesensing.1066">DOI 10.34133/remotesensing.1066</a></p>
+<div class="tags"><span>#白光LiDAR</span><span>#SAMC</span><span>#主动被动协同</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>白光 LiDAR 能否主动测量与被动 ocean color 同物理意义的 Rrs？</dd>
+<dt>核心假设 / 方法</dt><dd>当接收 footprint 足够大、收集到匹配的多次散射比例时，主动积分回波可逼近被动 Rrs。</dd>
+<dt>关键结果</dt><dd>PB-SMC/AF-SMC/AF-SAMC 与 HydroLight 交叉验证；给出 H–FOV–IOP 设计条件，部分高空/星载场景 MAPE<10%。</dd>
+<dt>科研故事线</dt><dd>太阳依赖 → 人工太阳概念 → active/passive 等价问题 → MC 体系 → 关键控制量 → 仪器设计。</dd>
+<dt>高水平期刊特征</dt><dd>提出新观测范式，并把多次散射完整性转成系统参数约束。</dd>
+<dt>薄弱点 / 延伸</dt><dd>均匀水体假设较强，真实垂向非均匀海洋和 photon budget 仍待验证。</dd>
+<dt>对你的启发</dt><dd>非常适合继续做“垂向非均匀水体下 active-passive Rrs 等价边界”。</dd>
+</dl>
+</section>
+<section class="paper" id="core-inflation">
+<h2 class="paper-title">4. Getting to the Core: Inflation Risks Within and Across Asset Classes</h2>
+<p class="paper-meta">The Review of Financial Studies · 2026 · 金融 · <a href="https://doi.org/10.1093/rfs/hhaf050">DOI 10.1093/rfs/hhaf050</a></p>
+<div class="tags"><span>#通胀</span><span>#资产配置</span><span>#宏观</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>“资产抗通胀”是否取决于通胀组成？</dd>
+<dt>核心假设 / 方法</dt><dd>把总通胀拆为 core inflation 与 energy inflation，检验跨资产 beta 与风险价格。</dd>
+<dt>关键结果</dt><dd>股票对 core inflation beta 为负、对 energy inflation beta 为正；稳定负风险价格主要来自 core inflation。</dd>
+<dt>科研故事线</dt><dd>总通胀模糊 → 分解组成 → 跨资产证据 → 风险价格 → NK 模型 → 股债相关性。</dd>
+<dt>高水平期刊特征</dt><dd>一个简单分解统一解释多类资产的通胀暴露与股债相关性状态变化。</dd>
+<dt>薄弱点 / 延伸</dt><dd>core/energy 仍是粗粒度分解，供给/需求、住房/服务等结构可继续细分。</dd>
+<dt>对你的启发</dt><dd>个人投资看 CPI 时先问“高在哪里”，并把股债相关性视为状态变量。</dd>
+</dl>
+</section>
+<section class="paper" id="opa-polarization-lidar">
+<h2 class="paper-title">5. Optical phased array LiDAR chips towards polarization-resolved 4D sensing</h2>
+<p class="paper-meta">Nature Communications · 2026 · 科研 · <a href="https://doi.org/10.1038/s41467-026-76736-5">DOI 10.1038/s41467-026-76736-5</a></p>
+<div class="tags"><span>#OPA LiDAR</span><span>#偏振</span><span>#光计算</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>LiDAR 如何从“定位物体”升级到“识别材料”？</dd>
+<dt>核心假设 / 方法</dt><dd>把偏振作为材料敏感维度，并用片上 PolarONN 直接进行光域推理。</dd>
+<dt>关键结果</dt><dd>实现 3D+强度+偏振+材料标签；wood/stone/steel 在约 10 m 范围保持 >85% 分类准确率。</dd>
+<dt>科研故事线</dt><dd>几何能力缺口 → 偏振信息 → 电子后端瓶颈 → 光计算 → 实时材料感知。</dd>
+<dt>高水平期刊特征</dt><dd>感知维度、功能与计算架构三层创新叠加。</dd>
+<dt>薄弱点 / 延伸</dt><dd>材料种类少，粗糙度、入射角、湿度等 nuisance variables 仍待处理。</dd>
+<dt>对你的启发</dt><dd>你的多模态海洋 LiDAR 应由“能力缺口→所需信息→物理量→器件→算法”倒推。</dd>
+</dl>
+</section>
+<section class="paper" id="partial-equilibrium-bubbles">
+<h2 class="paper-title">6. Partial Equilibrium Thinking, Extrapolation, and Bubbles</h2>
+<p class="paper-meta">The Review of Financial Studies · 2026 · 金融 · <a href="https://doi.org/10.1093/rfs/hhag053">DOI 10.1093/rfs/hhag053</a></p>
+<div class="tags"><span>#行为金融</span><span>#泡沫</span><span>#趋势</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>为什么同样的趋势外推平时产生 momentum，重大变革后却演化成 bubble/crash？</dd>
+<dt>核心假设 / 方法</dt><dd>投资者低估一般均衡反馈；displacement shock 提高不确定性并放大 extrapolation。</dd>
+<dt>关键结果</dt><dd>统一解释普通 momentum 与泡沫—崩盘，关键状态变量是 displacement 与不确定性。</dd>
+<dt>科研故事线</dt><dd>趋势外推 → PET 微观基础 → 普通冲击 → momentum；重大冲击 → 强化外推 → bubble/crash。</dd>
+<dt>高水平期刊特征</dt><dd>一个机制统一多个行为资产定价现象。</dd>
+<dt>薄弱点 / 延伸</dt><dd>理论上如何实时识别 displacement 仍需额外实证。</dd>
+<dt>对你的启发</dt><dd>AI/机器人/crypto 等主题可监控 Price Revision − Fundamental Revision 的 extrapolation gap。</dd>
+</dl>
+</section>
+<section class="paper" id="hcho-methane-oxidation">
+<h2 class="paper-title">7. Satellite quantification of enhanced methane oxidation applied to the stratospheric plume following Hunga Tonga-Hunga Ha’apai eruption</h2>
+<p class="paper-meta">Nature Communications · 2026 · 科研 · <a href="https://doi.org/10.1038/s41467-026-72191-4">DOI 10.1038/s41467-026-72191-4</a></p>
+<div class="tags"><span>#甲烷氧化</span><span>#TROPOMI</span><span>#代理量</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>目标 CH₄ sink 难直接测时，能否通过反应链中 HCHO 代理量反演氧化速率？</dd>
+<dt>核心假设 / 方法</dt><dd>CH₄ 氧化产生短寿命 HCHO；在异常化学羽流中，HCHO enhancement 可约束 CH₄ oxidation。</dd>
+<dt>关键结果</dt><dd>TROPOMI 观测到强 HCHO 异常并反演约 900±220 Mg/day CH₄ oxidation，进一步指向持续氯化学。</dd>
+<dt>科研故事线</dt><dd>MRV 难题 → 找 proxy → 火山天然实验 → 化学归因 → 定量 sink → 未解 Cl 来源。</dd>
+<dt>高水平期刊特征</dt><dd>从状态量观测升级到过程量监测，并指向未来 methane-removal MRV。</dd>
+<dt>薄弱点 / 延伸</dt><dd>HCHO 有多种来源，代理关系需要其他 tracer 与化学输送模型共同约束。</dd>
+<dt>对你的启发</dt><dd>你的 CH₄ 研究可先画反应/因果链，再寻找寿命合适、背景干净的过程 proxy。</dd>
+</dl>
+</section>
+<section class="paper" id="portfolio-frictions">
+<h2 class="paper-title">8. What Drives Investors' Portfolio Choices? Separating Risk Preferences from Frictions</h2>
+<p class="paper-meta">The Journal of Finance · 2026 · 金融 · <a href="https://doi.org/10.1111/jofi.70013">DOI 10.1111/jofi.70013</a></p>
+<div class="tags"><span>#家庭金融</span><span>#摩擦</span><span>#默认选项</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>低股票仓位来自高风险厌恶，还是来自参与/调整摩擦？</dd>
+<dt>核心假设 / 方法</dt><dd>利用 401(k) 默认配置变化识别 revealed preferences 与 participation frictions。</dd>
+<dt>关键结果</dt><dd>消除摩擦后约 94% 投资者愿意持股；结构估计显示相对温和的风险厌恶即可解释组合选择。</dd>
+<dt>科研故事线</dt><dd>经典 puzzle → preference/friction 识别难题 → default 准实验 → 结构模型 → 重新解释。</dd>
+<dt>高水平期刊特征</dt><dd>准实验和生命周期结构模型结合，改变 stock participation puzzle 的解释。</dd>
+<dt>薄弱点 / 延伸</dt><dd>美国退休账户制度背景限制外部推广。</dd>
+<dt>对你的启发</dt><dd>投资系统要把研究、操作、税务、再平衡等摩擦计入真实最优组合。</dd>
+</dl>
+</section>
+<div class="week-nav"><a href="2026-W37.html">← 2026-W37</a><a href="2026-W39.html">2026-W39 →</a></div>
+</article></main></body></html>
