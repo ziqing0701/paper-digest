@@ -92,7 +92,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>全球 CH₄ 增长率取决于排放与 sink 的差。OH 增强即使幅度很小，也会通过缩短 CH₄ lifetime 放大全球损失项。NOx 的空间分布尤其重要，因为不同纬度和化学背景下，同样的 NOx 对 OH 生成效率不同。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>论文需要同时满足三层：平台期事实、OH 变化方向、NOx 部门/空间变化能否解释 OH。只有三层链条相互一致，才能从相关归因推进到化学机制。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>最脆弱部分通常是 OH 本身不可全球直接观测，依赖 CTM 与 proxy。不同化学机制、VOC/CO 排放与气象变化是否会给出替代解释，是审稿重点。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你的海洋 CH₄ 可借鉴‘空间重分布’思路：总生产不变时，只要源从低 k 区迁移到高 k 区，积分海气通量也会变化。可直接研究 source field 与 transfer efficiency 的空间协方差。</p></div>
+</div></section>
 <section class="paper" id="stablecoin-runs">
 <h2 class="paper-title">2. Stablecoin Runs and the Centralization of Arbitrage</h2>
 <p class="paper-meta">The Review of Financial Studies · 2026 · 金融 · <a href="https://doi.org/10.1093/rfs/hhag072">DOI 10.1093/rfs/hhag072</a></p>
@@ -174,7 +180,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>套利者通过低价买入并按面值赎回压缩 depeg，但一级赎回权通常高度集中。于是稳定币机制同时包含 price-stabilization channel 和 liquidity-concentration channel，两者并非总是同向改善系统稳定性。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>真正有价值的是把赎回结构与价格表现连接起来，而不是只描述“有人套利”。若赎回集中度可以预测 depeg 修复速度或危机流动性，就形成资产定价/金融稳定机制。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会关注发行人制度变化、样本事件数量以及 OTC/场外通道不可见性。稳定币市场结构变化快，外部有效性需要持续更新。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你持有 USDT/USDC 时，除了 reserve attestation，还应跟踪 redemption access、交易所深度、链上大户集中度和跨平台价差。</p></div>
+</div></section>
 <section class="paper" id="ihmsc">
 <h2 class="paper-title">3. IHMSC: A novel iterative hybrid multiple scattering-corrected retrieval method for enhancing accuracy in ocean lidar profiling inversions</h2>
 <p class="paper-meta">Remote Sensing of Environment · 2026 · 科研 · <a href="https://doi.org/10.1016/j.rse.2025.115209">DOI 10.1016/j.rse.2025.115209</a></p>
@@ -255,7 +267,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>迭代的必要性来自循环依赖：要校正多次散射，需要知道 IOP；但 IOP 又正是待反演量。因此算法必须在 \(\theta\rightarrow P_{MS}\rightarrow P_{corr}\rightarrow\theta\) 间反复更新，直到一致。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>论文的证据链强在长期、多平台实测。如果一种 MS correction 只在少数仿真场景有效，工程价值有限；跨多年真实海洋数据仍能改善 Kd/bbp，说明 forward correction 具有稳定性。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会追问 phase function、FOV、海面粗糙度等 forward assumptions。若 MS model 参数误差过大，迭代可能收敛到错误但自洽的解。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你可以把它升级成 information perspective：比较不同 scattering order 对 Jacobian singular values 的贡献，判断哪些 MS 是噪声，哪些 MS 其实携带新的颗粒信息。</p></div>
+</div></section>
 <section class="paper" id="flow-etf">
 <h2 class="paper-title">4. Flow</h2>
 <p class="paper-meta">The Review of Financial Studies · 2026 · 金融 · <a href="https://doi.org/10.1093/rfs/hhag080">DOI 10.1093/rfs/hhag080</a></p>
@@ -336,7 +354,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>flow-performance sensitivity 可以理解为过去收益对下一期申赎流的弹性。若机构和 model portfolios 同时使用趋势/排名信号，就会把单个资产过去收益放大成系统性资金需求。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>证据强弱取决于是否能区分 performance chasing 与 skill learning。若高流入只是投资者发现更好经理，就不等于机械追涨。投资者结构和模型组合渠道能帮助做这一区分。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问流量因果方向：资金流本身也能推高价格，造成 return→flow 与 flow→return 的双向关系，需要工具变量或事件设计辅助。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>A 股行业 ETF 研究中，可以同时看净申购、机构持有变化和盈利预期修正，把‘被动追涨’与‘基本面资金流’分开。</p></div>
+</div></section>
 <section class="paper" id="polarization-hyperspectral-sensor">
 <h2 class="paper-title">5. A high-resolution polarization-hyperspectral image sensor for complex intelligent sensing</h2>
 <p class="paper-meta">Nature Communications · 2026 · 科研 · 官方信息见期刊页面</p>
@@ -417,7 +441,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>联合编码系统本质是一个高维线性/非线性逆问题。硬件先把空间、光谱、偏振混合到有限测量 \(y\)，再依靠已知 sensing matrix 与 prior 重建 \(x\)。因此硬件编码与算法先验必须协同设计。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>真正的说服力来自多种复杂任务，而不只是分辨率参数。若系统能在雾、眩光、材料识别和深度场景中稳定工作，说明多维信息不是实验室指标堆叠，而是任务增益。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会关注 calibration drift、低光子 SNR、重建 hallucination 和 out-of-distribution 场景。计算成像系统尤其要区分真实信息与网络先验“补出来”的细节。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你的 ocean LiDAR 可以考虑 joint coding / computational decoding，但必须保留严格 forward model 和不确定度输出，避免深度网络在低 SNR 下生成物理上不存在的结构。</p></div>
+</div></section>
 <section class="paper" id="skewness-momentum">
 <h2 class="paper-title">6. Time-Varying Skewness and Momentum Crashes</h2>
 <p class="paper-meta">The Review of Asset Pricing Studies · 2026 · 金融 · <a href="https://doi.org/10.1093/rapstu/raag010">DOI 10.1093/rapstu/raag010</a></p>
@@ -499,7 +529,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>波动率是二阶矩，只描述分布宽度；偏度是三阶矩，描述左右尾不对称。momentum crash 的关键是极端左尾，因此 \(\sigma\) 与 skewness 提供不同风险维度。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>只要 skewness 在控制 volatility 后仍有 OOS 增量预测，并且动态降 exposure 改善左尾而非仅降低平均收益，就说明它有独立经济价值。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会追问 skewness 估计噪声很大，尤其在短窗口。不同估计器、窗口长度和极端值处理是否稳健非常关键。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你的趋势策略可先只在风控层加入 skewness：当负偏度恶化且波动同步抬升时降低仓位，不必立刻把它变成反向交易信号。</p></div>
+</div></section>
 <section class="paper" id="bathymetry-140m">
 <h2 class="paper-title">7. Lidar bathymetry over 140 m with polarization noise suppression</h2>
 <p class="paper-meta">PhotoniX · 2026 · 科研 · <a href="https://doi.org/10.1186/s43074-026-00231-9">DOI 10.1186/s43074-026-00231-9</a></p>
@@ -580,7 +616,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>交叉偏振滤波的收益取决于信号损失和噪声抑制的相对速度。若海底退偏比例高于水柱/海面噪声，那么虽然总光子减少，SNR 仍能上升。最终测深误差还要叠加 MS 导致的路径长度偏置。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>140 m 不是单纯“测到一个峰”，而是偏振选择、真实海试和 SA-MC range correction 三者共同支撑。独立 ADCP/测深参考尤其重要，因为深水弱信号很容易把噪声峰误认成底。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问不同底质、太阳高度、海况和水体浑浊度下是否仍成立。cross-pol 的最佳收益很可能高度场景依赖。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你的信息图谱可以把 photon budget 纳入：\(Information\ Gain\times Photon\ Throughput\)。这能避免“理论上最可辨识的通道实际光子数太少”的设计陷阱。</p></div>
+</div></section>
 <section class="paper" id="reference-dependent-sentiment">
 <h2 class="paper-title">8. Reference-Dependent Preferences and Sentiment-Driven Asset Prices</h2>
 <p class="paper-meta">The Journal of Finance · 2026 · 金融 · <a href="https://doi.org/10.1111/jofi.70079">DOI 10.1111/jofi.70079</a></p>
@@ -662,6 +704,12 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>参考依赖让同样的财富变化在参考点上下产生不同边际效用。价格下跌一旦把投资者推入“损失区”，其感知风险和需求函数会改变，形成价格—情绪反馈。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>理论贡献在于同时解释多种现象，而非只拟合一条时间序列。若 excess volatility、下跌波动放大和 sentiment co-movement 都可由同一机制生成，统一性就是核心证据。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会要求经验 proxy 真正对应 reference-dependent state，而不是一般风险厌恶、杠杆或流动性。机制区分是关键。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>逆势交易时，不要只看估值分位。若市场仍处于强制去杠杆/情绪自我强化阶段，便宜可以继续更便宜。你需要等基本面、positioning 与价格结构至少两项改善。</p></div>
+</div></section>
 <div class="week-nav"><a href="2026-W38.html">← 2026-W38</a><a href="2026-W40.html">2026-W40 →</a></div>
 </article></main></body></html>
