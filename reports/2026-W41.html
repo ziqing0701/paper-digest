@@ -92,7 +92,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>把 NPP 拆成 biomass × growth rate 是最关键的思想。若 \(C_{phyto}\) 变化小但 \(\mu\) 明显下降，说明生态系统改变主要发生在单位生物量生产效率，而不是简单的‘藻变少’。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>趋势只是第一层；aφ、Cphyto、µ 的拆分提供机制；EOF 与气候指数提供更大尺度背景；subsurface fraction 上升则进一步产生新的观测问题。故事因此从现象一直推进到观测体系缺口。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>最大争议会集中在深层 NPP，因为被动卫星无法直接看见，模型中的 photoacclimation 和 nutrient limitation 假设会决定结果。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>这给海洋 LiDAR 一个很强的科学问题：被动卫星看到的表层变化是否正在低估深层碳固定？你可以联合 LiDAR/BGC-Argo 验证 SCM 与 subsurface NPP 的长期迁移。</p></div>
+</div></section>
 <section class="paper" id="flare-gmm">
 <h2 class="paper-title">2. FLARE-GMM: an automatic aerosol typing model based on Mie–Raman–fluorescence lidar measurements with LILAS</h2>
 <p class="paper-meta">Atmospheric Measurement Techniques · 2025 · 科研 · <a href="https://doi.org/10.5194/amt-18-5729-2025">DOI 10.5194/amt-18-5729-2025</a></p>
@@ -173,7 +179,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>退偏 \(\delta\) 更多反映形态/非球形，\(G_{fluo}\) 更多反映有机/生物组分。两者若在观测空间近似正交，就比增加多个彼此相关的 elastic color ratio 更能提高 class separation。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>RH conditioning 很重要，因为环境状态会系统性移动 cluster。若不控制 RH，分类器可能把同一颗粒在不同吸湿状态误判成不同类型。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问 pure-layer labels 是否可靠，以及 mixed aerosol 下 Gaussian mixture 假设是否失效。跨站点泛化也是关键，因为荧光响应受仪器和环境影响。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你的微藻—高岭石实验应把环境变量固定住，先证明端元在 \((\delta,F)\) 空间可分，再逐步加入 mixture 和浓度变化，看 posterior 如何变宽。</p></div>
+</div></section>
 <section class="paper" id="methane-isotopologues">
 <h2 class="paper-title">3. Incorporating methane isotopologues alters tropical and subtropical methane emission estimates</h2>
 <p class="paper-meta">Nature Communications · 2026 · 科研 · <a href="https://doi.org/10.1038/s41467-026-72668-2">DOI 10.1038/s41467-026-72668-2</a></p>
@@ -254,7 +266,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>贝叶斯反演中，观测项只约束 forward model 可见的组合。XCH₄ 对不同源部门往往高度共线；同位素相当于给状态空间增加新的观测方向，减少 posterior covariance。关键指标因此不是总误差，而是后验相关性和 source allocation。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>最漂亮的是 ablation：逐步加 δ13C、δD、C2H6，看总拟合与源归因如何改变。结果表明更多 tracer 不一定总更好，因为模型误差也会跟着增加。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问 source signatures 的空间/时间可变性以及同位素站点稀疏性。若 fingerprint 本身不稳，新的观测维度也会引入结构误差。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你的颗粒反演也应做同样的 modality ablation：比较每加入一个通道后 posterior volume、参数相关系数和预测误差分别怎么变。</p></div>
+</div></section>
 <section class="paper" id="investor-factors">
 <h2 class="paper-title">4. Investor Factors</h2>
 <p class="paper-meta">The Journal of Finance · 2025 · 金融 · <a href="https://doi.org/10.1111/jofi.13474">DOI 10.1111/jofi.13474</a></p>
@@ -335,7 +353,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>如果不同投资者群体系统性偏好不同股票，其持仓差异可以被映射成一个 demand factor。股票对该因子的 beta 若能解释未来收益，就说明 investor heterogeneity 具有定价含义。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>只看 holdings 相关还不够；关键是同一个 investor factor 同时解释谁持有什么和哪些股票获得更高风险溢价，把 household finance 与 asset pricing 接起来。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>外部有效性是最大问题。挪威税制、账户结构和家庭财富构成可能让 investor factor 与美国/中国不同。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>在加密市场可以构造类似的 holder factor：长期持有者 vs 高频/杠杆资金、ETF 托管 vs 交易所余额、鲸鱼集中度等，研究谁是边际定价者。</p></div>
+</div></section>
 <section class="paper" id="beaufort-pelagic-methane">
 <h2 class="paper-title">5. Subsurface Methane Accumulation in the Beaufort Sea Driven by Pelagic Processes: A Mechanistic Modeling Approach</h2>
 <p class="paper-meta">Geophysical Research Letters · 2025 · 科研 · <a href="https://doi.org/10.1029/2025GL116717">DOI 10.1029/2025GL116717</a></p>
@@ -416,7 +440,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>模型把 CH₄ tendency 拆成多个 production、transport、oxidation 和 exchange 项。每个候选机制单独打开，相当于做结构化 ablation；最终 removal counterfactual 则告诉你某机制对全年 flux 是否必要。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>沿岸和外海得到不同最佳机制，是这篇最有价值的结果之一。它说明同一个表面现象——subsurface CH₄ maximum——在不同环境下可以由不同过程产生，典型地体现了 equifinality。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问 1-D 模型如何代表 lateral transport，以及几个生物路径是否存在参数互相补偿。需要三维流场和更直接的 process tracer 来提高唯一性。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你的北极研究可以先按 shelf/offshore 分区，而不是全 Arctic 用同一回归。不同环境的主导机制很可能不同。</p></div>
+</div></section>
 <section class="paper" id="algorithmic-pricing-liquidity">
 <h2 class="paper-title">6. Algorithmic Pricing and Liquidity in Securities Markets</h2>
 <p class="paper-meta">The Review of Financial Studies · 2026 · 金融 · <a href="https://doi.org/10.1093/rfs/hhag010">DOI 10.1093/rfs/hhag010</a></p>
@@ -501,7 +531,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>Q-learning 更新里，reward 噪声直接影响行动价值的学习速度。若 lowering quote 带来的利润增量经常被订单和 fundamental shock 淹没，算法很难确认‘更低价是更优行动’，于是 undercutting 进程停得过早。这个机制与显式合谋完全不同。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>最强证据是关闭 adverse selection 后高 spread 仍存在，再增加环境噪声时 spread 继续上升，最后提高 exploration 又能部分恢复竞争。三组反事实一起把 learning friction 机制锁得很紧。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问 Q-learning 设定是否代表真实做市算法。真实系统常有模型预测、库存约束、多时间尺度目标和人为风险限额，因此实验结论更像机制演示而非直接实证。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>对加密市场，最值得观察的是极端波动时 spread 与 depth 的非线性恶化。如果噪声增加使做市算法更保守，执行成本会在你最想交易的时候突然上升。</p></div>
+</div></section>
 <section class="paper" id="uav-radar-lidar">
 <h2 class="paper-title">7. UAV-Borne Quasi-3D Observation of Physical-Biological Coupling in a Dipole Eddy by Integrating Radar Altimetry and Ocean LiDAR</h2>
 <p class="paper-meta">IEEE TGRS · 2026 · 科研 · <a href="https://doi.org/10.1109/TGRS.2026.3728024">DOI 10.1109/TGRS.2026.3728024</a></p>
@@ -584,7 +620,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>SLA 是表层动力结构 proxy，SCM/Chl(z) 是水下生物响应。把两者同平台同步测量，等于把 forcing 与 response 放到同一时空坐标系里，减少错配。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>每个传感器先独立验证，再讨论两者耦合，这是非常规范的证据链。否则 observed correlation 可能只是两个仪器各自的系统偏差。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>最大的科学追问是“同步变化是否等于因果”。真正证明 upwelling→nutrient→SCM，还需要温盐、流场和营养盐剖面。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你做主动—被动协同时，可以给每个传感器分配因果链角色：谁测 forcing、谁测 state、谁测 biological response、谁测 atmospheric consequence。</p></div>
+</div></section>
 <section class="paper" id="consumption-asset-returns">
 <h2 class="paper-title">8. Consumption in Asset Returns</h2>
 <p class="paper-meta">The Journal of Finance · 2026 · 金融 · <a href="https://doi.org/10.1111/jofi.70044">DOI 10.1111/jofi.70044</a></p>
@@ -666,6 +708,12 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>消费增长被拆成持久条件均值 \(\mu_t\) 与暂时噪声。资产价格之所以有用，是因为它们会提前反映关于未来 \(\mu_t\) 的信息，因此可以作为低频宏观数据的高频辅助测量。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>识别出 persistent component 只是第一步；它还必须在资产横截面中有风险价格，且进入结构模型后能解释宏观资产定价事实，才说明它具有经济含义。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>机制不唯一是最大的限制。相同的 persistent component 可能来自信息摩擦、调整成本或偏好结构，因此论文更强的是识别“存在什么状态”，较弱的是解释“为什么存在”。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>个人宏观投资中，可以把股票风格、信用利差、期限结构、商品和波动率共同看作 latent growth state 的传感器，而不是依赖单一宏观数据公布。</p></div>
+</div></section>
 <div class="week-nav"><a href="2026-W40.html">← 2026-W40</a><span></span></div>
 </article></main></body></html>
