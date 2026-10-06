@@ -3,39 +3,75 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>周报模板 · Paper Digest</title>
+<title>完整精读周报模板 · Paper Digest</title>
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <main class="wrap">
   <article class="report">
     <a class="back" href="../index.html">← 返回论文精读首页</a>
-    <p class="eyebrow">WEEKLY REPORT TEMPLATE</p>
-    <h1>2026年第41周 · 顶刊论文精读</h1>
-    <p class="sub">示例周报：2026-10-05 至 2026-10-11。实际文件按 ISO 周命名为 reports/YYYY-Www.html。</p>
+    <p class="eyebrow">FULL WEEKLY REVIEW TEMPLATE</p>
+    <h1>YYYY-Www · 顶刊论文精读</h1>
+    <p class="sub">每周一个 HTML；首页只保留摘要，周报正文必须保持与对话框精读相近的信息密度。</p>
 
     <nav class="toc">
       <strong>本周目录</strong>
-      <p><a href="#2026-10-06">10月6日</a> · <a href="#2026-10-08">10月8日</a> · <a href="#2026-10-10">10月10日</a> · <a href="#2026-10-11">10月11日</a></p>
+      <p><a href="#paper-id">论文标题</a></p>
     </nav>
 
-    <section id="2026-10-06">
-      <h2>2026年10月6日</h2>
-      <p class="note">当天推荐论文内容追加在这里。同一周后续任务继续更新当前文件，并保留此前全部内容。</p>
+    <section class="paper" id="paper-id">
+      <h2 class="paper-title">1. 完整论文标题</h2>
+      <p class="paper-meta">作者 · 期刊 · 年份 · DOI / 官方链接</p>
+      <div class="tags"><span>#主题</span><span>#方法</span></div>
 
-      <h3>论文标题示例</h3>
-      <p>每篇论文固定包含文献信息、研究问题、核心假设、数据/实验/模型、关键结果、创新点、科研故事线、顶刊特征、批判性阅读、科研迁移启发和科研判断训练。</p>
+      <p class="paper-summary"><strong>一句话抓核心：</strong>用 2–4 句话说明科学矛盾、作者做了什么、最关键结论是什么。</p>
+
+      <div class="deep-section">
+        <h3>1. 研究问题：作者真正想解决什么</h3>
+        <p>说明背景、已有认知、冲突或识别缺口，以及为什么值得研究。</p>
+      </div>
+
+      <div class="deep-section">
+        <h3>2. 核心假设与物理 / 经济机制</h3>
+        <p>明确写出机制链，必要时用公式或箭头表示。</p>
+      </div>
+
+      <div class="deep-section">
+        <h3>3. 数据、实验或模型：证据链怎样搭起来</h3>
+        <p>交代数据集、实验设计、仪器、模型、对照、独立验证和反事实/消融。</p>
+      </div>
+
+      <div class="deep-section">
+        <h3>4. 关键结果</h3>
+        <p>保留真正推动叙事的重要数值、比例、RMSE、相关系数、效应量等。</p>
+      </div>
+
+      <div class="deep-section">
+        <h3>5. 最重要的 2–4 个创新点</h3>
+        <ul><li>问题创新</li><li>方法创新</li><li>证据创新</li><li>应用或叙事创新</li></ul>
+      </div>
+
+      <div class="deep-section">
+        <h3>6. 科研故事线</h3>
+        <div class="chain">现象/矛盾 → 问题 → 假设 → 证据 → 机制 → 闭环</div>
+        <p>解释每一部分结果如何推动下一部分。</p>
+      </div>
+
+      <div class="deep-section">
+        <h3>7. 为什么能进高水平期刊</h3>
+        <p>从问题重要性、方法可信度、因果/机制证据、普适性、图表与叙事结构解释。</p>
+      </div>
+
+      <div class="deep-section">
+        <h3>8. 薄弱点与延伸问题</h3>
+        <div class="caution">说明真正的识别边界，而不是泛泛写“样本量不足”。</div>
+      </div>
+
+      <div class="deep-section">
+        <h3>9. 对用户现有研究 / 投资体系的直接启发</h3>
+        <div class="takeaway">给出 1–3 个可以直接执行的迁移动作。</div>
+      </div>
     </section>
-
-    <section id="2026-10-08">
-      <h2>2026年10月8日</h2>
-      <p>后续运行时追加新的日期区块，并同步更新顶部目录。</p>
-    </section>
-
-    <h2>归档规则</h2>
-    <p>首页从 archive.json 读取每篇论文的元数据。每条记录的 report_url 指向本周周报及对应日期锚点，例如 reports/2026-W41.html#2026-10-06。</p>
-
-    <a class="back" href="../index.html">← 返回论文精读首页</a>
   </article>
 </main>
 </body>
