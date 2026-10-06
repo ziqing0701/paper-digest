@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>2026-W39 顶刊论文精读 · Paper Digest</title><link rel="stylesheet" href="../style.css"></head>
+<title>2026-W39 顶刊论文精读 · Paper Digest</title><link rel="stylesheet" href="../style.css">
+<script>
+window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
 <body><main class="wrap"><article class="report">
 <a class="back" href="../index.html">← 返回论文精读首页</a>
 <p class="eyebrow">HISTORICAL BACKFILL · WEEKLY REPORT</p>
@@ -13,6 +18,16 @@
 <div class="tags"><span>#全球甲烷</span><span>#OH</span><span>#NOx</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>1999–2006 全球 CH₄ 平台期由排放变化还是汇变化主导？ 文章通过 NOx 总量增长与空间南移/海运排放增强提高热带 OH，缩短 CH₄ lifetime。，最终得到的关键证据是：约 1.4% OH 增强足以使 CH₄ loss 增长并抵消同期人为排放增长，解释平台期。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>1999–2006 的 CH₄ plateau 是一个典型“浓度没涨 ≠ 排放没涨”的例子。要解释平台期，必须把 source 和 sink 同时放进收支方程。</p>
+<div class="formula-box">\[\frac{d[CH_4]}{dt}=E_{CH_4}-\frac{[CH_4]}{\tau_{OH}}\]</div>
+<div class="formula-box">\[NO_x\uparrow\Rightarrow OH\uparrow\Rightarrow \tau_{CH_4}\downarrow\Rightarrow Loss\uparrow\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：先承认 source-only 解释不够</strong><p>人为排放并没有完全停滞，因此平台期必须有 sink 同步增强。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：追到 OH</strong><p>全球 CH₄ 的主要大气 sink 由 OH 控制，少量 OH 改变即可显著影响多年增长率。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：继续追 OH 为什么变</strong><p>NOx 总量增长和空间向热带/航运区重分布，提高了 OH 生产效率。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 最终闭环</strong><p>排放空间分布本身就会改变全球化学环境，因此“总排放不变”也可能对应不同的大气 CH₄ 趋势。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -84,6 +99,16 @@
 <div class="tags"><span>#稳定币</span><span>#套利</span><span>#挤兑</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>为什么稳定币一级赎回套利高度集中？ 文章通过 更强套利提高 peg 精度，同时降低退出价格冲击，从而可能提高 run incentives。，最终得到的关键证据是：Tether 直接现金赎回高度集中；发行人面临 peg precision 与 run resilience 的内生权衡。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>稳定币套利看起来是简单的 1 美元锚定交易，但真正关键的是谁能直接向发行人赎回。一级赎回权越集中，二级市场定价和挤兑机制就越特殊。</p>
+<div class="formula-box">\[Arb\ Profit\approx 1-P_{stable}-Cost_{redeem}\]</div>
+<div class="formula-box">\[Peg\ Precision\uparrow\quad\text{may coexist with}\quad Run\ Incentive\uparrow\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：识别一级市场结构</strong><p>不是所有持有人都有同样的赎回通道。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：套利改善锚定</strong><p>少数大机构可以在偏离时快速赎回/申购，压缩价格误差。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：同一机制改变 run dynamics</strong><p>当退出高度依赖少数通道时，危机中的流动性和价格冲击可能更集中。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 投资迁移</strong><p>评估 USDT/USDC 风险时必须拆成 reserve、issuer、redemption access 和 secondary-market depth，而不是只看当前价格是否 1 美元。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -156,6 +181,16 @@
 <div class="tags"><span>#海洋LiDAR</span><span>#多次散射</span><span>#反演</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>如何把多次散射从误差源直接纳入 ocean LiDAR 反演算子？ 文章通过 迭代联合优化 backscatter/attenuation 与 lidar ratio，并用半解析多次散射模型纠正回波。，最终得到的关键证据是：基于 2017–2024 南海 117,456 条剖面恢复 Kd、bbp，再映射 Chl/POC，并用于次表层生态过程。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>传统做法把 multiple scattering 当作附加误差；IHMSC 更进一步，把它直接放进反演迭代，让 forward model 和 inverse model 同时更新。</p>
+<div class="formula-box">\[P_{obs}(z)=P_{SS}(z)+P_{MS}(z)\]</div>
+<div class="formula-box">\[\theta^{(k+1)}=\mathcal I\!\left(P_{obs}-\widehat P_{MS}(\theta^{(k)})\right)\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：先承认单散射方程与真实回波不一致</strong><p>FOV、浑浊度和深度都会让 MS 占比上升。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：用半解析模型估计 MS</strong><p>得到当前参数假设下的多次散射贡献。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：修正回波再更新参数</strong><p>新的 Kd/bbp 又会反过来改变 MS 估计，于是需要迭代。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 最后扩展到生态参数</strong><p>一旦 IOP 剖面更可信，才能进一步推 Chl、POC 和次表层结构。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -227,6 +262,15 @@
 <div class="tags"><span>#ETF</span><span>#资金流</span><span>#动量</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>为什么 ETF 的 flow-performance sensitivity 特别强？ 文章通过 机构配置、herding 与 model portfolios 让 ETF 资金流具有显著 momentum-chasing 成分。，最终得到的关键证据是：ETF 的业绩追逐强于传统基金，且机构持有越高越明显；manager-skill learning 只能解释一部分。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>ETF 的资金流为什么特别追涨？作者把问题从“基金是否追逐业绩”推进到“哪类投资者和资产管理基础设施在放大这种追逐”。</p>
+<div class="formula-box">\[Flow_{t+1}=f(Return_t,Institutional\ Share,Model\ Portfolio,\ldots)\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：确认 ETF flow-performance sensitivity 更强</strong><p>先建立相对于传统基金的事实差异。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：看投资者结构</strong><p>机构持有更高的 ETF，其 flow 对过去收益更敏感。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：加入 model portfolios</strong><p>批量再平衡/模型组合会把相同信号同步作用于大量资金。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 投资迁移</strong><p>看行业 ETF 资金流时，要把“信息性买入”和“被动追涨/再平衡需求”分开，最好与盈利预期修正一起看。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -299,6 +343,16 @@
 <div class="tags"><span>#偏振</span><span>#高光谱</span><span>#光电探测</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>能否在单颗 CMOS 上同时获取高空间、高光谱和偏振信息？ 文章通过 以 on-chip 联合编码 + 标定 sensing matrix + physics-informed reconstruction 恢复高维光场。，最终得到的关键证据是：实现 61 波段、4 偏振态、约 500 万像素和 74 FPS，并展示雾霾、眩光、3D 等复杂场景。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇解决的是多维成像里一个根本矛盾：空间、光谱、偏振三种维度都想要，但如果每个维度单独分光，通量、帧率和像素都会被迅速吃掉。</p>
+<div class="formula-box">\[\mathbf y=\Phi\mathbf x+\mathbf n\]</div>
+<div class="formula-box">\[\hat{\mathbf x}=\arg\min_x\|\Phi x-y\|^2+\lambda\mathcal R(x)\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：把多维信息编码到单颗 CMOS</strong><p>硬件端通过联合编码保留空间—光谱—偏振混合信息。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：建立可标定的 sensing matrix</strong><p>只有 \(\Phi\) 被可靠标定，计算解码才有物理依据。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：用 physics-informed reconstruction 解混</strong><p>算法不只是 black box，而是受 forward model 约束。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 最后用复杂场景验证</strong><p>雾霾、眩光、材料和深度任务证明多维信息确实转化成场景能力。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -370,6 +424,16 @@
 <div class="tags"><span>#动量</span><span>#偏度</span><span>#尾部风险</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>momentum crash 风险除了波动率，还能从收益分布形状获得什么信息？ 文章通过 conditional volatility 与 negative skewness 共同刻画左尾风险状态。，最终得到的关键证据是：skewness 对未来左尾收益具有 volatility 之外的增量预测力，动态降 exposure 可改善 downside management。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>momentum crash 通常用高波动解释，但高波动只告诉你“分布变宽”，不告诉你“左尾是否特别厚”。这篇加入 conditional skewness。</p>
+<div class="formula-box">\[Skew_t=E[(R-\mu)^3]/\sigma^3\]</div>
+<div class="formula-box">\[Exposure_t=g(\sigma_t,Skew_t),\qquad Skew_t\downarrow\Rightarrow Exposure_t\downarrow\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：区分波动率与左尾形状</strong><p>同样的 \(\sigma\)，收益分布可以接近对称，也可以有很重的负尾。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：检验 skewness 的增量预测</strong><p>控制 volatility 后看 skewness 是否仍能预测 crash。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：把信号用于动态风险控制</strong><p>不是预测平均收益，而是降低极端左尾状态的 exposure。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 投资迁移</strong><p>你的裸 K / momentum 策略可先把 negative skewness 作为仓位缩放器，而不是单独生成方向信号。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -442,6 +506,16 @@
 <div class="tags"><span>#测深</span><span>#偏振</span><span>#SA-MC</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>能否在光子进入探测器前，利用偏振差异选择性删除海面和水柱噪声？ 文章通过 交叉偏振强抑制海面镜面反射与部分水柱散射，同时保留较大比例海底退偏信号。，最终得到的关键证据是：机载南海实测最大水深 140.4 m；&gt;100 m 时交叉偏振 SNR 约为总信号 1.6 倍，并用 SA-MC 修正 MS 测深偏差。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>深水测深最难的不是“底回波有没有”，而是底回波淹没在海面强反射和水柱散射中。作者把偏振当作光子进入探测器前的物理筛选器。</p>
+<div class="formula-box">\[S_{co}=S_{bottom,co}+S_{water,co}+N_{co}\]</div>
+<div class="formula-box">\[SNR_{co}=\frac{S_{bottom,co}}{S_{water,co}+N_{co}}\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：找海底和噪声的偏振差异</strong><p>镜面海面和部分水柱散射保持原偏振较强，而粗糙海底退偏更明显。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：用交叉偏振抑制前景</strong><p>虽然同时损失一部分光子，但噪声下降更快，深水 SNR 反而提高。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：海试证明 >100 m 区域收益</strong><p>最终实现 140.4 m 级测深。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 第四步：再用 SA-MC 修正 MS 带来的 range bias</strong><p>把‘看见底’继续推进到‘测得准’。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -513,6 +587,16 @@
 <div class="tags"><span>#行为金融</span><span>#情绪</span><span>#风险恐慌</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>为什么基本面变化不大时，价格与恐慌仍可能互相强化？ 文章通过 reference-dependent preferences 使价格下跌提高 perceived downside risk，形成自我实现的 risk-panic feedback。，最终得到的关键证据是：一个机制可同时生成 excess volatility、下跌波动不对称、情绪不对称和跨资产共振。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>作者关心的是为什么价格下跌后，投资者会变得更悲观，而且这种悲观本身还能继续压低价格。reference-dependent utility 提供了自我强化渠道。</p>
+<div class="formula-box">\[U(W_t)=u(W_t-W_t^{ref})\]</div>
+<div class="formula-box">\[P\downarrow\Rightarrow perceived\ downside\ risk\uparrow\Rightarrow demand\downarrow\Rightarrow P\downarrow\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：引入参考点</strong><p>投资者评估风险不是只看最终财富，而会相对参考水平看收益和损失。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：价格下跌改变感知风险</strong><p>跌破参考点后，未来下行被赋予更高权重。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：需求反过来影响价格</strong><p>更弱需求继续压价，形成 sentiment-risk feedback。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 投资迁移</strong><p>逆势交易前应同时看基本面、positioning/sentiment 和价格结构，避免只因为“跌很多”就认为风险溢价一定足够高。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
