@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>2026-W38 顶刊论文精读 · Paper Digest</title><link rel="stylesheet" href="../style.css"></head>
+<title>2026-W38 顶刊论文精读 · Paper Digest</title><link rel="stylesheet" href="../style.css">
+<script>
+window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
 <body><main class="wrap"><article class="report">
 <a class="back" href="../index.html">← 返回论文精读首页</a>
 <p class="eyebrow">HISTORICAL BACKFILL · WEEKLY REPORT</p>
@@ -13,6 +18,17 @@
 <div class="tags"><span>#圆偏振</span><span>#海洋LiDAR</span><span>#多次散射</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>圆偏振 V 通道能否同时抑制太阳背景和部分多次散射？ 文章通过 太阳背景 V≈0，而保持圆偏振记忆的低阶/小角散射路径在 V 中权重更高。，最终得到的关键证据是：南海实测中 V 通道夜间有效探测距离由 I 的 82 m 提升到 118 m，并改善深层 SBR 与 KL 物理意义。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇最值得你看的地方，是作者没有把圆偏振 V 只当成“多一个偏振参数”，而是把它重新定义成一个具有抗太阳背景和选择 photon path 能力的观测通道。</p>
+<div class="formula-box">\[I=I_R+I_L,\qquad V=I_R-I_L\]</div>
+<div class="formula-box">\[V_{sun}\approx0,\qquad V_{lidar}\neq0\]</div>
+<div class="formula-box">\[\frac{R_V}{R_I}=\frac{118}{82}\approx1.44\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：先区分目标信号与干扰的物理属性</strong><p>太阳背景强度很大，但圆偏振分量很弱；人工激光则可以携带稳定的 V。于是“强度域分不开”的信号，在偏振域出现了不对称。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：再问多次散射会不会把 V 也洗掉</strong><p>作者通过偏振 Monte Carlo 发现，不同散射路径对圆偏振 memory 的保留程度不同，所以 V 实际上在做 photon-path weighting。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：搭仪器做 I 与 V 的同平台对照</strong><p>如果 V 只是模拟上更好，没有真实海试就不够。南海实测把有效探测距离从 82 m 推到 118 m。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 最后一层：从“看得更深”推进到“反演物理量变了”</strong><p>V 通道的 attenuation 更接近 beam attenuation c，说明偏振选择已经改变了回波对应的传输物理。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -84,6 +100,15 @@
 <div class="tags"><span>#量化投资</span><span>#数据</span><span>#市场效率</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>数据更丰富、算力更便宜时，量化 alpha 会怎样演化？ 文章通过 把 data frontier 与 processing cost 分开建模，并考虑 data miners 的最优搜索和均衡价格信息含量。，最终得到的关键证据是：更多数据提高价格信息效率，主动管理表现可能呈驼峰；长期平均 alpha 会受到竞争侵蚀。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>作者问的不是“更多数据能不能提高预测”，而是当所有专业机构都拥有更多数据和更便宜算力后，均衡中的 alpha 还剩多少。</p>
+<div class="formula-box">\[\alpha_{net}=\alpha_{signal}-\alpha_{competition}-Cost_{data}-Cost_{compute}\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：把技术进步拆成两个维度</strong><p>data frontier 变宽和 processing cost 下降不是同一件事，它们对研究投入和价格效率的作用不同。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：让 data miners 内生选择搜索强度</strong><p>随着更多人挖掘同类信号，价格会更快反映信息。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：得到驼峰式结果</strong><p>数据丰富初期可能提高主动管理机会，但竞争继续上升后，平均 alpha 会被压缩。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 投资迁移</strong><p>任何公开因子策略都要问：如果大量机构同时可见，这个 alpha 靠什么摩擦、约束或风险补偿继续存在？</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -156,6 +181,18 @@
 <div class="tags"><span>#白光LiDAR</span><span>#SAMC</span><span>#主动被动协同</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>白光 LiDAR 能否主动测量与被动 ocean color 同物理意义的 Rrs？ 文章通过 当接收 footprint 足够大、收集到匹配的多次散射比例时，主动积分回波可逼近被动 Rrs。，最终得到的关键证据是：PB-SMC/AF-SMC/AF-SAMC 与 HydroLight 交叉验证；给出 H–FOV–IOP 设计条件，部分高空/星载场景 MAPE&lt;10%。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇的核心不是“白光 LiDAR 能不能测到光谱”，而是更严格的问题：主动窄束照明下得到的量，什么时候真的等价于被动海色遥感里的 \(R_{rs}\)。</p>
+<div class="formula-box">\[R_{rs}(\lambda)=\frac{L_w(\lambda)}{E_d(\lambda)}\]</div>
+<div class="formula-box">\[D_{footprint}\approx2H\tan(FOV/2)\]</div>
+<div class="formula-box">\[R_{rs}^{active}\rightarrow R_{rs}^{passive}\quad\text{when MS collection is sufficiently complete}\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：建立 passive reference</strong><p>PB-SMC / HydroLight 先给出被动照明下的 Rrs 和散射阶次组成。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：建立严格 active solution</strong><p>AF-SMC 模拟白光激光束、海面、水体和接收机几何，得到主动观测。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：用 AF-SAMC 解决计算效率</strong><p>半解析接收估计让大参数扫描成为可能。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 第四步：找真正控制误差的量</strong><p>不是“FOV 越大越好”这么简单，而是主动系统必须收集与被动场接近的多次散射横向扩展。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>5. 最后转成仪器设计</strong><p>于是得到 \(FOV_{min}=f(H,\lambda,IOP)\)，从模拟结论变成可直接指导机载/星载系统的约束。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -227,6 +264,16 @@
 <div class="tags"><span>#通胀</span><span>#资产配置</span><span>#宏观</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>“资产抗通胀”是否取决于通胀组成？ 文章通过 把总通胀拆为 core inflation 与 energy inflation，检验跨资产 beta 与风险价格。，最终得到的关键证据是：股票对 core inflation beta 为负、对 energy inflation beta 为正；稳定负风险价格主要来自 core inflation。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>把 headline inflation 当成单一变量会把完全不同的风险混在一起。作者将其拆成 core 与 energy 两部分，重新检验跨资产通胀暴露。</p>
+<div class="formula-box">\[\pi_t=w_c\pi^{core}_t+w_e\pi^{energy}_t\]</div>
+<div class="formula-box">\[R_{i,t}=\alpha_i+\beta^{core}_i\pi^{core}_t+\beta^{energy}_i\pi^{energy}_t+\varepsilon_{i,t}\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：先证明“总通胀 beta”不稳定</strong><p>因为不同通胀来源对现金流和贴现率影响不同。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：分解风险暴露</strong><p>股票对 core 与 energy 的方向甚至可以不同，因此总 CPI 会掩盖状态依赖。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：检验风险价格</strong><p>只有被系统性定价的 inflation component 才能进入资产配置判断。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 投资迁移</strong><p>看到 CPI 超预期时，先看是住房/服务核心项还是能源项，再判断股债相关性和行业暴露，而不是机械地“高通胀=买商品”。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -299,6 +346,16 @@
 <div class="tags"><span>#OPA LiDAR</span><span>#偏振</span><span>#光计算</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>LiDAR 如何从“定位物体”升级到“识别材料”？ 文章通过 把偏振作为材料敏感维度，并用片上 PolarONN 直接进行光域推理。，最终得到的关键证据是：实现 3D+强度+偏振+材料标签；wood/stone/steel 在约 10 m 范围保持 &gt;85% 分类准确率。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>传统 LiDAR 主要回答“物体在哪里”，这篇想把问题推进到“它是什么材料”。所以真正新增的是偏振敏感性和片上推理，而不是单纯多一维点云。</p>
+<div class="formula-box">\[\mathbf S=[I,Q,U,V]^T\]</div>
+<div class="formula-box">\[\hat c=\mathcal N_{photonic}(\mathbf y_{pol},\mathbf y_{range})\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：指出几何信息不足</strong><p>不同材料可能有类似形状和反射强度。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：加入偏振维度</strong><p>偏振响应与表面/材料属性相关，可提供独立判别轴。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：处理数据维度带来的计算瓶颈</strong><p>PolarONN 把部分推理放在光域，避免只靠电子后端。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 最后看任务指标</strong><p>材料分类准确率而不是单一器件参数，证明新增偏振维度真正转化成 sensing capability。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -370,6 +427,16 @@
 <div class="tags"><span>#行为金融</span><span>#泡沫</span><span>#趋势</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>为什么同样的趋势外推平时产生 momentum，重大变革后却演化成 bubble/crash？ 文章通过 投资者低估一般均衡反馈；displacement shock 提高不确定性并放大 extrapolation。，最终得到的关键证据是：统一解释普通 momentum 与泡沫—崩盘，关键状态变量是 displacement 与不确定性。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>作者把普通 momentum 和极端 bubble 放到同一条机制链里：投资者会外推趋势，但在重大 displacement 后，他们更容易低估价格变化对未来供需和基本面的反馈。</p>
+<div class="formula-box">\[P_t=E_t\!\left[\sum_{j\ge1}m_{t,t+j}CF_{t+j}\right]\]</div>
+<div class="formula-box">\[Extrapolation\ Gap\sim \Delta P-\Delta Fundamentals\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：从趋势外推出发</strong><p>在普通环境里，外推可产生可持续一段时间的 momentum。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：加入 displacement shock</strong><p>技术变革、制度变化等提高不确定性，让投资者更难做一般均衡推理。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：低估反馈</strong><p>价格上涨本身会改变供给、竞争和融资，若忽略这些反馈，外推会被放大。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 投资迁移</strong><p>AI、机器人、crypto 等主题中，重点监控价格修正速度是否长期高于盈利/现金流/用户基本面的修正速度。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -442,6 +509,16 @@
 <div class="tags"><span>#甲烷氧化</span><span>#TROPOMI</span><span>#代理量</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>目标 CH₄ sink 难直接测时，能否通过反应链中 HCHO 代理量反演氧化速率？ 文章通过 CH₄ 氧化产生短寿命 HCHO；在异常化学羽流中，HCHO enhancement 可约束 CH₄ oxidation。，最终得到的关键证据是：TROPOMI 观测到强 HCHO 异常并反演约 900±220 Mg/day CH₄ oxidation，进一步指向持续氯化学。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>目标变量是 CH₄ oxidation，但它很难被卫星直接观测。作者转而寻找反应链中寿命更短、更容易留下局地空间结构的 proxy：HCHO。</p>
+<div class="formula-box">\[CH_4+OH\rightarrow CH_3\rightarrow\cdots\rightarrow HCHO\]</div>
+<div class="formula-box">\[\Delta HCHO\propto \int R_{CH_4\ oxidation}\,dt\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：从不可直接观测的过程量出发</strong><p>CH₄ 浓度只反映源、汇和输送的合成结果。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：找过程 proxy</strong><p>HCHO 是氧化链的中间产物，更接近“反应正在发生”这个过程。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：利用火山羽流做天然实验</strong><p>空间边界清楚、扰动强，使 proxy 与背景更容易区分。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 最后定量反推 sink</strong><p>把 HCHO enhancement 经过化学输送约束转成 CH₄ oxidation rate，从“看异常”升级到“测过程”。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -513,6 +590,15 @@
 <div class="tags"><span>#家庭金融</span><span>#摩擦</span><span>#默认选项</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>低股票仓位来自高风险厌恶，还是来自参与/调整摩擦？ 文章通过 利用 401(k) 默认配置变化识别 revealed preferences 与 participation frictions。，最终得到的关键证据是：消除摩擦后约 94% 投资者愿意持股；结构估计显示相对温和的风险厌恶即可解释组合选择。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>股票参与率低经常被解释成“家庭很厌恶风险”，但默认配置和账户操作摩擦也会产生类似结果。作者需要把 preference 与 friction 分开。</p>
+<div class="formula-box">\[w^{obs}=w^{*}(risk\ preference)+\text{friction wedge}\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：利用默认选项变化</strong><p>默认基金构成变化提供准实验，观察投资者在没有主动决策时组合如何移动。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：从行为反推出摩擦大小</strong><p>如果默认改变大幅提高股票持有率，说明原先低持股不全是高风险厌恶。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：结构估计风险偏好</strong><p>将 participation cost / inertia 纳入模型后，再估计真正的 preference。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 投资迁移</strong><p>个人资产配置也要把操作摩擦、税务、再平衡成本和心理惰性当作真实约束，而不是只算理论最优权重。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
