@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>2026-W37 顶刊论文精读 · Paper Digest</title><link rel="stylesheet" href="../style.css"></head>
+<title>2026-W37 顶刊论文精读 · Paper Digest</title><link rel="stylesheet" href="../style.css">
+<script>
+window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
 <body><main class="wrap"><article class="report">
 <a class="back" href="../index.html">← 返回论文精读首页</a>
 <p class="eyebrow">HISTORICAL BACKFILL · WEEKLY REPORT</p>
@@ -13,6 +18,16 @@
 <div class="tags"><span>#碳循环</span><span>#CO₂</span><span>#机制归因</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>2024 年大气 CO₂ 增长率为何创纪录？ 文章通过 把全球碳预算逐层拆为化石燃料、海洋、陆地，再把陆地拆为 GPP、生态系统呼吸与火灾。，最终得到的关键证据是：陆地碳汇异常下降是主因，生态系统总呼吸异常增强超过 GPP 增长；热湿复合条件是关键环境状态。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>先不要从“2024 很热”直接跳到“所以 CO₂ 增长快”。作者真正要拆的是大气 CO₂ 年增长率这个总账，究竟由化石排放、海洋汇、陆地汇中的哪一项异常主导，再继续追到陆地内部的 GPP、呼吸与火灾。</p>
+<div class="formula-box">\[\Delta C_{atm}=E_{fossil}+E_{LUC}-S_{land}-S_{ocean}\]</div>
+<div class="formula-box">\[NEE\approx R_{eco}-GPP,\qquad S_{land}\approx -NEE\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：先拆总账</strong><p>把大气增长率写成排放减去陆地和海洋吸收。这样“2024 增长率异常”先被转化成几个可检验的候选来源。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：发现陆地汇异常后继续往下拆</strong><p>陆地净交换仍然是合成量；作者继续比较 GPP、生态系统呼吸和火灾，判断是“吸得少”还是“呼得多”。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：用温度×水分状态解释空间差异</strong><p>只有当高温和水分条件同时进入分析，才能解释为什么某些区域呼吸异常更强。这里的状态空间比单变量相关更接近机制。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 最后闭环</strong><p>从年度极值回到气候反馈：若变暖更容易触发呼吸增强，陆地碳汇稳定性本身就成为未来 CO₂ 增长率的不确定源。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -84,6 +99,16 @@
 <div class="tags"><span>#资产定价</span><span>#机器学习</span><span>#复杂度</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>为什么参数远超样本数的模型仍可能提升样本外投资表现？ 文章通过 以 random features 和正则化研究过参数化下函数逼近收益与估计方差的权衡。，最终得到的关键证据是：在适当 shrinkage 下，提高复杂度可继续改善样本外组合价值；预测 R² 与投资效用并不等价。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇的反直觉点在于：传统统计直觉认为参数越多越容易过拟合，但资产收益预测关心的是样本外投资效用，复杂度和正则化共同决定偏差—方差权衡。</p>
+<div class="formula-box">\[\hat r_{t+1}=f_{\theta}(x_t),\qquad \dim(\theta)\gg T\]</div>
+<div class="formula-box">\[\hat\theta=\arg\min_{\theta}\sum_t(r_{t+1}-f_{\theta}(x_t))^2+\lambda\|\theta\|^2\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：先区分“预测误差”和“投资价值”</strong><p>模型是否有更高 R²，并不等于它是否给组合带来更高 certainty-equivalent return。论文先改变评价目标。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：让模型进入过参数化区间</strong><p>作者研究 random features / 高维回归，观察当参数数目超过样本时，正则化是否还能控制估计方差。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：把复杂度收益映射到组合</strong><p>如果更复杂模型捕捉到更多可交易非线性结构，其价值应体现在 OOS return、Sharpe 或 utility，而不是训练集拟合。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 最后闭环</strong><p>论文因此把“复杂模型会不会过拟合”改写成“在什么正则化和信号结构下，复杂度能否提升经济决策”。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -156,6 +181,16 @@
 <div class="tags"><span>#海洋甲烷</span><span>#营养盐</span><span>#微生物</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>大气氮沉降是否会通过营养盐化学计量改变海洋好氧产甲烷？ 文章通过 N 沉降提高 N:P，增强 P 限制，促进微生物利用甲基膦酸盐并副产 CH₄。，最终得到的关键证据是：培养实验、营养盐操纵、功能基因和全球外推共同支持 N→P stress→MPn→CH₄ 链条；全球海气通量增量虽小但机制明确。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这里不能只看“加了气溶胶，CH₄ 上升”。真正的故事是逐层排除：气溶胶里很多成分都可能起作用，作者必须找到是哪一种输入改变了哪条微生物代谢路径。</p>
+<div class="formula-box">\[N_{dep}\uparrow\Rightarrow N:P\uparrow\Rightarrow P\ limitation\uparrow\]</div>
+<div class="formula-box">\[MPn\xrightarrow{C-P\ lyase}CH_4+P_{available}\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：从海洋甲烷悖论出发</strong><p>富氧表层海水仍然过饱和 CH₄，说明传统厌氧产甲烷解释不完整。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：用 aerosol+MPn 培养把大气沉降接到 CH₄</strong><p>这一步只证明“沉降里有东西能增强 CH₄”，还不能说明是什么。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：做营养盐操纵</strong><p>单独增加 N 能复现主要效应，而 Fe 等不能完整复现，于是机制被收敛到 N:P 失衡和 P stress。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 第四步：再上升到全球通量</strong><p>局地培养得到的是 production，作者还要通过混合层、气体交换和沉降场外推到 emission，最终形成 Earth-system feedback。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -227,6 +262,16 @@
 <div class="tags"><span>#机器学习</span><span>#不确定性</span><span>#组合</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>收益预测相同的两只股票，预测精度不同，组合应该怎样处理？ 文章通过 为多类 ML 收益预测构造 ex-ante uncertainty，并把预测水平与预测精度共同用于选股。，最终得到的关键证据是：confident-high minus confident-low 在多类模型中提升样本外收益与 Sharpe；模型越复杂，uncertainty filtering 越有价值。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇最重要的转变是：机器学习输出一个收益预测还不够，投资决策还需要知道这个预测本身有多不确定。相同的 10% 预期收益，若置信区间完全不同，仓位就不该一样。</p>
+<div class="formula-box">\[\hat\mu_i=E(R_i\mid X),\qquad CI_i=\hat\mu_i\pm z_{\alpha/2}\hat\sigma_i\]</div>
+<div class="formula-box">\[Score_i\;\sim\;\frac{\hat\mu_i}{\hat\sigma_i}\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：指出 point forecast 的缺口</strong><p>传统 ML 排序默认每只股票的预测精度相同，这在高维非线性模型里并不成立。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：给每个预测配一个 uncertainty</strong><p>作者构造 ex-ante confidence interval，于是横截面从一维 \(\hat\mu\) 变成二维 \((\hat\mu,\hat\sigma)\)。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：只交易高置信预测</strong><p>confident-high 与 confident-low 的组合把模型不确定性直接转成持仓选择。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 最后闭环</strong><p>模型越复杂，uncertainty filtering 越有价值，说明复杂度本身不是问题，不能识别什么时候该不相信模型才是问题。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -299,6 +344,16 @@
 <div class="tags"><span>#光电探测</span><span>#弱光</span><span>#器件</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>弱光探测的真正瓶颈是否被传统 D* 指标完整描述？ 文章通过 提出 turn-on threshold power，并利用 steep-slope / tunneling injection 降低载流子注入门槛。，最终得到的关键证据是：器件可在约 35 pW 弱光下响应，最低可探测功率相对 conventional phototransistor 显著改善，即使 responsivity/D* 并非最高。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>作者首先挑战了弱光探测中一个常见误区：responsivity 或 D* 很高，不代表器件真的能在极低入射功率下“被打开”。因此他们重新定义任务指标。</p>
+<div class="formula-box">\[P_{th}:\quad I_{photo}(P_{th})\gtrsim I_{dark}+I_{noise}\]</div>
+<div class="formula-box">\[S=\frac{d\log I}{dV_g}\quad\text{越陡，越小的光生扰动越可能跨过导通阈值}\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：从指标错位入手</strong><p>传统 D* 强调线性探测性能，但 ultra-weak regime 更关心是否有足够大的势垒/载流子调制让器件发生可检测状态变化。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：引入 steep-slope injection</strong><p>通过更陡的亚阈值特性，让极小光生载流子变化转化成更明显电流变化。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：用 turn-on threshold power 检验</strong><p>关键结果不是“某个材料 responsivity 最高”，而是器件在更低 pW 级功率下仍能稳定响应。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 对你真正有用的地方</strong><p>做海洋 Raman/fluorescence 接收机时，应把器件参数转换到任务量：最小可探测回波、深度相关 SNR、误警率，而不是只比较 NEP/D*。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -370,6 +425,15 @@
 <div class="tags"><span>#家庭金融</span><span>#资产配置</span><span>#生命周期</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>现实家庭股票配置是否真的遵循生命周期 glide path？ 文章通过 用大型账户级数据与 2006 PPA/TDF 默认机制识别年龄与股票占比变化。，最终得到的关键证据是：股票占比呈明显生命周期结构；TDF 默认选择显著推动年轻人更高权益配置和临近退休降风险。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>生命周期资产配置理论早就预测年轻人股票多、临退休股票少，但现实账户数据长期给出不稳定证据。作者利用默认基金制度变化把“偏好”与“默认机制”分开。</p>
+<div class="formula-box">\[w^{equity}_{a}=g(age_a,wealth_a,risk\ preference,default)\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：先确认横截面事实</strong><p>观察不同年龄投资者的权益比例，判断是否存在稳定 glide path。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：利用 TDF 默认机制识别因果</strong><p>默认选项变化提供近似外生冲击，帮助区分“主动选择”与“被制度推着走”。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：解释年轻人和临退休者的不同反应</strong><p>如果默认机制能显著改变配置，就说明现实组合偏离并不完全来自风险厌恶。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 投资迁移</strong><p>个人配置应先确定生命周期风险预算，再谈选股、行业轮动和加密仓位；高风险资产只能占风险预算中的子集。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -442,6 +506,16 @@
 <div class="tags"><span>#海色遥感</span><span>#颗粒组成</span><span>#反演</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>为什么同一 SPM 浓度在不同水体中具有不同光谱响应？ 文章通过 先根据 POC/SPM 判断颗粒组成状态，再选择条件化的 SPM 反演关系。，最终得到的关键证据是：12 个海域、800+ 配对样本实现高精度全球近岸 SPM 反演，并扩展到 40 年 Landsat 档案。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇抓住了全球近岸 SPM 反演的本质困难：同样的悬浮颗粒质量浓度，在有机颗粒主导和矿物颗粒主导水体里，光谱响应并不一样。</p>
+<div class="formula-box">\[R_{rs}(\lambda)=F(SPM,\;POC/SPM,\;PSD,\;m,\ldots)\]</div>
+<div class="formula-box">\[\widehat{SPM}=f_k(R_{rs})\quad\text{where }k=\text{particle-composition regime}\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：发现统一算法跨区失效</strong><p>这提示 hidden state 不是噪声，而是颗粒组成差异。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：先识别 composition regime</strong><p>用 POC/SPM 等指标把水体分到不同颗粒状态。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：条件化反演</strong><p>在不同 regime 下使用不同 SPM 映射，显著降低跨区域系统偏差。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 对你的对应关系</strong><p>微藻与高岭石也可先做材料端元/组成状态识别，再在条件空间里反演形态和粒径，避免把所有参数一次性塞进同一模型。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
@@ -513,6 +587,15 @@
 <div class="tags"><span>#回测</span><span>#前视偏差</span><span>#机器学习</span></div>
 
 <p class="paper-summary"><strong>一句话抓核心：</strong>极强的 ML alpha 是否可能主要来自未来信息泄漏？ 文章通过 复现既有 analyst forecast-error ML 策略并逐项审计 point-in-time 信息集。，最终得到的关键证据是：删除 look-ahead bias 后原先约 1.54% 月 alpha 基本消失，复杂 ML 优势显著收缩。</p>
+<div class="analysis-flow">
+<h3>先抓住矛盾，再顺着证据链走</h3>
+<p>这篇的故事并不是“机器学习不行”，而是“如果信息集不是 point-in-time，任何复杂模型都能把未来信息变成看似惊人的 alpha”。</p>
+<div class="formula-box">\[\alpha_{reported}=\alpha_{true}+\alpha_{leakage}\]<span class="caption">公式用于抓住论文的核心变量关系；标注 conceptual decomposition 的式子是机制概括，不代表论文原文逐字公式。</span></div>
+<div class="step"><strong>1. 第一步：复现一个看起来非常强的 ML 策略</strong><p>只有先复制出原结果，后面的质疑才有说服力。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>2. 第二步：逐项审计信息时间戳</strong><p>检查 analyst forecasts、修订时间、可获得日期和构造变量是否使用了未来数据。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>3. 第三步：删除 leakage 再跑 OOS</strong><p>如果 alpha 大幅消失，就说明核心贡献来自数据处理而不是预测结构。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 上一层只能排除一部分解释，下一层用新的数据、控制或反事实继续收窄机制空间。</div></div>
+<div class="step"><strong>4. 投资迁移</strong><p>你自己的回测要把 point-in-time、survivorship、execution lag、delisting 和 purged split 当成强制检查项。</p></div>
+</div>
 
 <div class="deep-section">
 <h3>1. 研究问题：作者真正想解决什么</h3>
