@@ -40,3 +40,14 @@ h1{font-size:clamp(32px,5vw,54px);line-height:1.15;margin:0 0 16px;letter-spacin
   .wrap{padding:28px 14px 60px}
   .report{padding:22px}
 }
+.deep-section{margin:28px 0}
+.deep-section h3{font-size:18px;margin:0 0 10px;color:#26324b}
+.deep-section p{margin:8px 0;color:#344054}
+.deep-section ul{margin:8px 0 0 20px;padding:0;color:#344054}
+.deep-section li{margin:7px 0}
+.chain{background:#f8faff;border:1px solid #e8edff;border-radius:14px;padding:14px 16px;font-weight:600;color:#344054}
+.takeaway{background:#f7fbf8;border-left:4px solid #2f855a;padding:14px 16px;margin:12px 0}
+.caution{background:#fff8f1;border-left:4px solid #dd6b20;padding:14px 16px;margin:12px 0}
+.invest{background:#f6f8ff;border-left:4px solid #5b5bd6;padding:14px 16px;margin:12px 0}
+.paper-summary{font-size:16px;color:#475467;margin:10px 0 20px}
+.paper hr{border:0;border-top:1px dashed var(--line);margin:28px 0}
