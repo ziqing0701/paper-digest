@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-W40 顶刊论文精读 · Paper Digest</title><link rel="stylesheet" href="../style.css"></head>
+<body><main class="wrap"><article class="report">
+<a class="back" href="../index.html">← 返回论文精读首页</a>
+<p class="eyebrow">HISTORICAL BACKFILL · WEEKLY REPORT</p>
+<h1>2026-W40 · 顶刊论文精读</h1>
+<p class="sub">2026-09-28 — 2026-10-04。本页为历史回填：按当前对话中的既有推送顺序整理到连续 ISO 自然周；历史消息未暴露精确发送时间，因此以周级顺序归档，不把周内日期当作精确发送时间。</p>
+<nav class="toc"><strong>本周 8 篇</strong><p><a href="#irregular-particles-underwater">1. Influence of irregular particles on the propagation of polarized pulsed laser beams through turbid underwater environments</a><br><a href="#asian-dust-real-shape">2. Scattering properties and lidar characteristics of Asian dust particles based on realistic shape models</a><br><a href="#svalbard-methane">3. Subglacial geology and thermal conditions regulate methane emissions from Svalbard glaciers</a><br><a href="#aerosol-height-dfs">4. A multi-angle and polarization-based retrieval algorithm for aerosol layer height of smoke and dust</a><br><a href="#airborne-ocean-hsrl">5. China’s first airborne oceanic high spectral resolution lidar achieves decoupled measurement of seawater optical properties</a><br><a href="#coastal-upwelling-ch4">6. Coastal Upwelling Enhances Winter Arctic Ocean Methane Emission</a><br><a href="#mesoscale-eddies-ch4">7. Regulation of Mesoscale Eddies on Oceanic Methane Production, Oxidation, and Emissions</a><br><a href="#single-photon-adaptive">8. An Adaptive Inversion Framework for Shipborne Single-Photon LiDAR to Retrieve Ocean Optical Profiles With Multiple Scattering Correction</a></p></nav>
+<section class="paper" id="irregular-particles-underwater">
+<h2 class="paper-title">1. Influence of irregular particles on the propagation of polarized pulsed laser beams through turbid underwater environments</h2>
+<p class="paper-meta">JOSA A · 2026 · 科研 · <a href="https://doi.org/10.1364/JOSAA.574207">DOI 10.1364/JOSAA.574207</a></p>
+<div class="tags"><span>#T-matrix</span><span>#非球形颗粒</span><span>#偏振MC</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>球形颗粒假设会怎样改变水下偏振传播和 LiDAR 可观测量？</dd>
+<dt>核心假设 / 方法</dt><dd>用 T-matrix 生成 sand/algae 非球形散射矩阵，再嵌入 polarized Monte Carlo。</dd>
+<dt>关键结果</dt><dd>flattened particles 增强后向散射、elongated 增强前向散射；algae 退偏更强，圆偏振 memory 具有颗粒依赖性。</dd>
+<dt>科研故事线</dt><dd>真实形态缺失 → T-matrix → polarized MC → energy/polarization/time-domain response。</dd>
+<dt>高水平期刊特征</dt><dd>把 single-particle morphology 与多次散射后的可测波形连起来。</dd>
+<dt>薄弱点 / 延伸</dt><dd>主要是 forward sensitivity，inverse identifiability 仍未解决。</dd>
+<dt>对你的启发</dt><dd>你可以直接推进到不同 (r,shape,m) 组合的 degeneracy manifold / Jacobian-SVD 图。</dd>
+</dl>
+</section>
+<section class="paper" id="asian-dust-real-shape">
+<h2 class="paper-title">2. Scattering properties and lidar characteristics of Asian dust particles based on realistic shape models</h2>
+<p class="paper-meta">Atmospheric Chemistry and Physics · 2025 · 科研 · <a href="https://doi.org/10.5194/acp-25-13359-2025">DOI 10.5194/acp-25-13359-2025</a></p>
+<div class="tags"><span>#真实颗粒</span><span>#DDA</span><span>#退偏</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>真实 3D 颗粒形态、粒径和复折射率如何共同影响 LiDAR depolarization？</dd>
+<dt>核心假设 / 方法</dt><dd>用 FIB tomography 重建真实颗粒形状，结合 EDX 组成与 DDA 计算 scattering matrix。</dd>
+<dt>关键结果</dt><dd>size parameter 约 >8 后 S 与 δ 进入平台；sphericity 与 δ/S 相关性很弱；吸收矿物显著改变 δ。</dd>
+<dt>科研故事线</dt><dd>真实形态获取 → 电磁正演 → 参数隔离 → lidar quantities → 参数化。</dd>
+<dt>高水平期刊特征</dt><dd>真实形态、严格散射计算和参数隔离实验结合，提供强外部证据。</dd>
+<dt>薄弱点 / 延伸</dt><dd>真实 geometry library 仍较小，波长相关折射率处理有限。</dd>
+<dt>对你的启发</dt><dd>不可辨识图谱应区分 saturation degeneracy 与 cross-parameter compensation。</dd>
+</dl>
+</section>
+<section class="paper" id="svalbard-methane">
+<h2 class="paper-title">3. Subglacial geology and thermal conditions regulate methane emissions from Svalbard glaciers</h2>
+<p class="paper-meta">Nature Communications · 2026 · 科研 · 官方信息见期刊页面</p>
+<div class="tags"><span>#北极甲烷</span><span>#冰川</span><span>#机制</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>为什么相邻斯瓦尔巴冰川 CH₄ 排放可相差多个数量级？</dd>
+<dt>核心假设 / 方法</dt><dd>甲烷 mobilization = source availability × hydrological accessibility；前者受地质控制，后者受 basal thermal state 控制。</dd>
+<dt>关键结果</dt><dd>19 条冰川中 geology 单独解释约 52% 方差，加入 temperate basal ice fraction 后提高到约 75%。</dd>
+<dt>科研故事线</dt><dd>高 CH₄ 现象 → 同位素/烃类辨源 → geology → 剩余方差 → GPR thermal state → 河流 fate → 气候演化。</dd>
+<dt>高水平期刊特征</dt><dd>多模态观测分别约束 source、transport 与 process，交互机制清楚。</dd>
+<dt>薄弱点 / 延伸</dt><dd>冰川样本数有限，全斯瓦尔巴上推仍有较大不确定度。</dd>
+<dt>对你的启发</dt><dd>你的 Arctic methane 可用 Source potential × Transport accessibility × Emission efficiency 框架组织变量。</dd>
+</dl>
+</section>
+<section class="paper" id="aerosol-height-dfs">
+<h2 class="paper-title">4. A multi-angle and polarization-based retrieval algorithm for aerosol layer height of smoke and dust</h2>
+<p class="paper-meta">Atmospheric Measurement Techniques · 2026 · 科研 · <a href="https://doi.org/10.5194/amt-19-5843-2026">DOI 10.5194/amt-19-5843-2026</a></p>
+<div class="tags"><span>#偏振遥感</span><span>#DFS</span><span>#信息量</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>增加 multi-angle 和 polarization 到底提供多少独立反演信息？</dd>
+<dt>核心假设 / 方法</dt><dd>用 vector RT + optimal estimation，通过 averaging kernel 和 DFS 定量评估观测配置。</dd>
+<dt>关键结果</dt><dd>加入多角度偏振明显提高 ALH DFS；PACE HARP2 反演经 EarthCARE ATLID 验证，RMSE 约 1.03 km。</dd>
+<dt>科研故事线</dt><dd>RT physics → information content → sensor design → satellite retrieval → independent lidar validation。</dd>
+<dt>高水平期刊特征</dt><dd>把“多一个通道是否有用”变成可量化信息问题。</dd>
+<dt>薄弱点 / 延伸</dt><dd>DFS 依赖先验与噪声模型，跨场景可比性需谨慎。</dd>
+<dt>对你的启发</dt><dd>你的 T-matrix+SA-MC 可直接计算 ΔDFS_polarization / spectral / inelastic。</dd>
+</dl>
+</section>
+<section class="paper" id="airborne-ocean-hsrl">
+<h2 class="paper-title">5. China’s first airborne oceanic high spectral resolution lidar achieves decoupled measurement of seawater optical properties</h2>
+<p class="paper-meta">Science Bulletin · 2026 · 科研 · <a href="https://doi.org/10.1016/j.scib.2026.02.002">DOI 10.1016/j.scib.2026.02.002</a></p>
+<div class="tags"><span>#HSRL</span><span>#物理解耦</span><span>#机载</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>传统 elastic ocean LiDAR 的 α–β 耦合如何通过新增光谱观测解开？</dd>
+<dt>核心假设 / 方法</dt><dd>利用分子/颗粒光谱差异建立独立观测方程，实现 seawater optical properties 的 decoupled measurement。</dd>
+<dt>关键结果</dt><dd>从船载 HSRL 推进到机载平台，形成区域尺度三维海洋光学观测能力。</dd>
+<dt>科研故事线</dt><dd>elastic ill-posedness → HSRL spectral discrimination → shipborne validation → airborne scaling → 3D mapping。</dd>
+<dt>高水平期刊特征</dt><dd>改变 observation operator，从信息源头改善 inverse problem。</dd>
+<dt>薄弱点 / 延伸</dt><dd>微观粒径/形态/折射率仍未直接解耦，多次散射仍需额外处理。</dd>
+<dt>对你的启发</dt><dd>你的工作可把“最少新增哪个通道最能解除颗粒退化”作为主线。</dd>
+</dl>
+</section>
+<section class="paper" id="coastal-upwelling-ch4">
+<h2 class="paper-title">6. Coastal Upwelling Enhances Winter Arctic Ocean Methane Emission</h2>
+<p class="paper-meta">Geophysical Research Letters · 2025 · 科研 · <a href="https://doi.org/10.1029/2024GL113692">DOI 10.1029/2024GL113692</a></p>
+<div class="tags"><span>#北极甲烷</span><span>#上升流</span><span>#海冰</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>冬季北极海洋在海冰覆盖下为何仍会出现脉冲式 CH₄ ventilation？</dd>
+<dt>核心假设 / 方法</dt><dd>海冰破裂提供交换窗口，沿岸上升流把深层富 CH₄ 水带到表层，两者相乘触发排放事件。</dd>
+<dt>关键结果</dt><dd>2003–2023 识别 196 个 ventilation days；SIC 下降、东北风与 Atlantic Water 共同增强事件。</dd>
+<dt>科研故事线</dt><dd>冬季 knowledge gap → 事件检测 → 海冰关系 → 风场/锚系追溯 → upwelling mechanism → climate implication。</dd>
+<dt>高水平期刊特征</dt><dd>长期卫星记录与海洋动力观测结合，机制集中而气候意义明确。</dd>
+<dt>薄弱点 / 延伸</dt><dd>大气 CH₄ anomaly 仍受输送和边界层影响，通量归因需更直接观测。</dd>
+<dt>对你的启发</dt><dd>你的 Arctic methane 可由月/季平均转向 event-based causal design。</dd>
+</dl>
+</section>
+<section class="paper" id="mesoscale-eddies-ch4">
+<h2 class="paper-title">7. Regulation of Mesoscale Eddies on Oceanic Methane Production, Oxidation, and Emissions</h2>
+<p class="paper-meta">Global Biogeochemical Cycles · 2025 · 科研 · <a href="https://doi.org/10.1029/2025GB008500">DOI 10.1029/2025GB008500</a></p>
+<div class="tags"><span>#海洋甲烷</span><span>#中尺度涡</span><span>#生物地球化学</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>气旋/反气旋涡如何同时改变海洋 CH₄ 生产、氧化和海气通量？</dd>
+<dt>核心假设 / 方法</dt><dd>气旋涡通过营养盐与 DMSP 促进 CH₄ production；反气旋涡强化 stratification 与 methanotrophy。</dd>
+<dt>关键结果</dt><dd>cyclonic eddy 中 CH₄ flux 相对 reference +204%，anticyclonic eddy 约 -25.1%；DMSP 与 CH₄ 显著相关。</dd>
+<dt>科研故事线</dt><dd>eddy physics → nutrients → phytoplankton/DMSP 或 methanotrophs → CH₄ → air-sea flux。</dd>
+<dt>高水平期刊特征</dt><dd>把物理、微生物和气体通量连接成完整跨尺度链。</dd>
+<dt>薄弱点 / 延伸</dt><dd>现场样本时空覆盖有限，全球推广需 eddy-population composite。</dd>
+<dt>对你的启发</dt><dd>适合发展全球 AVISO eddy × CH₄ 的天然实验/合成分析。</dd>
+</dl>
+</section>
+<section class="paper" id="single-photon-adaptive">
+<h2 class="paper-title">8. An Adaptive Inversion Framework for Shipborne Single-Photon LiDAR to Retrieve Ocean Optical Profiles With Multiple Scattering Correction</h2>
+<p class="paper-meta">IEEE TGRS · 2025 · 科研 · <a href="https://doi.org/10.1109/TGRS.2025.3639516">DOI 10.1109/TGRS.2025.3639516</a></p>
+<div class="tags"><span>#单光子LiDAR</span><span>#多次散射</span><span>#自适应反演</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>如何同时降低经验参数先验依赖与 multiple scattering 偏差？</dd>
+<dt>核心假设 / 方法</dt><dd>dual-iterative 优化反演参数，并把半解析多次散射校正嵌入 retrieval。</dd>
+<dt>关键结果</dt><dd>环海南约 2500 km、>58,000 profiles；Kd/bbp 与原位吻合较好，多次散射校正显著降低误差。</dd>
+<dt>科研故事线</dt><dd>ill-conditioned inversion → adaptive parameters → MS correction → 大航次 → 原位验证。</dd>
+<dt>高水平期刊特征</dt><dd>physics correction 与 inverse optimization 同时推进，并有大尺度实测。</dd>
+<dt>薄弱点 / 延伸</dt><dd>目标仍集中在 Kd/bbp，偏振/非弹性高维信息尚未进入。</dd>
+<dt>对你的启发</dt><dd>你的 SA-MC 下一步应量化 MS 对不同模态 information content 的损失，而不只校正 waveform。</dd>
+</dl>
+</section>
+<div class="week-nav"><a href="2026-W39.html">← 2026-W39</a><a href="2026-W41.html">2026-W41 →</a></div>
+</article></main></body></html>
