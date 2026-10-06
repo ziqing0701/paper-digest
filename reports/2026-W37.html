@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-W37 顶刊论文精读 · Paper Digest</title><link rel="stylesheet" href="../style.css"></head>
+<body><main class="wrap"><article class="report">
+<a class="back" href="../index.html">← 返回论文精读首页</a>
+<p class="eyebrow">HISTORICAL BACKFILL · WEEKLY REPORT</p>
+<h1>2026-W37 · 顶刊论文精读</h1>
+<p class="sub">2026-09-07 — 2026-09-13。本页为历史回填：按当前对话中的既有推送顺序整理到连续 ISO 自然周；历史消息未暴露精确发送时间，因此以周级顺序归档，不把周内日期当作精确发送时间。</p>
+<nav class="toc"><strong>本周 8 篇</strong><p><a href="#dramatic-co2-2024">1. Dramatic increase in ecosystem respiration causes record-breaking atmospheric CO₂ growth rate in 2024</a><br><a href="#virtue-complexity">2. The Virtue of Complexity in Return Prediction</a><br><a href="#atmospheric-deposition-methane">3. Atmospheric deposition enhances marine methane production and emissions from global oceans</a><br><a href="#confident-risk-premiums">4. Confident Risk Premiums and Investments Using Machine Learning Uncertainties</a><br><a href="#ultra-weak-infrared">5. Ultra-weak infrared light detection based on steep-slope phototransistors</a><br><a href="#household-portfolios">6. Household Portfolios and Retirement Saving over the Life Cycle</a><br><a href="#spm-composition-adaptive">7. High spatial-resolution satellite mapping of suspended particulate matter in global coastal waters using particle composition-adaptive algorithms</a><br><a href="#man-vs-ml-revisited">8. Man versus Machine Learning Revisited</a></p></nav>
+<section class="paper" id="dramatic-co2-2024">
+<h2 class="paper-title">1. Dramatic increase in ecosystem respiration causes record-breaking atmospheric CO₂ growth rate in 2024</h2>
+<p class="paper-meta">Nature Communications · 2026 · 科研 · <a href="https://doi.org/10.1038/s41467-026-72189-y">DOI 10.1038/s41467-026-72189-y</a></p>
+<div class="tags"><span>#碳循环</span><span>#CO₂</span><span>#机制归因</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>2024 年大气 CO₂ 增长率为何创纪录？</dd>
+<dt>核心假设 / 方法</dt><dd>把全球碳预算逐层拆为化石燃料、海洋、陆地，再把陆地拆为 GPP、生态系统呼吸与火灾。</dd>
+<dt>关键结果</dt><dd>陆地碳汇异常下降是主因，生态系统总呼吸异常增强超过 GPP 增长；热湿复合条件是关键环境状态。</dd>
+<dt>科研故事线</dt><dd>历史极值 → 碳预算拆账 → 陆地过程拆解 → 空间归因 → 温度×水分状态空间 → 气候反馈。</dd>
+<dt>高水平期刊特征</dt><dd>问题全球重要，多源观测与通量约束形成连续归因链，最终从年度异常上升为可泛化的气候机制。</dd>
+<dt>薄弱点 / 延伸</dt><dd>TER 主要由残差反演，继承 NBE、GPP 与火灾不确定度；全球呼吸直接观测仍不足。</dd>
+<dt>对你的启发</dt><dd>你的 Arctic/ocean methane 可直接复制“总异常→源/汇拆分→过程归因→环境状态→反事实”的连续证据链。</dd>
+</dl>
+</section>
+<section class="paper" id="virtue-complexity">
+<h2 class="paper-title">2. The Virtue of Complexity in Return Prediction</h2>
+<p class="paper-meta">The Journal of Finance · 2024 · 金融 · <a href="https://doi.org/10.1111/jofi.13298">DOI 10.1111/jofi.13298</a></p>
+<div class="tags"><span>#资产定价</span><span>#机器学习</span><span>#复杂度</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>为什么参数远超样本数的模型仍可能提升样本外投资表现？</dd>
+<dt>核心假设 / 方法</dt><dd>以 random features 和正则化研究过参数化下函数逼近收益与估计方差的权衡。</dd>
+<dt>关键结果</dt><dd>在适当 shrinkage 下，提高复杂度可继续改善样本外组合价值；预测 R² 与投资效用并不等价。</dd>
+<dt>科研故事线</dt><dd>过拟合直觉 → 理论反例 → random-matrix 分析 → 美国股票实证 → portfolio utility。</dd>
+<dt>高水平期刊特征</dt><dd>理论结果直接转化为组合决策，连接机器学习、资产收益预测与资产配置。</dd>
+<dt>薄弱点 / 延伸</dt><dd>复杂度收益依赖正则化、特征构造和稳定的数据生成过程；现实交易成本会压缩增益。</dd>
+<dt>对你的启发</dt><dd>你的 A 股模型应优先评价 walk-forward Sharpe、回撤与换手后收益，而非只优化 R²/IC。</dd>
+</dl>
+</section>
+<section class="paper" id="atmospheric-deposition-methane">
+<h2 class="paper-title">3. Atmospheric deposition enhances marine methane production and emissions from global oceans</h2>
+<p class="paper-meta">Nature Communications · 2026 · 科研 · <a href="https://doi.org/10.1038/s41467-026-68527-9">DOI 10.1038/s41467-026-68527-9</a></p>
+<div class="tags"><span>#海洋甲烷</span><span>#营养盐</span><span>#微生物</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>大气氮沉降是否会通过营养盐化学计量改变海洋好氧产甲烷？</dd>
+<dt>核心假设 / 方法</dt><dd>N 沉降提高 N:P，增强 P 限制，促进微生物利用甲基膦酸盐并副产 CH₄。</dd>
+<dt>关键结果</dt><dd>培养实验、营养盐操纵、功能基因和全球外推共同支持 N→P stress→MPn→CH₄ 链条；全球海气通量增量虽小但机制明确。</dd>
+<dt>科研故事线</dt><dd>海洋甲烷悖论 → 大气沉降假设 → 瓶级实验 → 微生物机制 → 全球空间外推 → 气候反馈。</dd>
+<dt>高水平期刊特征</dt><dd>把大气过程、营养盐、微生物代谢和温室气体连成跨系统因果链。</dd>
+<dt>薄弱点 / 延伸</dt><dd>从局地培养到全球外推仍依赖较强假设，沿海与开阔海洋异质性很大。</dd>
+<dt>对你的启发</dt><dd>可把大气沉降事件作为天然实验，检验全球真实海洋中的 CH₄ 响应。</dd>
+</dl>
+</section>
+<section class="paper" id="confident-risk-premiums">
+<h2 class="paper-title">4. Confident Risk Premiums and Investments Using Machine Learning Uncertainties</h2>
+<p class="paper-meta">The Review of Financial Studies · 2026 · 金融 · <a href="https://doi.org/10.1093/rfs/hhaf087">DOI 10.1093/rfs/hhaf087</a></p>
+<div class="tags"><span>#机器学习</span><span>#不确定性</span><span>#组合</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>收益预测相同的两只股票，预测精度不同，组合应该怎样处理？</dd>
+<dt>核心假设 / 方法</dt><dd>为多类 ML 收益预测构造 ex-ante uncertainty，并把预测水平与预测精度共同用于选股。</dd>
+<dt>关键结果</dt><dd>confident-high minus confident-low 在多类模型中提升样本外收益与 Sharpe；模型越复杂，uncertainty filtering 越有价值。</dd>
+<dt>科研故事线</dt><dd>point forecast 缺陷 → 置信区间 → 横截面精度差异 → 组合筛选 → ambiguity-aversion 解释。</dd>
+<dt>高水平期刊特征</dt><dd>统计不确定性被直接转化为经济决策，适用模型范围广。</dd>
+<dt>薄弱点 / 延伸</dt><dd>不确定性估计自身也可能失配；组合增益仍依赖交易成本与实施细节。</dd>
+<dt>对你的启发</dt><dd>你的股票/加密仓位应由“预期收益 × 预测置信度”共同决定。</dd>
+</dl>
+</section>
+<section class="paper" id="ultra-weak-infrared">
+<h2 class="paper-title">5. Ultra-weak infrared light detection based on steep-slope phototransistors</h2>
+<p class="paper-meta">Nature Communications · 2025 · 科研 · <a href="https://doi.org/10.1038/s41467-025-59006-8">DOI 10.1038/s41467-025-59006-8</a></p>
+<div class="tags"><span>#光电探测</span><span>#弱光</span><span>#器件</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>弱光探测的真正瓶颈是否被传统 D* 指标完整描述？</dd>
+<dt>核心假设 / 方法</dt><dd>提出 turn-on threshold power，并利用 steep-slope / tunneling injection 降低载流子注入门槛。</dd>
+<dt>关键结果</dt><dd>器件可在约 35 pW 弱光下响应，最低可探测功率相对 conventional phototransistor 显著改善，即使 responsivity/D* 并非最高。</dd>
+<dt>科研故事线</dt><dd>传统指标 → 反直觉现象 → 注入势垒机制 → 器件设计 → SS–Pth 关系验证。</dd>
+<dt>高水平期刊特征</dt><dd>重新定义任务指标，并用控制实验把器件物理和弱光能力直接连接。</dd>
+<dt>薄弱点 / 延伸</dt><dd>最佳结果偏低温；单光子极限仍属外推。</dd>
+<dt>对你的启发</dt><dd>海洋 Raman/fluorescence 探测应从器件参数转向 Pmin、SNR(z)、Pd/Pfa 等任务指标。</dd>
+</dl>
+</section>
+<section class="paper" id="household-portfolios">
+<h2 class="paper-title">6. Household Portfolios and Retirement Saving over the Life Cycle</h2>
+<p class="paper-meta">The Journal of Finance · 2025 · 金融 · <a href="https://doi.org/10.1111/jofi.13473">DOI 10.1111/jofi.13473</a></p>
+<div class="tags"><span>#家庭金融</span><span>#资产配置</span><span>#生命周期</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>现实家庭股票配置是否真的遵循生命周期 glide path？</dd>
+<dt>核心假设 / 方法</dt><dd>用大型账户级数据与 2006 PPA/TDF 默认机制识别年龄与股票占比变化。</dd>
+<dt>关键结果</dt><dd>股票占比呈明显生命周期结构；TDF 默认选择显著推动年轻人更高权益配置和临近退休降风险。</dd>
+<dt>科研故事线</dt><dd>经典理论 → 旧数据谜题 → 新账户数据 → 制度冲击 → 因果识别。</dd>
+<dt>高水平期刊特征</dt><dd>大样本真实账户数据与制度变化结合，回答 household finance 核心问题。</dd>
+<dt>薄弱点 / 延伸</dt><dd>样本来自一家大型机构，代表性和外部资产覆盖有限。</dd>
+<dt>对你的启发</dt><dd>个人投资应先固定生命周期风险预算，再在其中分配主动投资和高波动资产。</dd>
+</dl>
+</section>
+<section class="paper" id="spm-composition-adaptive">
+<h2 class="paper-title">7. High spatial-resolution satellite mapping of suspended particulate matter in global coastal waters using particle composition-adaptive algorithms</h2>
+<p class="paper-meta">Remote Sensing of Environment · 2025 · 科研 · <a href="https://doi.org/10.1016/j.rse.2025.114745">DOI 10.1016/j.rse.2025.114745</a></p>
+<div class="tags"><span>#海色遥感</span><span>#颗粒组成</span><span>#反演</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>为什么同一 SPM 浓度在不同水体中具有不同光谱响应？</dd>
+<dt>核心假设 / 方法</dt><dd>先根据 POC/SPM 判断颗粒组成状态，再选择条件化的 SPM 反演关系。</dd>
+<dt>关键结果</dt><dd>12 个海域、800+ 配对样本实现高精度全球近岸 SPM 反演，并扩展到 40 年 Landsat 档案。</dd>
+<dt>科研故事线</dt><dd>跨区泛化失败 → 找到 composition hidden state → 分类 → 条件反演 → 全球长期应用。</dd>
+<dt>高水平期刊特征</dt><dd>物理状态变量改善跨区域泛化，并最终产生新的环境观测能力。</dd>
+<dt>薄弱点 / 延伸</dt><dd>POC/SPM 本身也需反演，分类误差会向后传播；三类状态仍较粗糙。</dd>
+<dt>对你的启发</dt><dd>你的藻类/矿物偏振反演可采用“先材料类别，再形态参数”的 conditional inversion。</dd>
+</dl>
+</section>
+<section class="paper" id="man-vs-ml-revisited">
+<h2 class="paper-title">8. Man versus Machine Learning Revisited</h2>
+<p class="paper-meta">The Review of Financial Studies · 2025 · 金融 · <a href="https://doi.org/10.1093/rfs/hhaf066">DOI 10.1093/rfs/hhaf066</a></p>
+<div class="tags"><span>#回测</span><span>#前视偏差</span><span>#机器学习</span></div>
+<dl class="facts">
+<dt>研究问题</dt><dd>极强的 ML alpha 是否可能主要来自未来信息泄漏？</dd>
+<dt>核心假设 / 方法</dt><dd>复现既有 analyst forecast-error ML 策略并逐项审计 point-in-time 信息集。</dd>
+<dt>关键结果</dt><dd>删除 look-ahead bias 后原先约 1.54% 月 alpha 基本消失，复杂 ML 优势显著收缩。</dd>
+<dt>科研故事线</dt><dd>惊人结果 → replication → 泄漏定位 → 删除未来信息 → 鲁棒性 → 文献纠错。</dd>
+<dt>高水平期刊特征</dt><dd>纠正一个具有重大资产定价含义的高影响结果，改变对 ML 增量价值的判断。</dd>
+<dt>薄弱点 / 延伸</dt><dd>结论针对特定应用场景，不能外推成“ML 无效”。</dd>
+<dt>对你的启发</dt><dd>所有回测必须做 point-in-time、survivorship、execution lag 与 purged split 审计。</dd>
+</dl>
+</section>
+<div class="week-nav"><span></span><a href="2026-W38.html">2026-W38 →</a></div>
+</article></main></body></html>
