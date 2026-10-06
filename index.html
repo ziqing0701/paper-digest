@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>顶刊论文精读与科研训练档案</title>
+  <meta name="description" content="海洋激光雷达、偏振遥感、甲烷与金融顶刊论文精读归档">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <p class="eyebrow">PAPER DIGEST ARCHIVE</p>
+      <h1>顶刊论文精读与科研训练档案</h1>
+      <p class="sub">聚焦海洋激光雷达、偏振遥感、非球形颗粒、甲烷遥感与高水平经济金融研究。</p>
+    </header>
+
+    <section class="stats" id="stats"></section>
+
+    <section class="toolbar">
+      <div id="filters" class="filters"></div>
+      <input id="search" class="search" type="search" placeholder="搜索标题、期刊、主题或关键词">
+    </section>
+
+    <section id="archive" class="archive">
+      <p class="loading">正在读取归档…</p>
+    </section>
+  </main>
+
+<script>
+const archiveEl = document.getElementById('archive');
+const statsEl = document.getElementById('stats');
+const filtersEl = document.getElementById('filters');
+const searchEl = document.getElementById('search');
+let data = [];
+let active = '全部';
+
+function esc(s=''){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));}
+
+function renderStats(items){
+  const reports = new Set(items.map(x=>x.date)).size;
+  const research = items.filter(x=>x.category==='科研').length;
+  const finance = items.filter(x=>x.category==='金融').length;
+  statsEl.innerHTML = [
+    ['累计报告', reports],
+    ['累计论文', items.length],
+    ['科研论文', research],
+    ['金融论文', finance]
+  ].map(([k,v])=>'<div class="stat"><strong>'+v+'</strong><span>'+k+'</span></div>').join('');
+}
+
+function renderFilters(items){
+  const tags = ['全部', ...new Set(items.flatMap(x=>[x.category, ...(x.keywords||[])].filter(Boolean)))];
+  filtersEl.innerHTML = tags.slice(0,14).map(t=>'<button class="chip'+(t===active?' active':'')+'" data-tag="'+esc(t)+'">'+esc(t)+'</button>').join('');
+  filtersEl.querySelectorAll('button').forEach(b=>b.onclick=()=>{active=b.dataset.tag; renderFilters(data); renderArchive();});
+}
+
+function renderArchive(){
+  const q = searchEl.value.trim().toLowerCase();
+  const items = data.filter(x=>{
+    const hay=[x.title,x.journal,x.topic,(x.keywords||[]).join(' '),x.category,x.summary].join(' ').toLowerCase();
+    const tagOk = active==='全部' || x.category===active || (x.keywords||[]).includes(active);
+    return tagOk && (!q || hay.includes(q));
+  }).sort((a,b)=>String(b.date).localeCompare(String(a.date)));
+
+  if(!items.length){ archiveEl.innerHTML='<p class="empty">暂无匹配内容。</p>'; return; }
+
+  archiveEl.innerHTML = items.map(x=>`
+    <article class="card">
+      <div class="meta">
+        <time>${esc(x.date)}</time>
+        <span class="badge">${esc(x.category||'科研')}</span>
+      </div>
+      <h2>${esc(x.title)}</h2>
+      <p class="journal">${esc(x.journal||'')} ${x.year?'· '+esc(x.year):''}</p>
+      <div class="tags">${(x.keywords||[]).map(k=>'<span>#'+esc(k)+'</span>').join('')}</div>
+      <p class="summary">${esc(x.summary||x.topic||'')}</p>
+      <a class="read" href="${esc(x.report_url||'#')}">阅读全文 →</a>
+    </article>`).join('');
+}
+
+fetch('archive.json?ts='+Date.now())
+  .then(r=>r.json())
+  .then(json=>{
+    data = Array.isArray(json) ? json : (json.items||[]);
+    renderStats(data);
+    renderFilters(data);
+    renderArchive();
+  })
+  .catch(()=>{
+    statsEl.innerHTML='';
+    filtersEl.innerHTML='';
+    archiveEl.innerHTML='<p class="empty">归档已初始化，首期报告生成后会显示在这里。</p>';
+  });
+
+searchEl.addEventListener('input', renderArchive);
+</script>
+</body>
+</html>
