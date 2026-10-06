@@ -92,7 +92,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>单颗粒 Mueller matrix 决定一次散射如何改变 Stokes 向量；多次散射则是多个 Mueller 操作的连乘与坐标变换。不同形态若在某些角度有不同 \(M_{ij}\)，这些差异能否在多次散射后保留下来，就是 LiDAR 可辨识性的根源。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>论文已经证明形态会改变前后向散射与 polarization memory，但这仍属于 forward sensitivity。真正的 inverse 证据需要展示不同参数组合能否在观测空间被分离。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问 T-matrix 形状族是否代表真实海洋颗粒，以及 orientation distribution、polydispersity 和 mixture 如何影响结论。单一形状端元很难覆盖真实水体。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你应直接构建 \(\theta=(r,AR,n,k)\rightarrow y=(I,Q,U,V)\) 的 Jacobian 与全局 nearest-neighbor degeneracy map，明确哪些不同颗粒会产生不可区分响应。</p></div>
+</div></section>
 <section class="paper" id="asian-dust-real-shape">
 <h2 class="paper-title">2. Scattering properties and lidar characteristics of Asian dust particles based on realistic shape models</h2>
 <p class="paper-meta">Atmospheric Chemistry and Physics · 2025 · 科研 · <a href="https://doi.org/10.5194/acp-25-13359-2025">DOI 10.5194/acp-25-13359-2025</a></p>
@@ -173,7 +179,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>size parameter \(x=2\pi r/\lambda\) 决定散射从 Rayleigh/Mie-like 向几何光学过渡。出现 saturation 意味着当尺寸继续增大时，某些 lidar observables 的导数 \(\partial y/\partial x\) 变小，从信息论角度就是局部可辨识性下降。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>真实形态 + 成分 + DDA 的组合使结论比理想椭球更可信。尤其“sphericity 与 δ/S 弱相关”说明常用形态简化指标无法唯一预测遥感量。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>最大的限制是 realistic-shape library 规模。十几个颗粒足以说明问题，但不足以建立稳健统计先验。还需要更多粒子和真实 orientation distributions。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你的不可辨识图谱可以显式区分两类退化：一种是参数进入 saturation 后的局部低敏感；另一种是不同参数相互补偿造成的 global degeneracy。</p></div>
+</div></section>
 <section class="paper" id="svalbard-methane">
 <h2 class="paper-title">3. Subglacial geology and thermal conditions regulate methane emissions from Svalbard glaciers</h2>
 <p class="paper-meta">Nature Communications · 2026 · 科研 · 官方信息见期刊页面</p>
@@ -253,7 +265,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>把 mobilization 写成 source potential × accessibility 很有力量，因为它解释了为什么富甲烷地质不一定高排放：没有融水通道时，储库仍被封闭。这个乘法框架比把 geology 和 temperature 简单相加更接近物理过程。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>同位素/轻烃先确定源，geology 解释 reservoir，GPR thermal state 解释通道，河流剖面再追踪后续 fate。多个观测各自负责因果链不同节点，是论文强项。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问 19 条冰川是否足够支撑多变量模型，以及 surge history、冰厚、融水量等共变量是否会混淆 thermal-state effect。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你的北极海洋甲烷同样可以按 Source potential × Transport accessibility × Exchange efficiency 分层组织，避免把所有 SST/SIC/wind/Chl 直接丢进一个黑箱模型。</p></div>
+</div></section>
 <section class="paper" id="aerosol-height-dfs">
 <h2 class="paper-title">4. A multi-angle and polarization-based retrieval algorithm for aerosol layer height of smoke and dust</h2>
 <p class="paper-meta">Atmospheric Measurement Techniques · 2026 · 科研 · <a href="https://doi.org/10.5194/amt-19-5843-2026">DOI 10.5194/amt-19-5843-2026</a></p>
@@ -335,7 +353,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>Jacobian 只告诉你‘观测对参数敏不敏感’，DFS 进一步把观测噪声和先验不确定度纳入，告诉你最终能恢复多少独立状态维度。两个通道若敏感方向平行，虽然都敏感，新增 DFS 仍可能很小。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>理论信息量分析之后再用真实 PACE/HARP2 retrieval，并由 EarthCARE ATLID 独立验证，是很完整的闭环。否则 DFS 很容易停留在理想化传感器设计层。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问先验协方差和噪声模型是否人为决定了 DFS 结论。不同 aerosol model / geometry 下增益是否稳健非常重要。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你的多模态 LiDAR 设计应同时画 \(\sigma_{min}(J)\) 与 DFS。前者看纯物理局部退化，后者看真实噪声和先验下可获得的信息量。</p></div>
+</div></section>
 <section class="paper" id="airborne-ocean-hsrl">
 <h2 class="paper-title">5. China’s first airborne oceanic high spectral resolution lidar achieves decoupled measurement of seawater optical properties</h2>
 <p class="paper-meta">Science Bulletin · 2026 · 科研 · <a href="https://doi.org/10.1016/j.scib.2026.02.002">DOI 10.1016/j.scib.2026.02.002</a></p>
@@ -416,7 +440,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>传统 elastic waveform 中 \(\alpha\) 与 \(\beta\) 同时进入指数衰减和回波幅度，单通道天然耦合。HSRL 增加分子/颗粒光谱分量，相当于给同一未知状态增加方向不同的观测方程，从而改善 Jacobian rank 和 condition number。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>船载阶段证明物理原理，机载阶段证明尺度扩展。高水平仪器论文往往需要这两层：先证明测得准，再证明能在真正有科学价值的空间尺度工作。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问机载振动、平台姿态、海面 roughness 和 MS 是否引入新的系统误差。平台化会带来一整套实验室不存在的问题。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你可以把 HSRL 当作‘成功解除 α–β 退化’的范式，然后继续研究粒径—形态—折射率退化需要哪些最小额外通道。</p></div>
+</div></section>
 <section class="paper" id="coastal-upwelling-ch4">
 <h2 class="paper-title">6. Coastal Upwelling Enhances Winter Arctic Ocean Methane Emission</h2>
 <p class="paper-meta">Geophysical Research Letters · 2025 · 科研 · <a href="https://doi.org/10.1029/2024GL113692">DOI 10.1029/2024GL113692</a></p>
@@ -497,7 +527,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>海气通量由 \(k\) 和水气浓度梯度共同决定。海冰开裂主要改变交换效率/有效面积，upwelling 主要改变表层 \(C_w\)。因此事件只有在供给与通道同时增强时才最强。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>196 个 ventilation days 给出统计事实；SIC、风和锚系水团数据分别约束 exchange window 与 subsurface supply。多源证据让‘海冰打开’不再是唯一解释。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>最大问题仍是 atmospheric CH₄ anomaly 可能来自水平大气输送。需要更强的边界层/反演或直接 flux 数据排除非海洋源。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你可以在 Arctic 数据中做 event-based matched control：相似气象背景下，只比较有无强 upwelling / ice opening 的事件，减少季节和背景趋势混淆。</p></div>
+</div></section>
 <section class="paper" id="mesoscale-eddies-ch4">
 <h2 class="paper-title">7. Regulation of Mesoscale Eddies on Oceanic Methane Production, Oxidation, and Emissions</h2>
 <p class="paper-meta">Global Biogeochemical Cycles · 2025 · 科研 · <a href="https://doi.org/10.1029/2025GB008500">DOI 10.1029/2025GB008500</a></p>
@@ -579,7 +615,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>涡旋不是直接产生 CH₄，而是改变 nutrient supply、stratification 和 microbial ecology，再通过 production/oxidation 改变 \(\Delta pCH_4\)。因此这是典型的“物理动力→生态过程→气体通量”级联。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>CE/AE 对照建立现象，DMSP 相关和 pmoA/oxidation rate 提供机制 proxy，最终 flux calculation 才把生物过程转成气候意义。每层观测对应不同因果节点。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问单个/少量涡旋是否具有代表性，涡龄、季节和背景营养状态会不会改变方向。全球上推前必须做大量 eddy composite。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你的最佳延伸是全球 eddy tracks × CH₄ / Chl / NPP / MLD，先做 CE/AE 合成，再按营养状态、纬度和季节分层看机制是否普适。</p></div>
+</div></section>
 <section class="paper" id="single-photon-adaptive">
 <h2 class="paper-title">8. An Adaptive Inversion Framework for Shipborne Single-Photon LiDAR to Retrieve Ocean Optical Profiles With Multiple Scattering Correction</h2>
 <p class="paper-meta">IEEE TGRS · 2025 · 科研 · <a href="https://doi.org/10.1109/TGRS.2025.3639516">DOI 10.1109/TGRS.2025.3639516</a></p>
@@ -660,6 +702,12 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>算法的两层自适应分别解决 inverse prior 和 forward mismatch。先通过 \(r,\eta\) 等参数减少固定经验关系，再估计 \(P_{MS}\) 修正真实回波。两者都依赖当前状态，因此天然需要迭代。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>大量实测剖面和原位站点比单纯模拟更有价值，因为 water type 连续变化能检验 adaptive framework 是否真的跨环境稳定。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会关心算法是否存在多解、初值依赖和局部收敛。如果多个参数组合能给出相似 waveform，迭代自洽不代表真实唯一。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你可以用自己的 identifiability 工具先判断哪些水体/深度下反问题本身不可辨识，再决定是否值得上更复杂的优化器。</p></div>
+</div></section>
 <div class="week-nav"><a href="2026-W39.html">← 2026-W39</a><a href="2026-W41.html">2026-W41 →</a></div>
 </article></main></body></html>
