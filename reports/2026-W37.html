@@ -92,7 +92,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>大气增长项是一个总量约束。只要把它写成排放减陆地汇减海洋汇，就能看出任何“2024 异常”必须落到其中至少一项。进一步把陆地净交换拆成 GPP 与生态系统呼吸，才能区分“光合作用变弱”和“呼吸变强”这两条完全不同的生态反馈路径。这里最关键的变量不是单独的温度或水分，而是它们共同改变呼吸和生产过程的状态空间。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>证据强度可以分三级看。第一层是大气 CO₂ 增长率确实异常，这是观测事实；第二层是碳预算告诉你主要异常来自陆地汇减弱，这是归因；第三层再用 GPP、TER、火灾和气候状态解释陆地汇减弱，才进入机制层。真正容易被审稿人追问的是 TER 很大程度上来自残差约束，因此误差会从多个上游量传递下来。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>如果我是审稿人，我会重点问：不同陆地通量产品对 TER 异常方向是否一致？如果换不同 GPP 产品、火灾清单、陆地反演体系，核心结论是否保持？如果这些稳健性成立，文章的说服力就来自多体系一致性而不是单一模型。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>对你的 Arctic methane，最可直接照搬的是“总异常→源汇拆分→过程拆分→环境状态→反事实”。先解释通量增长，再把增长拆成无冰面积、单位面积 ΔpCH₄、k 的贡献，最后问哪一个驱动最稳健。</p></div>
+</div></section>
 <section class="paper" id="virtue-complexity">
 <h2 class="paper-title">2. The Virtue of Complexity in Return Prediction</h2>
 <p class="paper-meta">The Journal of Finance · 2024 · 金融 · <a href="https://doi.org/10.1111/jofi.13298">DOI 10.1111/jofi.13298</a></p>
@@ -174,7 +180,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>这里的核心不是简单比较参数个数，而是比较模型逼近误差与估计方差。参数维度增加可以降低函数逼近偏差，但如果没有 shrinkage，估计方差会爆炸。正则化相当于给高维模型加一个“不要为每个噪声特征都付出自由度”的约束，因此复杂度和正则化必须一起看。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>先看统计层：复杂模型是否真的改善样本外预测；再看经济层：这种改善是否转成 portfolio utility。后者更重要，因为很多模型即使提高 R²，也可能只是在预测不可交易的微小波动。论文把 portfolio objective 纳入评价，使“复杂度有价值”不是纯统计结论。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人最关心的会是：结果是否依赖某个特定特征集、样本期或正则化强度？加入交易成本、换手约束和不同市场后是否仍成立？如果复杂度优势只在理想化无成本组合中存在，经济意义会明显下降。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你做 A 股或加密 ML 时，应把模型选择指标从 R²/IC 扩展到净 Sharpe、最大回撤、换手和不确定性。复杂模型是否值得保留，最终看它能否带来稳定、可执行、经过成本后的增量收益。</p></div>
+</div></section>
 <section class="paper" id="atmospheric-deposition-methane">
 <h2 class="paper-title">3. Atmospheric deposition enhances marine methane production and emissions from global oceans</h2>
 <p class="paper-meta">Nature Communications · 2026 · 科研 · <a href="https://doi.org/10.1038/s41467-026-68527-9">DOI 10.1038/s41467-026-68527-9</a></p>
@@ -255,7 +267,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>N 沉降改变的是营养盐化学计量，而不是直接把 CH₄ 带进海洋。N:P 升高会加重 P 限制，微生物为了获取 P 增加对 phosphonate 的利用，MPn 裂解时副产 CH₄。因此真正的机制链有至少四个环节：外部 N 输入、P stress、C–P lyase 利用、CH₄ production。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>培养实验只能证明某个处理会改变 CH₄；营养盐操纵才帮助识别 N 是关键驱动；微生物代谢指标进一步把 N 和 MPn 利用接起来；最后全球沉降场与气体交换模型把局地机制上推到全球通量。每往上一层，模型假设都会更多，因此局地机制证据强于全球量级估计。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>最容易被问的是外推：不同海区 MPn 储量、DOP 组成、微生物群落和 P 限制强度差异巨大，能否用一套参数全球化？另外，N 沉降与 Fe/P 等共沉降如何区分，也会影响机制唯一性。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你可以把大气沉降事件设计成准自然实验：事件前后比较 CH₄、Chl、MLD、风速和营养状态，同时匹配未受沉降影响的对照区。这样能直接检验“培养皿机制是否在真实海洋尺度出现”。</p></div>
+</div></section>
 <section class="paper" id="confident-risk-premiums">
 <h2 class="paper-title">4. Confident Risk Premiums and Investments Using Machine Learning Uncertainties</h2>
 <p class="paper-meta">The Review of Financial Studies · 2026 · 金融 · <a href="https://doi.org/10.1093/rfs/hhaf087">DOI 10.1093/rfs/hhaf087</a></p>
@@ -337,7 +355,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>点预测 \(\hat\mu_i\) 只是“模型认为收益有多高”，而 \(\hat\sigma_i\) 是“这个判断有多不确定”。真正用于仓位的量更接近 signal-to-uncertainty ratio。高预期收益但区间极宽的资产，与中等预期收益但区间很窄的资产，风险预算不应相同。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>文章先证明预测不确定性具有横截面差异，再证明这种差异对未来收益与组合表现有经济价值。最强的一层证据不是“uncertainty 与 return 有相关性”，而是把不确定性筛选嵌入多种模型后，样本外 Sharpe 都系统性改善。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问 uncertainty estimator 自己是否稳健。如果置信区间只是另一套容易失配的模型，所谓 confidence filtering 可能只是二次过拟合。因此跨模型、跨样本期和真正 OOS 的一致性很重要。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你自己的投资体系可以给每个 thesis 同时记两列：预期收益和证据置信度。仓位不由“看多程度”单独决定，而由收益空间、置信度、流动性和下行风险共同决定。</p></div>
+</div></section>
 <section class="paper" id="ultra-weak-infrared">
 <h2 class="paper-title">5. Ultra-weak infrared light detection based on steep-slope phototransistors</h2>
 <p class="paper-meta">Nature Communications · 2025 · 科研 · <a href="https://doi.org/10.1038/s41467-025-59006-8">DOI 10.1038/s41467-025-59006-8</a></p>
@@ -418,7 +442,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>传统 responsivity 描述单位光功率能产生多少电信号，D* 进一步考虑噪声，但在极弱光 regime，器件是否能跨过实际导通/检测阈值更直接。steep-slope 的意义是让极小的光生载流子变化引起更大的输出电流变化，所以 Pth 可以独立于传统高 responsivity 逻辑。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>最有说服力的是作者把新指标与器件物理机制对应起来，而不是只给一个更漂亮的数字。只有看到不同器件结构的 subthreshold slope、dark current 和 turn-on threshold 同向变化，才能说明弱光能力来自设计机理。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会追问温度、器件一致性、长期稳定性和噪声统计。特别是如果最佳结果依赖低温或少数器件，离工程可用还有距离。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你以后做海洋弱信号探测选器件时，不要只比较 D*、NEP。应该把系统任务写成某深度某带宽下的最小可探测回波、SNR、积分时间和误警率，再反推探测器指标。</p></div>
+</div></section>
 <section class="paper" id="household-portfolios">
 <h2 class="paper-title">6. Household Portfolios and Retirement Saving over the Life Cycle</h2>
 <p class="paper-meta">The Journal of Finance · 2025 · 金融 · <a href="https://doi.org/10.1111/jofi.13473">DOI 10.1111/jofi.13473</a></p>
@@ -499,7 +529,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>观察到的权益权重不是纯粹风险偏好的直接映射，它还包含默认选项、参与成本、再平衡惰性等摩擦。因此结构上可以把实际持仓看成“理论最优权重 + 摩擦造成的偏离”。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>描述性年龄梯度只是相关关系；真正提升识别的是默认机制变化。如果在制度外生变化后，不同年龄投资者的配置发生可预测移动，就能更有力地区分 preference 与 inertia。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会问样本账户是否代表完整家庭资产负债表。房产、养老金、配偶资产和人力资本都可能改变真实风险暴露。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>个人资产配置上，你应把房产、稳定工作收入、未来补贴与高波动投资放到同一个生命周期框架，而不是只看证券账户内部的股债比例。</p></div>
+</div></section>
 <section class="paper" id="spm-composition-adaptive">
 <h2 class="paper-title">7. High spatial-resolution satellite mapping of suspended particulate matter in global coastal waters using particle composition-adaptive algorithms</h2>
 <p class="paper-meta">Remote Sensing of Environment · 2025 · 科研 · <a href="https://doi.org/10.1016/j.rse.2025.114745">DOI 10.1016/j.rse.2025.114745</a></p>
@@ -580,7 +616,13 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>同一 SPM 浓度下，POC-rich 与 mineral-rich 颗粒的折射率、形状和粒径谱不同，所以 \(R_{rs}\) 到 SPM 的映射并不唯一。先判别 composition regime，本质上是在给逆问题增加一个离散状态变量，减少一个统一回归必须同时吸收的异质性。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>真正有说服力的是跨区域泛化提升。如果只在训练海区变好，可能只是增加模型复杂度；只有在多个海域上减少系统偏差，才能证明 composition state 抓到了可迁移物理差异。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>关键问题是 composition indicator 本身是否可靠。若 POC/SPM 也是反演量，其误差会产生 cascade error，因此需要分析分类错误如何传播到最终 SPM。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>对你的藻类—矿物颗粒问题，可以先把材料类别作为 latent class，再在类内做粒径、形态、折射率反演。这通常比一次性端到端回归全部参数更可解释。</p></div>
+</div></section>
 <section class="paper" id="man-vs-ml-revisited">
 <h2 class="paper-title">8. Man versus Machine Learning Revisited</h2>
 <p class="paper-meta">The Review of Financial Studies · 2025 · 金融 · <a href="https://doi.org/10.1093/rfs/hhaf066">DOI 10.1093/rfs/hhaf066</a></p>
@@ -661,6 +703,12 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg
 </ul>
 </div>
 
-</section>
+<div class="deep-section expansion">
+<h3>进一步精读：公式、证据强度与审稿视角</h3>
+<div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>任何回测结果都可以概念上拆成真实可预测成分和数据泄漏成分。只要未来信息以哪怕很弱的方式进入特征，高容量 ML 就会把这部分关系放大，因此复杂模型对时间戳错误尤其敏感。</p></div>
+<div class="result-box"><strong>证据链应该分几层看</strong><p>论文最有力的部分是先完整复现原结果，再一项项修正可获得日期。这样“结果消失”才能被归因到信息泄漏，而不是实现差异。</p></div>
+<div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>审稿人会要求严格 point-in-time 数据仓库、复现实验和不同泄漏修正方案。若结论只依赖某一个时间戳处理方式，就不够稳健。</p></div>
+<div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>你的任何策略回测都应保留原始发布日期、财报可得日、指数成分历史、退市样本和执行延迟。回测管线先做反泄漏审计，再谈模型。</p></div>
+</div></section>
 <div class="week-nav"><span></span><a href="2026-W38.html">2026-W38 →</a></div>
 </article></main></body></html>
