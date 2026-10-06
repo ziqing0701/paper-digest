@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>完整精读周报模板 · Paper Digest</title>
 <link rel="stylesheet" href="../style.css">
+<script>
+window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
 <main class="wrap">
@@ -25,6 +29,15 @@
       <div class="tags"><span>#主题</span><span>#方法</span></div>
 
       <p class="paper-summary"><strong>一句话抓核心：</strong>用 2–4 句话说明科学矛盾、作者做了什么、最关键结论是什么。</p>
+
+      <div class="analysis-flow">
+        <h3>先抓住矛盾，再顺着证据链走</h3>
+        <p>这里直接按聊天框精读的节奏写，不做二次摘要。</p>
+        <div class="formula-box">\[F=k(C_w-C_{eq})\]<span class="caption">关键公式直接渲染；若为解释性概念式需标注 schematic / conceptual。</span></div>
+        <div class="step"><strong>1. 第一层证据</strong><p>先说明作者观察到什么。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 说明这一层仍有哪些替代解释。</div></div>
+        <div class="step"><strong>2. 第二层证据</strong><p>引出新的数据、实验或模型，并说明它排除了什么。</p><div class="why-next"><span class="logic-arrow">为什么还不能停？</span> 明确还剩哪一个识别缺口。</div></div>
+        <div class="step"><strong>3. 机制闭环</strong><p>最后把过程、结果和系统意义接起来。</p></div>
+      </div>
 
       <div class="deep-section">
         <h3>1. 研究问题：作者真正想解决什么</h3>
