@@ -12,7 +12,7 @@
     <header class="hero">
       <p class="eyebrow">PAPER DIGEST ARCHIVE</p>
       <h1>顶刊论文精读与科研训练档案</h1>
-      <p class="sub">聚焦海洋激光雷达、偏振遥感、非球形颗粒、甲烷遥感与高水平经济金融研究。</p>
+      <p class="sub">按自然周归档，聚焦海洋激光雷达、偏振遥感、非球形颗粒、甲烷遥感与高水平经济金融研究。</p>
     </header>
 
     <section class="stats" id="stats"></section>
@@ -37,12 +37,16 @@ let active = '全部';
 
 function esc(s=''){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));}
 
+function weeklyReportKey(url=''){
+  return String(url).split('#')[0];
+}
+
 function renderStats(items){
-  const reports = new Set(items.map(x=>x.date)).size;
+  const reports = new Set(items.map(x=>weeklyReportKey(x.report_url)).filter(Boolean)).size;
   const research = items.filter(x=>x.category==='科研').length;
   const finance = items.filter(x=>x.category==='金融').length;
   statsEl.innerHTML = [
-    ['累计报告', reports],
+    ['累计周报', reports],
     ['累计论文', items.length],
     ['科研论文', research],
     ['金融论文', finance]
@@ -90,7 +94,7 @@ fetch('archive.json?ts='+Date.now())
   .catch(()=>{
     statsEl.innerHTML='';
     filtersEl.innerHTML='';
-    archiveEl.innerHTML='<p class="empty">归档已初始化，首期报告生成后会显示在这里。</p>';
+    archiveEl.innerHTML='<p class="empty">归档已初始化，首周报告生成后会显示在这里。</p>';
   });
 
 searchEl.addEventListener('input', renderArchive);
