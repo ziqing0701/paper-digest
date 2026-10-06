@@ -1,4 +1,645 @@
 {
   "updated_at": "2026-10-06",
-  "items": []
+  "items": [
+    {
+      "id": "dramatic-co2-2024",
+      "date": "2026-09-07",
+      "week": "2026-W37",
+      "category": "科研",
+      "title": "Dramatic increase in ecosystem respiration causes record-breaking atmospheric CO₂ growth rate in 2024",
+      "journal": "Nature Communications",
+      "year": "2026",
+      "keywords": [
+        "碳循环",
+        "CO₂",
+        "机制归因"
+      ],
+      "summary": "2024 年 CO₂ 增长率创纪录，核心归因指向陆地生态系统呼吸增强。",
+      "report_url": "reports/2026-W37.html#dramatic-co2-2024"
+    },
+    {
+      "id": "virtue-complexity",
+      "date": "2026-09-07",
+      "week": "2026-W37",
+      "category": "金融",
+      "title": "The Virtue of Complexity in Return Prediction",
+      "journal": "The Journal of Finance",
+      "year": "2024",
+      "keywords": [
+        "资产定价",
+        "机器学习",
+        "复杂度"
+      ],
+      "summary": "正则化条件下，过参数化可以提升样本外组合价值。",
+      "report_url": "reports/2026-W37.html#virtue-complexity"
+    },
+    {
+      "id": "atmospheric-deposition-methane",
+      "date": "2026-09-07",
+      "week": "2026-W37",
+      "category": "科研",
+      "title": "Atmospheric deposition enhances marine methane production and emissions from global oceans",
+      "journal": "Nature Communications",
+      "year": "2026",
+      "keywords": [
+        "海洋甲烷",
+        "营养盐",
+        "微生物"
+      ],
+      "summary": "大气氮沉降通过 N:P 失衡与磷限制增强 MPn 途径产甲烷。",
+      "report_url": "reports/2026-W37.html#atmospheric-deposition-methane"
+    },
+    {
+      "id": "confident-risk-premiums",
+      "date": "2026-09-07",
+      "week": "2026-W37",
+      "category": "金融",
+      "title": "Confident Risk Premiums and Investments Using Machine Learning Uncertainties",
+      "journal": "The Review of Financial Studies",
+      "year": "2026",
+      "keywords": [
+        "机器学习",
+        "不确定性",
+        "组合"
+      ],
+      "summary": "收益预测与预测精度联合使用可改善样本外组合表现。",
+      "report_url": "reports/2026-W37.html#confident-risk-premiums"
+    },
+    {
+      "id": "ultra-weak-infrared",
+      "date": "2026-09-07",
+      "week": "2026-W37",
+      "category": "科研",
+      "title": "Ultra-weak infrared light detection based on steep-slope phototransistors",
+      "journal": "Nature Communications",
+      "year": "2025",
+      "keywords": [
+        "光电探测",
+        "弱光",
+        "器件"
+      ],
+      "summary": "steep-slope 注入机制显著降低弱光 turn-on threshold power。",
+      "report_url": "reports/2026-W37.html#ultra-weak-infrared"
+    },
+    {
+      "id": "household-portfolios",
+      "date": "2026-09-07",
+      "week": "2026-W37",
+      "category": "金融",
+      "title": "Household Portfolios and Retirement Saving over the Life Cycle",
+      "journal": "The Journal of Finance",
+      "year": "2025",
+      "keywords": [
+        "家庭金融",
+        "资产配置",
+        "生命周期"
+      ],
+      "summary": "真实账户数据表明家庭权益配置呈生命周期 glide path。",
+      "report_url": "reports/2026-W37.html#household-portfolios"
+    },
+    {
+      "id": "spm-composition-adaptive",
+      "date": "2026-09-07",
+      "week": "2026-W37",
+      "category": "科研",
+      "title": "High spatial-resolution satellite mapping of suspended particulate matter in global coastal waters using particle composition-adaptive algorithms",
+      "journal": "Remote Sensing of Environment",
+      "year": "2025",
+      "keywords": [
+        "海色遥感",
+        "颗粒组成",
+        "反演"
+      ],
+      "summary": "先识别颗粒组成状态，再条件化反演 SPM，可提升全球近岸泛化。",
+      "report_url": "reports/2026-W37.html#spm-composition-adaptive"
+    },
+    {
+      "id": "man-vs-ml-revisited",
+      "date": "2026-09-07",
+      "week": "2026-W37",
+      "category": "金融",
+      "title": "Man versus Machine Learning Revisited",
+      "journal": "The Review of Financial Studies",
+      "year": "2025",
+      "keywords": [
+        "回测",
+        "前视偏差",
+        "机器学习"
+      ],
+      "summary": "移除 look-ahead bias 后原有巨大 ML alpha 基本消失。",
+      "report_url": "reports/2026-W37.html#man-vs-ml-revisited"
+    },
+    {
+      "id": "acpl",
+      "date": "2026-09-14",
+      "week": "2026-W38",
+      "category": "科研",
+      "title": "Anti-interference circularly polarized LiDAR for ocean detection",
+      "journal": "Communications Physics",
+      "year": "2026",
+      "keywords": [
+        "圆偏振",
+        "海洋LiDAR",
+        "多次散射"
+      ],
+      "summary": "V 通道同时抑制太阳背景并重新加权多次散射 photon paths。",
+      "report_url": "reports/2026-W38.html#acpl"
+    },
+    {
+      "id": "equilibrium-data-mining",
+      "date": "2026-09-14",
+      "week": "2026-W38",
+      "category": "金融",
+      "title": "Equilibrium Data Mining and Data Abundance",
+      "journal": "The Journal of Finance",
+      "year": "2025",
+      "keywords": [
+        "量化投资",
+        "数据",
+        "市场效率"
+      ],
+      "summary": "数据更丰富会提高价格信息效率，也会长期侵蚀公开信息型 alpha。",
+      "report_url": "reports/2026-W38.html#equilibrium-data-mining"
+    },
+    {
+      "id": "active-rrs",
+      "date": "2026-09-14",
+      "week": "2026-W38",
+      "category": "科研",
+      "title": "Active Remote Sensing Reflectance Measurement Using White-Light Lidar: Monte Carlo Simulations",
+      "journal": "Journal of Remote Sensing",
+      "year": "2026",
+      "keywords": [
+        "白光LiDAR",
+        "SAMC",
+        "主动被动协同"
+      ],
+      "summary": "白光 LiDAR 在足够接收多次散射时可主动逼近被动 Rrs。",
+      "report_url": "reports/2026-W38.html#active-rrs"
+    },
+    {
+      "id": "core-inflation",
+      "date": "2026-09-14",
+      "week": "2026-W38",
+      "category": "金融",
+      "title": "Getting to the Core: Inflation Risks Within and Across Asset Classes",
+      "journal": "The Review of Financial Studies",
+      "year": "2026",
+      "keywords": [
+        "通胀",
+        "资产配置",
+        "宏观"
+      ],
+      "summary": "core 与 energy inflation 的资产价格含义显著不同。",
+      "report_url": "reports/2026-W38.html#core-inflation"
+    },
+    {
+      "id": "opa-polarization-lidar",
+      "date": "2026-09-14",
+      "week": "2026-W38",
+      "category": "科研",
+      "title": "Optical phased array LiDAR chips towards polarization-resolved 4D sensing",
+      "journal": "Nature Communications",
+      "year": "2026",
+      "keywords": [
+        "OPA LiDAR",
+        "偏振",
+        "光计算"
+      ],
+      "summary": "片上偏振感知与光神经网络让 LiDAR 从几何测量扩展到材料识别。",
+      "report_url": "reports/2026-W38.html#opa-polarization-lidar"
+    },
+    {
+      "id": "partial-equilibrium-bubbles",
+      "date": "2026-09-14",
+      "week": "2026-W38",
+      "category": "金融",
+      "title": "Partial Equilibrium Thinking, Extrapolation, and Bubbles",
+      "journal": "The Review of Financial Studies",
+      "year": "2026",
+      "keywords": [
+        "行为金融",
+        "泡沫",
+        "趋势"
+      ],
+      "summary": "同一外推机制在普通状态下产生 momentum，在 displacement shock 后可放大成泡沫。",
+      "report_url": "reports/2026-W38.html#partial-equilibrium-bubbles"
+    },
+    {
+      "id": "hcho-methane-oxidation",
+      "date": "2026-09-14",
+      "week": "2026-W38",
+      "category": "科研",
+      "title": "Satellite quantification of enhanced methane oxidation applied to the stratospheric plume following Hunga Tonga-Hunga Ha’apai eruption",
+      "journal": "Nature Communications",
+      "year": "2026",
+      "keywords": [
+        "甲烷氧化",
+        "TROPOMI",
+        "代理量"
+      ],
+      "summary": "利用 HCHO 作为短寿命 proxy 可从卫星定量约束 CH₄ oxidation。",
+      "report_url": "reports/2026-W38.html#hcho-methane-oxidation"
+    },
+    {
+      "id": "portfolio-frictions",
+      "date": "2026-09-14",
+      "week": "2026-W38",
+      "category": "金融",
+      "title": "What Drives Investors' Portfolio Choices? Separating Risk Preferences from Frictions",
+      "journal": "The Journal of Finance",
+      "year": "2026",
+      "keywords": [
+        "家庭金融",
+        "摩擦",
+        "默认选项"
+      ],
+      "summary": "默认配置准实验表明 participation frictions 对低股票参与率解释力很强。",
+      "report_url": "reports/2026-W38.html#portfolio-frictions"
+    },
+    {
+      "id": "ch4-plateau",
+      "date": "2026-09-21",
+      "week": "2026-W39",
+      "category": "科研",
+      "title": "Atmospheric CH₄ plateau sustained by NOₓ emission rise and southward shift",
+      "journal": "Nature",
+      "year": "2026",
+      "keywords": [
+        "全球甲烷",
+        "OH",
+        "NOx"
+      ],
+      "summary": "NOx 排放增长与空间南移提高 OH，解释 1999–2006 CH₄ 平台期。",
+      "report_url": "reports/2026-W39.html#ch4-plateau"
+    },
+    {
+      "id": "stablecoin-runs",
+      "date": "2026-09-21",
+      "week": "2026-W39",
+      "category": "金融",
+      "title": "Stablecoin Runs and the Centralization of Arbitrage",
+      "journal": "The Review of Financial Studies",
+      "year": "2026",
+      "keywords": [
+        "稳定币",
+        "套利",
+        "挤兑"
+      ],
+      "summary": "一级赎回套利高度集中，peg 精度与 run resilience 存在权衡。",
+      "report_url": "reports/2026-W39.html#stablecoin-runs"
+    },
+    {
+      "id": "ihmsc",
+      "date": "2026-09-21",
+      "week": "2026-W39",
+      "category": "科研",
+      "title": "IHMSC: A novel iterative hybrid multiple scattering-corrected retrieval method for enhancing accuracy in ocean lidar profiling inversions",
+      "journal": "Remote Sensing of Environment",
+      "year": "2026",
+      "keywords": [
+        "海洋LiDAR",
+        "多次散射",
+        "反演"
+      ],
+      "summary": "把半解析多次散射校正直接嵌入 ocean LiDAR 迭代反演。",
+      "report_url": "reports/2026-W39.html#ihmsc"
+    },
+    {
+      "id": "flow-etf",
+      "date": "2026-09-21",
+      "week": "2026-W39",
+      "category": "金融",
+      "title": "Flow",
+      "journal": "The Review of Financial Studies",
+      "year": "2026",
+      "keywords": [
+        "ETF",
+        "资金流",
+        "动量"
+      ],
+      "summary": "ETF 的 flow-performance sensitivity 很强，机构与 model portfolios 放大追涨。",
+      "report_url": "reports/2026-W39.html#flow-etf"
+    },
+    {
+      "id": "polarization-hyperspectral-sensor",
+      "date": "2026-09-21",
+      "week": "2026-W39",
+      "category": "科研",
+      "title": "A high-resolution polarization-hyperspectral image sensor for complex intelligent sensing",
+      "journal": "Nature Communications",
+      "year": "2026",
+      "keywords": [
+        "偏振",
+        "高光谱",
+        "光电探测"
+      ],
+      "summary": "单芯片联合编码实现高空间、高光谱与偏振多维成像。",
+      "report_url": "reports/2026-W39.html#polarization-hyperspectral-sensor"
+    },
+    {
+      "id": "skewness-momentum",
+      "date": "2026-09-21",
+      "week": "2026-W39",
+      "category": "金融",
+      "title": "Time-Varying Skewness and Momentum Crashes",
+      "journal": "The Review of Asset Pricing Studies",
+      "year": "2026",
+      "keywords": [
+        "动量",
+        "偏度",
+        "尾部风险"
+      ],
+      "summary": "conditional skewness 提供 volatility 之外的 momentum crash 左尾信息。",
+      "report_url": "reports/2026-W39.html#skewness-momentum"
+    },
+    {
+      "id": "bathymetry-140m",
+      "date": "2026-09-21",
+      "week": "2026-W39",
+      "category": "科研",
+      "title": "Lidar bathymetry over 140 m with polarization noise suppression",
+      "journal": "PhotoniX",
+      "year": "2026",
+      "keywords": [
+        "测深",
+        "偏振",
+        "SA-MC"
+      ],
+      "summary": "交叉偏振抑制海面/水柱噪声并将机载测深推进到 140.4 m。",
+      "report_url": "reports/2026-W39.html#bathymetry-140m"
+    },
+    {
+      "id": "reference-dependent-sentiment",
+      "date": "2026-09-21",
+      "week": "2026-W39",
+      "category": "金融",
+      "title": "Reference-Dependent Preferences and Sentiment-Driven Asset Prices",
+      "journal": "The Journal of Finance",
+      "year": "2026",
+      "keywords": [
+        "行为金融",
+        "情绪",
+        "风险恐慌"
+      ],
+      "summary": "价格下跌可提高感知 downside risk，形成自我实现的 risk-panic feedback。",
+      "report_url": "reports/2026-W39.html#reference-dependent-sentiment"
+    },
+    {
+      "id": "irregular-particles-underwater",
+      "date": "2026-09-28",
+      "week": "2026-W40",
+      "category": "科研",
+      "title": "Influence of irregular particles on the propagation of polarized pulsed laser beams through turbid underwater environments",
+      "journal": "JOSA A",
+      "year": "2026",
+      "keywords": [
+        "T-matrix",
+        "非球形颗粒",
+        "偏振MC"
+      ],
+      "summary": "T-matrix 与偏振 MC 直接连接真实颗粒形态和水下可测回波。",
+      "report_url": "reports/2026-W40.html#irregular-particles-underwater"
+    },
+    {
+      "id": "asian-dust-real-shape",
+      "date": "2026-09-28",
+      "week": "2026-W40",
+      "category": "科研",
+      "title": "Scattering properties and lidar characteristics of Asian dust particles based on realistic shape models",
+      "journal": "Atmospheric Chemistry and Physics",
+      "year": "2025",
+      "keywords": [
+        "真实颗粒",
+        "DDA",
+        "退偏"
+      ],
+      "summary": "真实 3D 颗粒显示 size saturation、弱 sphericity 解释力和吸收性折射率耦合。",
+      "report_url": "reports/2026-W40.html#asian-dust-real-shape"
+    },
+    {
+      "id": "svalbard-methane",
+      "date": "2026-09-28",
+      "week": "2026-W40",
+      "category": "科研",
+      "title": "Subglacial geology and thermal conditions regulate methane emissions from Svalbard glaciers",
+      "journal": "Nature Communications",
+      "year": "2026",
+      "keywords": [
+        "北极甲烷",
+        "冰川",
+        "机制"
+      ],
+      "summary": "地质 source potential 与 basal thermal accessibility 共同控制冰川甲烷释放。",
+      "report_url": "reports/2026-W40.html#svalbard-methane"
+    },
+    {
+      "id": "aerosol-height-dfs",
+      "date": "2026-09-28",
+      "week": "2026-W40",
+      "category": "科研",
+      "title": "A multi-angle and polarization-based retrieval algorithm for aerosol layer height of smoke and dust",
+      "journal": "Atmospheric Measurement Techniques",
+      "year": "2026",
+      "keywords": [
+        "偏振遥感",
+        "DFS",
+        "信息量"
+      ],
+      "summary": "用 DFS 定量证明多角度偏振对 aerosol layer height 提供独立信息。",
+      "report_url": "reports/2026-W40.html#aerosol-height-dfs"
+    },
+    {
+      "id": "airborne-ocean-hsrl",
+      "date": "2026-09-28",
+      "week": "2026-W40",
+      "category": "科研",
+      "title": "China’s first airborne oceanic high spectral resolution lidar achieves decoupled measurement of seawater optical properties",
+      "journal": "Science Bulletin",
+      "year": "2026",
+      "keywords": [
+        "HSRL",
+        "物理解耦",
+        "机载"
+      ],
+      "summary": "机载 HSRL 通过改变 observation operator 解耦海水光学参数。",
+      "report_url": "reports/2026-W40.html#airborne-ocean-hsrl"
+    },
+    {
+      "id": "coastal-upwelling-ch4",
+      "date": "2026-09-28",
+      "week": "2026-W40",
+      "category": "科研",
+      "title": "Coastal Upwelling Enhances Winter Arctic Ocean Methane Emission",
+      "journal": "Geophysical Research Letters",
+      "year": "2025",
+      "keywords": [
+        "北极甲烷",
+        "上升流",
+        "海冰"
+      ],
+      "summary": "海冰开裂提供交换窗口，沿岸上升流提供 CH₄-rich water。",
+      "report_url": "reports/2026-W40.html#coastal-upwelling-ch4"
+    },
+    {
+      "id": "mesoscale-eddies-ch4",
+      "date": "2026-09-28",
+      "week": "2026-W40",
+      "category": "科研",
+      "title": "Regulation of Mesoscale Eddies on Oceanic Methane Production, Oxidation, and Emissions",
+      "journal": "Global Biogeochemical Cycles",
+      "year": "2025",
+      "keywords": [
+        "海洋甲烷",
+        "中尺度涡",
+        "生物地球化学"
+      ],
+      "summary": "气旋/反气旋涡通过不同生物地球化学链条重塑 CH₄ 源汇。",
+      "report_url": "reports/2026-W40.html#mesoscale-eddies-ch4"
+    },
+    {
+      "id": "single-photon-adaptive",
+      "date": "2026-09-28",
+      "week": "2026-W40",
+      "category": "科研",
+      "title": "An Adaptive Inversion Framework for Shipborne Single-Photon LiDAR to Retrieve Ocean Optical Profiles With Multiple Scattering Correction",
+      "journal": "IEEE TGRS",
+      "year": "2025",
+      "keywords": [
+        "单光子LiDAR",
+        "多次散射",
+        "自适应反演"
+      ],
+      "summary": "自适应参数优化与半解析多次散射校正联合提升 Kd/bbp 反演。",
+      "report_url": "reports/2026-W40.html#single-photon-adaptive"
+    },
+    {
+      "id": "global-npp-decline",
+      "date": "2026-10-05",
+      "week": "2026-W41",
+      "category": "科研",
+      "title": "Global declines in net primary production in the ocean color era",
+      "journal": "Nature Communications",
+      "year": "2025",
+      "keywords": [
+        "NPP",
+        "海色遥感",
+        "碳循环"
+      ],
+      "summary": "25 年 ocean-color 记录显示 NPP 广泛下降，核心变化更多来自 growth physiology。",
+      "report_url": "reports/2026-W41.html#global-npp-decline"
+    },
+    {
+      "id": "flare-gmm",
+      "date": "2026-10-05",
+      "week": "2026-W41",
+      "category": "科研",
+      "title": "FLARE-GMM: an automatic aerosol typing model based on Mie–Raman–fluorescence lidar measurements with LILAS",
+      "journal": "Atmospheric Measurement Techniques",
+      "year": "2025",
+      "keywords": [
+        "荧光LiDAR",
+        "退偏",
+        "概率分类"
+      ],
+      "summary": "depolarization + fluorescence + RH 提供更有物理含义的颗粒类型识别。",
+      "report_url": "reports/2026-W41.html#flare-gmm"
+    },
+    {
+      "id": "methane-isotopologues",
+      "date": "2026-10-05",
+      "week": "2026-W41",
+      "category": "科研",
+      "title": "Incorporating methane isotopologues alters tropical and subtropical methane emission estimates",
+      "journal": "Nature Communications",
+      "year": "2026",
+      "keywords": [
+        "甲烷",
+        "同位素",
+        "4D-Var"
+      ],
+      "summary": "加入 δ13C/δD 后总量变化小，但 source-sector attribution 大幅重排。",
+      "report_url": "reports/2026-W41.html#methane-isotopologues"
+    },
+    {
+      "id": "investor-factors",
+      "date": "2026-10-05",
+      "week": "2026-W41",
+      "category": "金融",
+      "title": "Investor Factors",
+      "journal": "The Journal of Finance",
+      "year": "2025",
+      "keywords": [
+        "资产定价",
+        "持仓",
+        "投资者异质性"
+      ],
+      "summary": "从真实投资者持仓结构可提取具有资产定价意义的 investor factor。",
+      "report_url": "reports/2026-W41.html#investor-factors"
+    },
+    {
+      "id": "beaufort-pelagic-methane",
+      "date": "2026-10-05",
+      "week": "2026-W41",
+      "category": "科研",
+      "title": "Subsurface Methane Accumulation in the Beaufort Sea Driven by Pelagic Processes: A Mechanistic Modeling Approach",
+      "journal": "Geophysical Research Letters",
+      "year": "2025",
+      "keywords": [
+        "北极甲烷",
+        "水柱过程",
+        "机制模型"
+      ],
+      "summary": "沿岸 subsurface CH₄ 更受 lateral transport 控制，外海更支持 pelagic production。",
+      "report_url": "reports/2026-W41.html#beaufort-pelagic-methane"
+    },
+    {
+      "id": "algorithmic-pricing-liquidity",
+      "date": "2026-10-05",
+      "week": "2026-W41",
+      "category": "金融",
+      "title": "Algorithmic Pricing and Liquidity in Securities Markets",
+      "journal": "The Review of Financial Studies",
+      "year": "2026",
+      "keywords": [
+        "市场微观结构",
+        "强化学习",
+        "流动性"
+      ],
+      "summary": "RL 做市商可因 noisy feedback 与有限探索长期停留在非竞争价差。",
+      "report_url": "reports/2026-W41.html#algorithmic-pricing-liquidity"
+    },
+    {
+      "id": "uav-radar-lidar",
+      "date": "2026-10-05",
+      "week": "2026-W41",
+      "category": "科研",
+      "title": "UAV-Borne Quasi-3D Observation of Physical-Biological Coupling in a Dipole Eddy by Integrating Radar Altimetry and Ocean LiDAR",
+      "journal": "IEEE TGRS",
+      "year": "2026",
+      "keywords": [
+        "主动协同",
+        "海洋LiDAR",
+        "中尺度涡"
+      ],
+      "summary": "同一 UAV 上 radar 看动力、LiDAR 看水下生态，实现准三维机制链观测。",
+      "report_url": "reports/2026-W41.html#uav-radar-lidar"
+    },
+    {
+      "id": "consumption-asset-returns",
+      "date": "2026-10-05",
+      "week": "2026-W41",
+      "category": "金融",
+      "title": "Consumption in Asset Returns",
+      "journal": "The Journal of Finance",
+      "year": "2026",
+      "keywords": [
+        "宏观金融",
+        "消费风险",
+        "资产定价"
+      ],
+      "summary": "利用股票和债券收益反向识别持久消费状态，连接宏观与风险溢价。",
+      "report_url": "reports/2026-W41.html#consumption-asset-returns"
+    }
+  ]
 }
