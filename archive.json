@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06",
+  "updated_at": "2026-10-08",
   "items": [
     {
       "id": "dramatic-co2-2024",
@@ -640,6 +640,64 @@
       ],
       "summary": "利用股票和债券收益反向识别持久消费状态，连接宏观与风险溢价。",
       "report_url": "reports/2026-W41.html#consumption-asset-returns"
+    },
+    {
+      "id": "swot-submesoscale-2025",
+      "date": "2026-10-08",
+      "week": "2026-W41",
+      "title": "Wide-swath satellite altimetry unveils global submesoscale ocean dynamics",
+      "authors": [
+        "Matthew Archer",
+        "Jinbo Wang",
+        "Patrice Klein",
+        "Gerald Dibarboure",
+        "Lee-Lueng Fu"
+      ],
+      "journal": "Nature",
+      "year": 2025,
+      "doi": "10.1038/s41586-025-08722-8",
+      "category": "科研",
+      "topic": "卫星宽幅雷达测高与全球海洋次中尺度动力、内孤立波能量和涡旋非地转运动",
+      "method_category": "SWOT KaRIn宽幅测高；全球SSHA统计；波能量通量；旋衡动力反演；SST/Chl交叉验证",
+      "scientific_question": "如何从全球观测定量描述1–100 km海洋次中尺度涡旋与内波的动力和能量？",
+      "keywords": [
+        "SWOT",
+        "卫星宽幅测高",
+        "次中尺度",
+        "内孤立波",
+        "动力生态耦合",
+        "海洋遥感"
+      ],
+      "summary": "Nature：SWOT 将过去难以全球测量的次中尺度 SSH 变率转化为全球统计、内孤立波能量通量和小涡旋动力学量化；关键价值在于观测能力直接改变可回答的科学问题。",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W41.html#2026-10-08"
+    },
+    {
+      "id": "segmented-arbitrage-2025",
+      "date": "2026-10-08",
+      "week": "2026-W41",
+      "title": "Segmented Arbitrage",
+      "authors": [
+        "Emil N. Siriwardane",
+        "Adi Sunderam",
+        "Jonathan Wallen"
+      ],
+      "journal": "The Journal of Finance",
+      "year": 2025,
+      "doi": "10.1111/jofi.13469",
+      "category": "金融",
+      "topic": "跨市场套利价差、融资渠道分割与金融中介资产负债表异质性",
+      "method_category": "32种套利价差面板；相关矩阵与主成分；2016年货币市场基金改革事件；2012年机构资本冲击",
+      "scientific_question": "为何一价定律偏离在跨市场间弱相关，代表性中介的共同约束假设哪里失效？",
+      "keywords": [
+        "套利限制",
+        "市场微观结构",
+        "融资分割",
+        "流动性",
+        "金融中介",
+        "风险管理"
+      ],
+      "summary": "Journal of Finance：32种套利价差两两相关系数均值仅0.22；制度冲击与机构事件共同支持融资来源和资产负债表两种分割机制。价差应作为资金与中介结构指标使用。",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W41.html#2026-10-08"
     }
   ]
 }
