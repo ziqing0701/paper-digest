@@ -3,96 +3,99 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>完整精读周报模板 · Paper Digest</title>
+<title>科学问题与证据链一体化精读模板 · Paper Digest</title>
 <link rel="stylesheet" href="../style.css">
-<script>
-window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};
-</script>
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
 <main class="wrap">
   <article class="report">
     <a class="back" href="../index.html">← 返回论文精读首页</a>
-    <p class="eyebrow">FULL WEEKLY REVIEW TEMPLATE</p>
-    <h1>YYYY-Www · 顶刊论文精读</h1>
-    <p class="sub">每周一个 HTML；首页只保留摘要，周报正文必须保持与对话框精读相近的信息密度。</p>
+    <p class="eyebrow">WEEKLY REVIEW · INTEGRATED EVIDENCE NARRATIVE</p>
+    <h1>YYYY年第WW周 · 顶刊论文精读</h1>
+    <p class="sub">ISO 周起止日期；一周一个 HTML；图表和公式随相关假设、方法与证据出现。</p>
 
-    <nav class="toc">
-      <strong>本周目录</strong>
-      <p><a href="#paper-id">论文标题</a></p>
+    <nav class="toc" aria-label="本周论文目录">
+      <strong>本周目录（按日期与论文）</strong>
+      <p><a href="#YYYY-MM-DD">星期二 · YYYY-MM-DD</a> → <a href="#paper-id">论文标题（示例）</a></p>
     </nav>
 
-    <section class="paper" id="paper-id">
-      <h2 class="paper-title">1. 完整论文标题</h2>
-      <p class="paper-meta">作者 · 期刊 · 年份 · DOI / 官方链接</p>
-      <div class="tags"><span>#主题</span><span>#方法</span></div>
+    <section class="day-section" id="YYYY-MM-DD">
+      <h2 class="day-title">YYYY年MM月DD日 · 当期精选</h2>
 
-      <p class="paper-summary"><strong>一句话抓核心：</strong>用 2–4 句话说明科学矛盾、作者做了什么、最关键结论是什么。</p>
+      <section class="paper" id="paper-id">
+        <h2 class="paper-title">完整论文标题</h2>
+        <p class="paper-meta">作者 · 期刊 · 年份 · <a href="https://doi.org/">可核实的 DOI / 期刊页面</a></p>
+        <div class="tags"><span>#研究主题</span><span>#方法</span></div>
+        <p class="paper-summary"><strong>一句话抓核心：</strong>简述科学矛盾、决定性证据和主要发现。</p>
 
-      <div class="analysis-flow">
-        <h3>先抓住矛盾，再顺着证据链走</h3>
-        <p>这里直接按聊天框精读的节奏写，不做二次摘要。</p>
-        <div class="formula-box">\[F=k(C_w-C_{eq})\]<span class="caption">关键公式直接渲染；若为解释性概念式需标注 schematic / conceptual。</span></div>
-        <div class="step"><strong>1. 第一层证据</strong><p>先说明作者观察到什么。</p><div class="why-next"><span class="logic-arrow">为什么还要往下一层？</span> 说明这一层仍有哪些替代解释。</div></div>
-        <div class="step"><strong>2. 第二层证据</strong><p>引出新的数据、实验或模型，并说明它排除了什么。</p><div class="why-next"><span class="logic-arrow">为什么还不能停？</span> 明确还剩哪一个识别缺口。</div></div>
-        <div class="step"><strong>3. 机制闭环</strong><p>最后把过程、结果和系统意义接起来。</p></div>
-      </div>
+        <div class="deep-section">
+          <h3>1. 现象、知识缺口与真正的科学问题</h3>
+          <p>观察到什么异常/矛盾？现有文献能解释到哪一步？缺少什么证据？问题为什么值得做？最后明确一个可检验的科学问题。</p>
+        </div>
 
-      <div class="deep-section">
-        <h3>1. 研究问题：作者真正想解决什么</h3>
-        <p>说明背景、已有认知、冲突或识别缺口，以及为什么值得研究。</p>
-      </div>
+        <div class="deep-section">
+          <h3>2. 核心假设、理论机制与模型起点</h3>
+          <p>建立逻辑假设，说明哪些变量或观测量可以区分竞争解释。在真正需要公式的位置直接解释原文公式的变量、单位、近似条件与物理意义。</p>
+          <div class="formula-box">
+            \[y=f(\boldsymbol{\theta},\mathbf{x})\]
+            <span class="caption">概念性示意，非原文公式：展示参数如何映射为可观测响应。实际生成时应使用经过原文核实的 Eq. (n)，或明确标注示意性质。</span>
+          </div>
+          <p><strong>为什么接下来需要证据？</strong> 此时仍需实际数据检验该假设，并区别替代机制。</p>
+        </div>
 
-      <div class="deep-section">
-        <h3>2. 核心假设与物理 / 经济机制</h3>
-        <p>明确写出机制链，必要时用公式或箭头表示。</p>
-      </div>
+        <div class="analysis-flow">
+          <h3>3. 第一层证据：用什么方法确定基础事实？</h3>
+          <div class="step">
+            <p><strong>本层问题：</strong>为什么这组数据、实验或模型是合理起点？</p>
+            <p><strong>研究设计：</strong>说明样本、仪器、模型、对照组、识别策略；如需要，紧跟相应方法公式及局限。</p>
+            <div class="result-box">
+              <strong>Fig. 1 / Table 1（在此处解读，与证据并排）</strong>
+              <p>确认原文图号与 panel；解释坐标、颜色、分组、对照、量纲、误差条与关键数值。指出结果支持的判断及尚不足以支持的因果/机制主张。引用图表官方链接。</p>
+            </div>
+            <p><strong>本层结论：</strong>用有来源的定量事实回答基础问题。</p>
+            <div class="why-next"><strong class="logic-arrow">为什么进入下一层？</strong> 说明此时还存在何种机制混淆或替代解释。</div>
+          </div>
 
-      <div class="deep-section">
-        <h3>3. 数据、实验或模型：证据链怎样搭起来</h3>
-        <p>交代数据集、实验设计、仪器、模型、对照、独立验证和反事实/消融。</p>
-      </div>
+          <h3>4. 第二层证据：怎样区分竞争机制？</h3>
+          <div class="step">
+            <p><strong>新增设计：</strong>根据上一层剩余问题引入新的实验、控制、遥感数据、模拟、计量识别或变量拆分。</p>
+            <p><strong>相关公式或指标：</strong>在本层就地给出并解释 Eq. (n) 的物理/经济意义，说明它怎样影响识别。</p>
+            <div class="result-box">
+              <strong>Fig. 2a–d（在此处解读）</strong>
+              <p>核对原文 panel、关键数值、误差、对照和作者推断。解释图如何推进前一层结论，以及仍然需要什么验证。</p>
+            </div>
+            <div class="why-next"><strong class="logic-arrow">为什么还要验证？</strong> 剩余的替代机制、外推风险或关键模型假设是什么？</div>
+          </div>
 
-      <div class="deep-section">
-        <h3>4. 关键结果</h3>
-        <p>保留真正推动叙事的重要数值、比例、RMSE、相关系数、效应量等。</p>
-      </div>
+          <h3>5. 第三层及后续证据：机制检验、稳健性与外推</h3>
+          <div class="step">
+            <p>按论文实际逻辑继续增加证据层，每一层配套说明方法、必要公式、Figure/Table 的定量信息、证据等级、局限及下一步理由。若已经闭环，则不人为增加层数。</p>
+          </div>
+          <h3>6. 科学结论怎样形成闭环？</h3>
+          <p>回到最初问题：哪个假设得到多少证据支持？独立验证、反事实/消融、稳健性测试解决了什么？普适范围与不确定性边界在哪里？这段直接承接上方证据，避免重新叙述整篇论文。</p>
+        </div>
 
-      <div class="deep-section">
-        <h3>5. 最重要的 2–4 个创新点</h3>
-        <ul><li>问题创新</li><li>方法创新</li><li>证据创新</li><li>应用或叙事创新</li></ul>
-      </div>
+        <div class="deep-section">
+          <h3>7. 最重要的 2–4 个创新点与高水平发表逻辑</h3>
+          <p>区分新问题、新方法、新数据、新机制及普适性贡献；点名决定性结果或 Figure；分析审稿人为何认可重要性、可信度、机制证据和叙事结构。</p>
+        </div>
 
-      <div class="deep-section">
-        <h3>6. 科研故事线</h3>
-        <div class="chain">现象/矛盾 → 问题 → 假设 → 证据 → 机制 → 闭环</div>
-        <p>解释每一部分结果如何推动下一部分。</p>
-      </div>
+        <div class="deep-section">
+          <h3>8. 批判性阅读：识别边界与下一篇论文问题</h3>
+          <div class="caution">说明模型依赖、替代解释、验证不足和外推风险。提出审稿人最可能追问的关键科学问题。</div>
+        </div>
 
-      <div class="deep-section">
-        <h3>7. 为什么能进高水平期刊</h3>
-        <p>从问题重要性、方法可信度、因果/机制证据、普适性、图表与叙事结构解释。</p>
-      </div>
-
-      <div class="deep-section">
-        <h3>8. 薄弱点与延伸问题</h3>
-        <div class="caution">说明真正的识别边界，而不是泛泛写“样本量不足”。</div>
-      </div>
-
-      <div class="deep-section">
-        <h3>9. 对用户现有研究 / 投资体系的直接启发</h3>
-        <div class="takeaway">给出 1–3 个可以直接执行的迁移动作。</div>
-      </div>
-
-      <div class="deep-section expansion">
-        <h3>进一步精读：公式、证据强度与审稿视角</h3>
-        <div class="result-box"><strong>关键公式 / 变量到底在表达什么</strong><p>逐项解释变量对应的物理或经济含义，说明公式在论文逻辑中的作用。</p></div>
-        <div class="result-box"><strong>证据链应该分几层看</strong><p>区分现象证据、机制支持、反事实/因果证据和外推证据。</p></div>
-        <div class="caution"><strong>如果我是审稿人，我会重点追问</strong><p>写出真正可能决定论文可信度的识别问题。</p></div>
-        <div class="takeaway"><strong>如果你接着做，最值得推进的一步</strong><p>给出一个可直接形成实验、模型或数据分析任务的下一步。</p></div>
-      </div>
+        <div class="deep-section">
+          <h3>9. 科研迁移与科研判断训练</h3>
+          <div class="takeaway">给出 1–3 个具体课题动作：科研问题、需要的数据/实验/模型、拟绘制的新 Figure、必要的反事实/独立验证，以及研究者为何这样排序证据。</div>
+          <p>金融论文在此额外明确区分“原文证实的学术结论”和“可迁移的投资启示、适用条件与失效风险”。</p>
+        </div>
+      </section>
     </section>
+
+    <a class="back" href="../index.html">← 返回论文精读首页</a>
   </article>
 </main>
 </body>
