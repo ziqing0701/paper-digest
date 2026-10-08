@@ -14,7 +14,7 @@
     <a class="back" href="../index.html">← 返回论文精读首页</a>
     <p class="eyebrow">WEEKLY REVIEW · INTEGRATED EVIDENCE NARRATIVE</p>
     <h1>YYYY年第WW周 · 顶刊论文精读</h1>
-    <p class="sub">ISO 周起止日期；一周一个 HTML；图表和公式随相关假设、方法与证据出现。</p>
+    <p class="sub">ISO 周起止日期；一周一个 HTML；图表和公式随相关假设、方法与证据出现；1–3 张决定性图优先在正文中原位展示。</p>
 
     <nav class="toc" aria-label="本周论文目录">
       <strong>本周目录（按日期与论文）</strong>
@@ -50,10 +50,18 @@
           <div class="step">
             <p><strong>本层问题：</strong>为什么这组数据、实验或模型是合理起点？</p>
             <p><strong>研究设计：</strong>说明样本、仪器、模型、对照组、识别策略；如需要，紧跟相应方法公式及局限。</p>
-            <div class="result-box">
-              <strong>Fig. 1 / Table 1（在此处解读，与证据并排）</strong>
-              <p>确认原文图号与 panel；解释坐标、颜色、分组、对照、量纲、误差条与关键数值。指出结果支持的判断及尚不足以支持的因果/机制主张。引用图表官方链接。</p>
-            </div>
+            <!-- 此处为可实际显示图片的示例。正式生成时替换为经核验、允许转载的原论文图；
+                 确认单张图的复用授权，标明许可与来源，图片路径优先使用仓库本地图。 -->
+            <figure class="paper-figure" aria-label="第一层证据图表示例">
+              <a class="figure-image-link" href="../assets/figures/example-evidence.svg" target="_blank" rel="noopener noreferrer" aria-label="放大查看教学示意图">
+                <img src="../assets/figures/example-evidence.svg" alt="教学示意：观测事实、机制识别、独立验证三阶段证据链；非论文原图" loading="lazy" decoding="async">
+              </a>
+              <figcaption>
+                <strong>Fig. 1a–c（正式报告请替换为实际核对的原文图号）。</strong>
+                <div class="figure-reading"><strong>怎么看：</strong>先交代横纵坐标、图例、分组、误差条和关键数值；再说明对应的科学判断、剩余替代解释和下一步为何必要。此处仅演示布局。</div>
+                <div class="figure-source">来源：本站原创教学示意，非论文原图 · 许可：本站自制 · 正式报告须填写原论文 DOI、图片来源链接及明确的复用许可；点击图像可放大查看。</div>
+              </figcaption>
+            </figure>
             <p><strong>本层结论：</strong>用有来源的定量事实回答基础问题。</p>
             <div class="why-next"><strong class="logic-arrow">为什么进入下一层？</strong> 说明此时还存在何种机制混淆或替代解释。</div>
           </div>
@@ -62,9 +70,12 @@
           <div class="step">
             <p><strong>新增设计：</strong>根据上一层剩余问题引入新的实验、控制、遥感数据、模拟、计量识别或变量拆分。</p>
             <p><strong>相关公式或指标：</strong>在本层就地给出并解释 Eq. (n) 的物理/经济意义，说明它怎样影响识别。</p>
-            <div class="result-box">
-              <strong>Fig. 2a–d（在此处解读）</strong>
-              <p>核对原文 panel、关键数值、误差、对照和作者推断。解释图如何推进前一层结论，以及仍然需要什么验证。</p>
+            <!-- 当原图受限时，采用链接卡片，避免无许可上传或外链热链失效。 -->
+            <div class="figure-link-only">
+              <strong>Fig. 2a–d（原图使用许可未核实时的替代排版）</strong>
+              <p>图表解读：按原文说明坐标、panel、分组、关键数值与结果强度，明确上一层与下一层的证据连接。</p>
+              <p><a href="https://doi.org/" target="_blank" rel="noopener noreferrer">查看原文图表或图所在论文 →</a></p>
+              <p class="figure-note">正式报告将此占位链接替换为已经核验的期刊 Figure 页或 DOI 页面。</p>
             </div>
             <div class="why-next"><strong class="logic-arrow">为什么还要验证？</strong> 剩余的替代机制、外推风险或关键模型假设是什么？</div>
           </div>
