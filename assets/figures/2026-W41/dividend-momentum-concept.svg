@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="395" viewBox="0 0 1100 395" role="img" aria-label="原创教学概念图：股利增长、估值比与收益的恒等约束、贝叶斯收缩和样本外投资验证">
+<rect width="1100" height="395" fill="#f7faff"/>
+<text x="38" y="48" fill="#162944" font-size="27" font-family="sans-serif" font-weight="700">股利动量论文的识别链：会计恒等式 × 收缩先验 × 样本外检验</text>
+<text x="38" y="81" fill="#53657d" font-size="16" font-family="sans-serif">教学概念示意 · 非论文原图 · 不代表原文定量数据</text>
+<rect x="35" y="130" width="245" height="134" rx="16" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+<text x="157" y="168" text-anchor="middle" font-size="23" fill="#1e3a8a" font-family="sans-serif">三变量 VAR</text>
+<text x="157" y="203" text-anchor="middle" font-size="18" fill="#1e3a8a" font-family="sans-serif">股利增长 / 估值比</text>
+<text x="157" y="231" text-anchor="middle" font-size="18" fill="#1e3a8a" font-family="sans-serif">/ 股票收益</text>
+<path d="M289 196 H365" stroke="#3157d5" stroke-width="5"/><path d="M365 196 l-15 -10 v20z" fill="#3157d5"/>
+<rect x="376" y="130" width="320" height="134" rx="16" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+<text x="536" y="168" text-anchor="middle" font-size="23" fill="#92400e" font-family="sans-serif">双重约束</text>
+<text x="536" y="203" text-anchor="middle" font-size="18" fill="#92400e" font-family="sans-serif">Campbell–Shiller 恒等式</text>
+<text x="536" y="231" text-anchor="middle" font-size="18" fill="#92400e" font-family="sans-serif">+ Bayesian shrinkage</text>
+<path d="M704 196 H778" stroke="#3157d5" stroke-width="5"/><path d="M778 196 l-15 -10 v20z" fill="#3157d5"/>
+<rect x="789" y="130" width="273" height="134" rx="16" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+<text x="925" y="168" text-anchor="middle" font-size="23" fill="#166534" font-family="sans-serif">经济价值检验</text>
+<text x="925" y="203" text-anchor="middle" font-size="18" fill="#166534" font-family="sans-serif">OOS 预测</text>
+<text x="925" y="231" text-anchor="middle" font-size="18" fill="#166534" font-family="sans-serif">长期组合与杠杆</text>
+<rect x="132" y="311" width="841" height="52" rx="12" fill="#172b50"/>
+<text x="552" y="344" text-anchor="middle" font-size="20" fill="#ffffff" font-family="sans-serif">关键消融：只加先验 / 只加恒等约束 / 两者结合，比较真正增量</text>
+</svg>
