@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08",
+  "updated_at": "2026-10-11",
   "items": [
     {
       "id": "dramatic-co2-2024",
@@ -698,6 +698,129 @@
       ],
       "summary": "Journal of Finance：32种套利价差两两相关系数均值仅0.22；制度冲击与机构事件共同支持融资来源和资产负债表两种分割机制。价差应作为资金与中介结构指标使用。",
       "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W41.html#2026-10-08"
+    },
+    {
+      "id": "otic-molecular-scattering-calibration-2026",
+      "date": "2026-10-10",
+      "week": "2026-W41",
+      "title": "Polarization calibration of spaceborne lidar using dense cirrus–scattered solar background with molecular scattering correction",
+      "authors": [
+        "Zhaoyan Liu",
+        "Mark A. Vaughan",
+        "Pengwang Zhai",
+        "Anne Emilie Garnier",
+        "Shan Zeng",
+        "Sharon D. Rodier",
+        "Yongxiang Hu",
+        "Ali H. Omar",
+        "Charles R. Trepte"
+      ],
+      "journal": "Atmospheric Measurement Techniques",
+      "year": 2026,
+      "doi": "10.5194/amt-19-5325-2026",
+      "category": "科研",
+      "topic": "星载偏振激光雷达定标与瑞利分子散射校正",
+      "method_category": "矢量辐射传输;冰云太阳背景定标;独立仪器对照",
+      "scientific_question": "厚冰云太阳背景如何校正分子散射偏振后用作532nm双通道增益定标？",
+      "keywords": [
+        "CALIOP",
+        "偏振定标",
+        "瑞利散射",
+        "矢量辐射传输"
+      ],
+      "summary": "AMT：分子瑞利散射引入约1%的偏振增益系统误差；通过矢量辐射传输校正并与独立仪器定标比较。",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W41.html#otic-molecular-scattering-calibration-2026"
+    },
+    {
+      "id": "dividend-momentum-bayesian-rfs-2026",
+      "date": "2026-10-10",
+      "week": "2026-W41",
+      "title": "Dividend Momentum and Stock Return Predictability: A Bayesian Approach",
+      "authors": [
+        "Juan Antolín-Díaz",
+        "Ivan Petrella",
+        "Juan F. Rubio-Ramírez"
+      ],
+      "journal": "The Review of Financial Studies",
+      "year": 2026,
+      "doi": "10.1093/rfs/hhaf110",
+      "category": "金融",
+      "topic": "股利增长持续性、Campbell-Shiller约束与长期股票收益预测",
+      "method_category": "受限贝叶斯VAR;样本外预测;长期组合效用",
+      "scientific_question": "股利动量与理论恒等约束能否改善长期收益预测及经济效用？",
+      "keywords": [
+        "股利动量",
+        "Bayesian VAR",
+        "资产定价",
+        "长期投资"
+      ],
+      "summary": "RFS：结合股利动态、Campbell–Shiller理论约束和贝叶斯收缩改善长期收益预测；具体图表数值来自作者工作论文版本。",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W41.html#dividend-momentum-bayesian-rfs-2026"
+    },
+    {
+      "id": "worldwide-national-methane-inversion-2025",
+      "date": "2026-10-11",
+      "week": "2026-W41",
+      "title": "Worldwide inference of national methane emissions by inversion of satellite observations with UNFCCC prior estimates",
+      "authors": [
+        "James D. East",
+        "Daniel J. Jacob",
+        "Dylan Jervis",
+        "Nicholas Balasus",
+        "Lucas A. Estrada",
+        "Sarah E. Hancock",
+        "Melissa P. Sulprizio",
+        "John Thomas",
+        "Xiaolin Wang",
+        "Zichong Chen",
+        "Daniel J. Varon",
+        "John R. Worden"
+      ],
+      "journal": "Nature Communications",
+      "year": 2025,
+      "doi": "10.1038/s41467-025-67122-8",
+      "category": "科研",
+      "topic": "TROPOMI+GOSAT高分辨率全球国家甲烷排放反演与部门归因可辨识性",
+      "method_category": "Bayesian inversion;GEOS-Chem;IMI2.0;GHGSat;averaging-kernel information content",
+      "scientific_question": "如何用统一卫星反演框架约束161国及部门甲烷排放，同时区分先验驱动与观测驱动？",
+      "keywords": [
+        "TROPOMI",
+        "GOSAT",
+        "GHGSat",
+        "甲烷排放",
+        "贝叶斯反演",
+        "信息量"
+      ],
+      "summary": "Nature Communications：2023年161国全球人为甲烷排放后验375（299–392）Tg/年，较先验高15%；油气高32%；国别部门后验附观测敏感度。",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W41.html#worldwide-national-methane-inversion-2025"
+    },
+    {
+      "id": "reaching-for-yield-households-2025",
+      "date": "2026-10-11",
+      "week": "2026-W41",
+      "title": "Reaching for yield: Evidence from households",
+      "authors": [
+        "Francisco Gomes",
+        "Cameron Peng",
+        "Oksana Smirnova",
+        "Ning Zhu"
+      ],
+      "journal": "Journal of Financial Economics",
+      "year": 2025,
+      "doi": "10.1016/j.jfineco.2025.104057",
+      "category": "金融",
+      "topic": "中国家庭低利率下主动风险追逐及财富年龄盈亏异质性",
+      "method_category": "券商账户面板;固定效应;SHIBOR创新;行为机制交互",
+      "scientific_question": "家庭是否主动追逐收益，人力资本与参考依赖如何解释利率敏感性差异？",
+      "keywords": [
+        "家庭金融",
+        "利率",
+        "风险追逐",
+        "投资者行为",
+        "资产配置"
+      ],
+      "summary": "JFE：近200万名中国投资者11年交易数据显示降息后平均主动增持风险资产，低财富、年轻和亏损者更敏感；部分群体反向调整。",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W41.html#reaching-for-yield-households-2025"
     }
   ]
 }
