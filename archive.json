@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11",
+  "updated_at": "2026-10-22",
   "items": [
     {
       "id": "dramatic-co2-2024",
@@ -821,6 +821,338 @@
       ],
       "summary": "JFE：近200万名中国投资者11年交易数据显示降息后平均主动增持风险资产，低财富、年轻和亏损者更敏感；部分群体反向调整。",
       "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W41.html#reaching-for-yield-households-2025"
+    },
+    {
+      "id": "acdl-regularization-2025",
+      "date": "2026-10-13",
+      "title": "Retrievals of vertically resolved aerosol microphysical particle parameters with regularization from spaceborne Aerosol and Carbon dioxide Detection Lidar (ACDL)",
+      "authors": [
+        "Ziyu Bi",
+        "Jianbo Hu",
+        "Yuan Xie",
+        "Decang Bi",
+        "Xiaopeng Zhu",
+        "Jiqiao Liu",
+        "Weibiao Chen"
+      ],
+      "journal": "Atmospheric Measurement Techniques",
+      "year": 2025,
+      "doi": "10.5194/amt-18-7565-2025",
+      "category": "科研",
+      "topic": "ACDL多波长微物理正则化反演",
+      "keywords": [
+        "HSRL",
+        "正则化",
+        "粒径谱"
+      ],
+      "summary": "星载多波长光学量用于气溶胶微物理廓线反演，揭示双峰颗粒反演退化。",
+      "week": "2026-W42",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W42.html#acdl-regularization-2025"
+    },
+    {
+      "id": "safe-asset-fragility-2026",
+      "date": "2026-10-13",
+      "title": "Fragility of Safe Asset Markets",
+      "authors": [
+        "Thomas M. Eisenbach",
+        "Gregory Phelan"
+      ],
+      "journal": "The Review of Financial Studies",
+      "year": 2026,
+      "doi": "10.1093/rfs/hhaf064",
+      "category": "金融",
+      "topic": "安全资产流动性脆弱性",
+      "keywords": [
+        "国债",
+        "流动性",
+        "预防性卖出"
+      ],
+      "summary": "交易商约束与预防性卖出可导致安全资产市场流动性危机。",
+      "week": "2026-W42",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W42.html#safe-asset-fragility-2026"
+    },
+    {
+      "id": "hall-aerotolerant-methanogens-2025",
+      "date": "2026-10-15",
+      "title": "Coastal methane emissions driven by aerotolerant methanogens using seaweed and seagrass metabolites",
+      "authors": [
+        "N. Hall",
+        "W. W. Wong",
+        "R. Lappan",
+        "F. Ricci",
+        "K. J. Jeppe",
+        "R. N. Glud",
+        "S. Kawaichi",
+        "A.-E. Rotaru",
+        "C. Greening",
+        "P. L. M. Cook"
+      ],
+      "journal": "Nature Geoscience",
+      "year": 2025,
+      "doi": "10.1038/s41561-025-01768-3",
+      "category": "科研",
+      "topic": "近岸耐氧产甲烷机制",
+      "keywords": [
+        "海洋甲烷",
+        "海草",
+        "古菌"
+      ],
+      "summary": "现场、抑制剂、反应器和纯培养证据支持海草及藻类代谢物驱动的耐氧产甲烷。",
+      "week": "2026-W42",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W42.html#hall-aerotolerant-methanogens-2025"
+    },
+    {
+      "id": "dominate-historical-average-2025",
+      "date": "2026-10-15",
+      "title": "How to Dominate the Historical Average",
+      "authors": [
+        "Kai Li",
+        "Yingying Li",
+        "Changlei Lyu",
+        "Jialin Yu"
+      ],
+      "journal": "The Review of Financial Studies",
+      "year": 2025,
+      "doi": "10.1093/rfs/hhaf010",
+      "category": "金融",
+      "topic": "长期风险溢价保守预测",
+      "keywords": [
+        "预测",
+        "估值",
+        "历史均值"
+      ],
+      "summary": "固定保守预测斜率降低估计噪声，改善部分样本外股权风险溢价预测。",
+      "week": "2026-W42",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W42.html#dominate-historical-average-2025"
+    },
+    {
+      "id": "across-track-sunglint-2026",
+      "date": "2026-10-17",
+      "title": "Across-Track Tilt Concept for Sun Glint Mitigation in Future Earth-Observing Missions",
+      "authors": [
+        "Saeed Arab",
+        "Christopher J. Crawford",
+        "Benjamin Page",
+        "Kevin R. Turpie",
+        "Peter Gege",
+        "David R. Thompson",
+        "Kelly M. A. Luis"
+      ],
+      "journal": "IEEE Transactions on Geoscience and Remote Sensing",
+      "year": 2026,
+      "doi": "10.1109/TGRS.2026.3709997",
+      "category": "科研",
+      "topic": "太阳耀斑与卫星观测几何优化",
+      "method_category": "Landsat;Cox-Munk;XGBoost;logistic regression",
+      "scientific_question": "如何将太阳耀斑风险转化为可量化的卫星姿态优化收益？",
+      "keywords": [
+        "太阳耀斑",
+        "观测几何",
+        "Landsat",
+        "水色遥感"
+      ],
+      "summary": "14,000余景Landsat资料支持耀斑风险模型，3°西倾在高风险几何中平均降低约21.3%的耀斑像元比例。",
+      "week": "2026-W42",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W42.html#across-track-sunglint-2026"
+    },
+    {
+      "id": "cash-payout-monetary-policy-2026",
+      "date": "2026-10-17",
+      "title": "Cash Heterogeneity and the Payout Channel of Monetary Policy",
+      "authors": [
+        "Altan Pazarbaşı"
+      ],
+      "journal": "The Journal of Finance",
+      "year": 2026,
+      "doi": "10.1111/jofi.70059",
+      "category": "金融",
+      "topic": "货币宽松的企业预防性现金释放与派现渠道",
+      "method_category": "货币政策冲击;现金与盈利分组;异质企业新凯恩斯模型;成本反事实",
+      "scientific_question": "为什么盈利且现金富裕的公司宽松后增加派现且股价更敏感？",
+      "keywords": [
+        "货币政策",
+        "现金",
+        "派现",
+        "资产定价"
+      ],
+      "summary": "盈利且现金富裕公司在宽松冲击后释放预防性现金并增加派现；结构模型与成本反事实支持机制。",
+      "week": "2026-W42",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W42.html#cash-payout-monetary-policy-2026"
+    },
+    {
+      "id": "blue-lidar-hidden-biology-2025",
+      "date": "2026-10-18",
+      "title": "Airborne blue lidar reveals the ocean’s hidden biological engine in the South China Sea",
+      "authors": [
+        "Chen Peng",
+        "Cédric Jamet",
+        "Paolo Di Girolamo",
+        "Davide Dionisi",
+        "Xinye Li",
+        "Siqi Zhang",
+        "Zhenhua Zhang",
+        "Weibiao Chen",
+        "Yan He",
+        "Kun Shi",
+        "Delu Pan"
+      ],
+      "journal": "Communications Earth & Environment",
+      "year": 2025,
+      "doi": "10.1038/s43247-025-03034-1",
+      "category": "科研",
+      "topic": "486nm蓝光机载LiDAR与次表层叶绿素最大层连续观测",
+      "method_category": "blue lidar;analog photon counting;physics guided inversion",
+      "scientific_question": "能否以连续深层主动观测揭示传统垂向叶绿素参数化遗漏的生态结构？",
+      "keywords": [
+        "486nm",
+        "蓝光LiDAR",
+        "SCML",
+        "APCD",
+        "多次散射",
+        "生物碳泵"
+      ],
+      "summary": "486 nm蓝光与模拟/光子计数复合探测实现约100 m连续SCML剖面；三配置消融区分波长和接收器增益。",
+      "week": "2026-W42",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W42.html#blue-lidar-hidden-biology-2025"
+    },
+    {
+      "id": "news-asset-pricing-sdf-2025",
+      "date": "2026-10-18",
+      "title": "News and Asset Pricing: A High-Frequency Anatomy of the SDF",
+      "authors": [
+        "Saketh Aleti",
+        "Tim Bollerslev"
+      ],
+      "journal": "The Review of Financial Studies",
+      "year": 2025,
+      "doi": "10.1093/rfs/hhae019",
+      "category": "金融",
+      "topic": "15分钟随机贴现因子跳跃、新闻主题与风险溢价",
+      "method_category": "high frequency SDF;news text;minimax;news mimicking portfolios",
+      "scientific_question": "哪些新闻主题真正影响系统性风险价格，日历外货币政策信息有多重要？",
+      "keywords": [
+        "SDF",
+        "新闻定价",
+        "货币政策",
+        "风险溢价",
+        "高频数据"
+      ],
+      "summary": "272组合、25年高频SDF与500余万条新闻匹配，货币政策主题解释重要系统性风险补偿，日历外沟通贡献显著。",
+      "week": "2026-W42",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W42.html#news-asset-pricing-sdf-2025"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Impact of water uptake on fluorescence of atmospheric aerosols: insights from Mie–Raman–fluorescence lidar measurements",
+      "authors": [
+        "Igor Veselovskii",
+        "Qiaoyun Hu",
+        "Philippe Goloub",
+        "Thierry Podvin",
+        "Gaël Dubois",
+        "Alexey Kolgotin",
+        "Mikhail Korenskii"
+      ],
+      "journal": "Atmospheric Measurement Techniques",
+      "year": 2025,
+      "doi": "10.5194/amt-18-6039-2025",
+      "category": "科研",
+      "topic": "多波长Mie–Raman–荧光激光雷达与吸湿颗粒荧光猝灭",
+      "keywords": [
+        "Mie–Raman",
+        "fluorescence",
+        "hygroscopic growth",
+        "depolarization",
+        "identifiability"
+      ],
+      "summary": "利用混合边界层对照、3β+2α反演及多事件观测，发现部分气溶胶吸湿过程中荧光发生非线性衰减，限制了荧光作为干颗粒量代理的适用范围。",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W43.html#veselovskii-water-uptake-fluorescence-2025",
+      "id": "veselovskii-water-uptake-fluorescence-2025",
+      "week": "2026-W43"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Investor Memory",
+      "authors": [
+        "Katrin Gödker",
+        "Peiran Jiao",
+        "Paul Smeets"
+      ],
+      "journal": "The Review of Financial Studies",
+      "year": 2025,
+      "doi": "10.1093/rfs/hhaf006",
+      "category": "金融",
+      "topic": "投资者选择性记忆、信念扭曲与次优重复投资",
+      "keywords": [
+        "investor memory",
+        "behavioral finance",
+        "beliefs",
+        "reinvestment",
+        "experiment"
+      ],
+      "summary": "随机延迟回忆实验揭示盈利经历被高估、亏损被低估，并与乐观信念、次优再投资和过度自信联系；数值依据作者公开工作论文。",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W43.html#godker-investor-memory-2025",
+      "id": "godker-investor-memory-2025",
+      "week": "2026-W43"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Retrieval of microphysical properties of dust aerosols from extinction, backscattering and depolarization lidar measurements using various particle scattering models",
+      "authors": [
+        "Yuyang Chang",
+        "Qiaoyun Hu",
+        "Philippe Goloub",
+        "Thierry Podvin",
+        "Igor Veselovskii",
+        "Fabrice Ducos",
+        "Gaël Dubois",
+        "Masanori Saito",
+        "Anton Lopatin",
+        "Oleg Dubovik",
+        "Cheng Chen"
+      ],
+      "journal": "Atmospheric Chemistry and Physics",
+      "year": 2025,
+      "doi": "10.5194/acp-25-6787-2025",
+      "category": "科研",
+      "topic": "非球形颗粒散射模型、光谱退偏信息量与沙尘激光雷达微物理反演",
+      "keywords": [
+        "irregular hexahedron",
+        "T-matrix",
+        "depolarization",
+        "Jacobian",
+        "lidar",
+        "retrieval"
+      ],
+      "summary": "对球形、旋转椭球与不规则六面体模型开展正演、谱退偏消融、噪声试验及实测沙尘反演，揭示通道增益与粒径、形态模型的耦合。",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W43.html#chang-dust-shape-depolarization-2025",
+      "id": "chang-dust-shape-depolarization-2025",
+      "week": "2026-W43"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Passive Investing and the Rise of Mega-Firms",
+      "authors": [
+        "Hao Jiang",
+        "Dimitri Vayanos",
+        "Lu Zheng"
+      ],
+      "journal": "The Review of Financial Studies",
+      "year": 2025,
+      "doi": "10.1093/rfs/hhaf085",
+      "category": "金融",
+      "topic": "被动指数投资、超大市值公司价格效应、特质风险与套利资本约束",
+      "keywords": [
+        "passive investing",
+        "mega-firms",
+        "index flows",
+        "idiosyncratic volatility",
+        "asset pricing"
+      ],
+      "summary": "理论与1996–2020年S&P500数据表明，被动资金流与超大市值股票更强的相对收益和特质波动率响应相关，S&P600负对照支持经济整体规模机制。",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W43.html#jiang-passive-megafirms-2025",
+      "id": "jiang-passive-megafirms-2025",
+      "week": "2026-W43"
     }
   ]
 }
