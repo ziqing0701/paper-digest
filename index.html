@@ -38,7 +38,7 @@ let active = '全部';
 function esc(s=''){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));}
 
 function weeklyReportKey(url=''){
-  return String(url).split('#')[0];
+  return new URL(url, window.location.href).pathname;
 }
 
 function renderStats(items){
