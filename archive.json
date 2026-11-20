@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-11-20",
   "items": [
     {
       "id": "dramatic-co2-2024",
@@ -1153,6 +1153,34 @@
       "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W43.html#jiang-passive-megafirms-2025",
       "id": "jiang-passive-megafirms-2025",
       "week": "2026-W43"
+    },
+    {
+      "id": "cheatham-ocean-color-microplastics-2026",
+      "date": "2026-11-20",
+      "title": "The ocean’s color is changing near the Great Pacific Garbage Patch",
+      "authors": [
+        "Shea Cheatham",
+        "Daniel Koestner",
+        "Børge Hamre"
+      ],
+      "journal": "Communications Earth & Environment",
+      "year": 2026,
+      "doi": "10.1038/s43247-026-04071-0",
+      "category": "科研",
+      "topic": "海洋水色长期变亮、微塑料光学响应与天然颗粒竞争解释",
+      "method_category": "多产品海色时间序列;辐射传输;光谱情景对照",
+      "scientific_question": "垃圾带附近蓝绿波段同步变亮能否由微塑料或天然颗粒变化解释？",
+      "keywords": [
+        "海洋水色",
+        "微塑料",
+        "颗粒光学",
+        "辐射传输",
+        "可辨识性"
+      ],
+      "summary": "三套海色产品在垃圾带附近均显示部分区域蓝绿变亮；模拟中加入微塑料变量后青色变亮更常见，但尚缺同域小粒径微塑料直接实测。",
+      "week": "2026-W47",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W47.html#cheatham-ocean-color-microplastics-2026"
     }
   ]
 }
+
