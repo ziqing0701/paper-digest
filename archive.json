@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20",
+  "updated_at": "2026-11-26",
   "items": [
     {
       "id": "dramatic-co2-2024",
@@ -1180,7 +1180,38 @@
       "summary": "三套海色产品在垃圾带附近均显示部分区域蓝绿变亮；模拟中加入微塑料变量后青色变亮更常见，但尚缺同域小粒径微塑料直接实测。",
       "week": "2026-W47",
       "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W47.html#cheatham-ocean-color-microplastics-2026"
+    },
+    {
+      "id": "elum-viirs-nighttime-methane-2026",
+      "date": "2026-11-26",
+      "week": "2026-W48",
+      "title": "Radiative Constraints on VIIRS Nighttime Detectability of Lower-Tropospheric Methane",
+      "authors": [
+        "Daja R. Elum",
+        "Nicholas R. Nalli",
+        "Johan Villanueva",
+        "Daniel Yeager",
+        "Adrian Flores",
+        "Monique Walker",
+        "Nakul Karle",
+        "Ricardo Sakai",
+        "Joseph Wilkins"
+      ],
+      "journal": "Atmospheric Measurement Techniques",
+      "year": 2026,
+      "doi": "10.5194/amt-19-7667-2026",
+      "category": "科研",
+      "topic": "夜间低层甲烷热红外探测的垂直热结构、辐射传输与地表误差底限",
+      "keywords": [
+        "VIIRS",
+        "CH4",
+        "热红外",
+        "MODTRAN6",
+        "发射率",
+        "可探测性"
+      ],
+      "summary": "基于实测大气背景的MODTRAN6灵敏度实验揭示夜间甲烷探测受垂直热结构、波段饱和及地表发射率异质性共同限制；即使九倍甲烷增强，在案例地表误差条件下SNR仍低于2。",
+      "report_url": "https://ziqing0701.github.io/paper-digest/reports/2026-W48.html#elum-viirs-nighttime-methane-2026"
     }
   ]
 }
-
